@@ -20,6 +20,7 @@
         <!-- Otherwise apply the normal LTR layouts -->
         {{ style('css/frontend.css') }}
         <link href="{{ asset('css/frontend/header.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/frontend/footer.css') }}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800|Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
         @stack('after-styles')
     </head>
@@ -39,6 +40,6 @@
         {!! script(mix('js/frontend.js')) !!}
         @stack('after-scripts')
 
-        @include('includes.partials.ga')
+        @include('frontend.includes.footer')
     </body>
 </html>

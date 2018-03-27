@@ -1,28 +1,39 @@
-<div id="header" class="bg-black">
-	
-	<nav id="header-top" class="navbar navbar-expand-lg  no-gutters">
-		<div class="container">
-		    <div class="col-sm-4 lang-switcher none-padding">
-			    <div class="nav-item dropdown">
-				    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownLanguageLink" data-toggle="dropdown"
-				       aria-haspopup="true" aria-expanded="false">
-				       <!-- {{ __('menus.language-picker.language') }} ({{ strtoupper(app()->getLocale()) }}) -->
-				       <span class="country">VIETNAM</span> -  <span class="language">English</span>
-				       </a>
-
-				    @include('frontend.includes.lang-switcher')
+<footer id="footer">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col logo">
+				<img class="logo" src="{{asset('img/frontend/logo.png')}}" />
+				<div class="social-links">
+					<a href="#"><img src="{{asset('/img/frontend/facebook-icon.png')}}"></a>
+					<a href="#"><img src="{{asset('/img/frontend/twiter.png')}}"></a>
+					<a href="#"><img src="{{asset('/img/frontend/instagram.png')}}"></a>
 				</div>
-		    	
-		    </div>
-		    <div class="col-sm-8 account-menu none-padding">
-		    	@include('frontend.includes.account-menu')
-		    </div>
-	    </div>
-    </nav>
-	    <div id="navbar">
-	    	<div class="container">
-	    		@include('frontend.includes.navbar')
-	    	</div>
+			
+			</div>
+			<ul class="col link-footer">
+				<li class="link-footer-item"><a href="#">Find Room</a></li>
+				<li class="link-footer-item"><a href="#">Find agencies</a></li>
+				<li class="link-footer-item"><a href="#">News and Blogs</a></li>
+				<li class="link-footer-item"><a href="#">Download app</a></li>
+			</ul>
+			<ul class="col link-footer">
+				<li class="link-footer-item"><a href="#">FAQs</a></li>
+				<li class="link-footer-item"><a href="#">Contact Us</a></li>
+				<li class="link-footer-item"><a href="#">Contact Us</a></li>
+				<li class="link-footer-item"><a href="#">Privacy</a></li>
+			</ul>
+			<div class="col are-you-new">
+				<div class="head-1">You are new?</div>
+				<div class="select-item dropdown align-items-center none-padding">
+		            <a href="#" class="dropdown-toggle"  data-toggle="dropdown"
+		           aria-haspopup="true" aria-expanded="false">How to find listings?</a>
+		            <div class="dropdown-menu " aria-labelledby="navbarDropdownLanguageLink">
+		                <a href="#" class="dropdown-item">How to find listings?</a>
+		            </div>
+		            <button class="btn btn-read">READ</button>
+		        </div>
+		        <div class="copy-right">© 2018 RNW - All Rights Reserved</div>	
+			</div>
 		</div>
-   
-</div>
+	</div>
+</footer>

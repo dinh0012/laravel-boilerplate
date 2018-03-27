@@ -1,0 +1,117 @@
+footer#footer {
+     height: 228px;
+  background-color: #3c3d41;
+}
+
+ul.link-footer li.link-footer-item a {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    /* margin-bottom: 15px; */
+}
+
+ul.link-footer li.link-footer-item {
+    list-style: none;
+    margin: 11px 0 8px 0;
+}
+
+#footer .row.align-items-center {
+    height: 228px;
+}
+
+#footer ul.link-footer {
+    margin: 0;
+}
+
+ul.link-footer li.link-footer-item:last-child {
+    margin-bottom: 0;
+}
+
+#footer .head-1 {
+    padding: 0;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.4;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+#footer .select-item {
+    width: 300px;
+    height: 45px;
+    /* opacity: 0.15; */
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+#footer button.btn.btn-read {
+    width: 70px;
+    height: 45px;
+    border-radius: 4px;
+    background-color: #f8e71c;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #000000;
+}
+
+#footer .are-you-new a.dropdown-toggle {
+    width: 225px;
+    display: inline-block;
+    padding-left: 15px;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+   line-height: 45px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #ffffff;
+}
+
+#footer .copy-right {
+    opacity: 0.5;
+    font-family: OpenSans;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 43px;
+}
+
+#footer .social-links {
+    margin-top: 20px;
+}
+
+#footer .social-links a {
+    margin-right: 25px;
+}
+#footer .select-item a.dropdown-toggle::after{
+    content: '';
+    background: url(/img/frontend/white.png);
+    width: 26px;
+    height: 15px;
+    border: none;
+    right: 78px;
+    position: absolute;
+    top: 14px;
+}
