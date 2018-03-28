@@ -433,3 +433,63 @@ div#pricing .type-price .nav-tabs a {
     display:block;
     margin: 72px auto 121px auto;
 }
+
+/*we have*/
+#we-have .item-name {
+    font-size: 11px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #3c3d41;
+    text-transform: uppercase;
+}
+
+#we-have .list-item-we-have.row {
+    padding-top: 56px;
+    padding-bottom: 70px;
+}
+
+#we-have .item-quantity {
+    font-size: 80px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: -5px;
+    text-align: center;
+    color: #f8e71c;
+    padding-top: 20px;
+}
+
+#we-have .item-time {
+    height: 27px;
+    font-family: OpenSans;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #656b6f;
+    margin-bottom: 9px;
+
+}
+
+#we-have .item-content {
+    height: 48px;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/*download our app*/

@@ -116,4 +116,82 @@
         </div>  
     </div> <!-- end pricing -->
 
+    <div id="we-have">
+        <div class="container">
+            <div class="head-1">WE HAVE</div>
+            <h1 class="head-2">Big Numbers To Prove Our Business</h1>
+            <div class="list-item-we-have row">
+                <div class="item col">
+                    <div class="item-name">AGENCIES</div>
+                    <div class="item-quantity">2500</div>
+                    <div class="item-time">Join per month</div>
+                    <div class="item-content">
+                        We can drink in a day. It’s kinda useless,</br> but fun information about us.
+                    </div>
+                </div>
+                <div class="item col">
+                    <div class="item-name">PROPERTIES</div>
+                    <div class="item-quantity">1.6M</div>
+                    <div class="item-time">Rented in 2017</div>
+                    <div class="item-content">
+                        We can drink in a day. It’s kinda useless,</br> but fun information about us.
+                    </div>
+                </div>
+                <div class="item col">
+                    <div class="item-name">LINKEDIN CONNECTION</div>
+                    <div class="item-quantity">2.890</div>
+                    <div class="item-time">Users per day</div>
+                    <div class="item-content">
+                        We can drink in a day. It’s kinda useless,</br> but fun information about us.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> <!--end we have-->
+
+    <div id="download-our-app">
+
+    </div> <!-- end download our app -->
+
+    <div id="news-and-blog">
+        <div class="container">
+            <div class="head-1">News and Blogs</div>
+            <h1 class="head-2">Promotions & News All The Best Select for You!</h1>
+            <div class="list-articles row">
+                <div class="col-3 article article-review">
+                    <img src="/img/frontend/bitmap_3.png" alt="">
+                    <div class="category-name category-review">Review</div>
+                    <div class="article-name">Taking Advantage of Bad Weather</div>
+                    <p class="article-description">Texas Holdem is by far the
+                        most common for of…</p>
+                </div>
+                <div class="col-6 article article-promotion">
+                    <div class="row">
+                        <div class="col-6 text-article">
+                            <div class="category-name category-promotion">PROMOTION</div>
+                            <div class="article-name">Why Las Vegas Hotel Rooms For You</div>
+                            <p class="article-description">It is not always possible to jet off
+                                half way around the world when
+                                you and your significant other
+                                are wishing to go off on a private.</p>
+                            <button class="btn btn-rnw-lg btn-rnw-light btn-view-promotion">VIEW PROMOTION</button>
+                        </div>
+                        <div class="col-6 img-article">
+                            <img src="/img/frontend/bitmap_3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 article article-review">
+                    <img src="/img/frontend/bitmap_3.png" alt="">
+                    <div class="category-name category-review">Review</div>
+                    <div class="article-name">Taking Advantage of Bad Weather</div>
+                    <p class="article-description">Texas Holdem is by far the
+                        most common for of…</p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end news and blog -->
+
+
 @endsection
