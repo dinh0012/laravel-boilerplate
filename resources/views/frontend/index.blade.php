@@ -157,37 +157,102 @@
     <div id="news-and-blog">
         <div class="container">
             <div class="head-1">News and Blogs</div>
-            <h1 class="head-2">Promotions & News All The Best Select for You!</h1>
-            <div class="list-articles row">
-                <div class="col-3 article article-review">
-                    <img src="/img/frontend/bitmap_3.png" alt="">
-                    <div class="category-name category-review">Review</div>
-                    <div class="article-name">Taking Advantage of Bad Weather</div>
-                    <p class="article-description">Texas Holdem is by far the
-                        most common for of…</p>
-                </div>
-                <div class="col-6 article article-promotion">
-                    <div class="row">
-                        <div class="col-6 text-article">
-                            <div class="category-name category-promotion">PROMOTION</div>
-                            <div class="article-name">Why Las Vegas Hotel Rooms For You</div>
-                            <p class="article-description">It is not always possible to jet off
-                                half way around the world when
-                                you and your significant other
-                                are wishing to go off on a private.</p>
-                            <button class="btn btn-rnw-lg btn-rnw-light btn-view-promotion">VIEW PROMOTION</button>
+            <h1 class="head-2">Promotions & News </br>All The Best Select for You!</h1>
+            <div class="row">
+                <div class="col-9 list-articles article-has-img row">
+                    <div class="col-4">
+                        <div class="article  article-review">
+                             <img src="/img/frontend/bitmap_3.png" alt="">
+                            <div class="category-name category-review">Review</div>
+                            <h5 class="article-name">Taking Advantage of Bad Weather</h5>
+                            <p class="article-description">Texas Holdem is by far the
+                            most common for of…</p>
+                            <div class="comment-total">
+                                <span class="comment"><img src="/img/frontend/comment.png"> 15</span>
+                                <span class="favorite"><img src="/img/frontend/favorite.png"> 15</span>
+                            </div>
                         </div>
-                        <div class="col-6 img-article">
+                    </div>
+                    <div class="col-8 ">
+                        <div class="row article article-promotion">
+                            <div class="col-6 text-article">
+                                <div class="category-name category-promotion">PROMOTION</div>
+                                <h5 class="article-name">Why Las Vegas Hotel Rooms For You</h5>
+                                <p class="article-description">It is not always possible to jet off
+                                    half way around the world when
+                                    you and your significant other
+                                    are wishing to go off on a private.</p>
+                                <button class="btn btn-rnw-lg btn-rnw-light btn-view-promotion">VIEW PROMOTION</button>
+                            </div>
+                            <div class="col-6 img-article">
+                                <img src="/img/frontend/sample.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 news-row"></div>
+                    <div class="col-4">
+                        <div class="article article-sharing row" style="background: url(/img/frontend/bitmap_3@2x.png) no-repeat;">
+                            <div class="category-name category-sharing">SHARING</div>
+                            <div class="col align-self-end">
+                                <h5 class="article-name">A Guide To Rocky Mountain Vacations</h5>
+                                <p class="article-description">Cancun is back, better
+                                than ever! Over a hundr…</p>
+                            </div>
+                            <div class="comment-total">
+                                <span class="comment"><img src="/img/frontend/comment_white.png"> 15</span>
+                                <span class="favorite"><img src="/img/frontend/favorite_white.png"> 15</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="article article-review">
                             <img src="/img/frontend/bitmap_3.png" alt="">
+                            <div class="category-name category-review">Review</div>
+                            <h5 class="article-name">Virginia Travel For Kids</h5>
+                            <p class="article-description">Here, I focus on a range of
+                            items and features that…</p>
+                            <div class="comment-total">
+                                <span class="comment"><img src="/img/frontend/comment.png"> 15</span>
+                                <span class="favorite"><img src="/img/frontend/favorite.png"> 15</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="article article-travel">
+                            <img src="/img/frontend/bitmap_3.png" alt="">
+                            <div class="category-name category-travel">TRAVEL</div>
+                            <h5 class="article-name">The Sunglasses That Make The World Look Like Instagram
+                            </h5>
+                            <p class="article-description">Here, I focus on a range of
+                            items and features that…</p>
+                            <div class="comment-total">
+                                <span class="comment"><img src="/img/frontend/comment.png"> 15</span>
+                                <span class="favorite"><img src="/img/frontend/favorite.png"> 15</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-3 article article-review">
-                    <img src="/img/frontend/bitmap_3.png" alt="">
-                    <div class="category-name category-review">Review</div>
-                    <div class="article-name">Taking Advantage of Bad Weather</div>
-                    <p class="article-description">Texas Holdem is by far the
-                        most common for of…</p>
+                
+                <div class="col-3 list-articles  editor-pick">
+                   
+                        <div class="editor-pick-header">
+                            EDITOR’S PICK
+                        </div>
+                        <div class="editor-pick-item first-item ">
+                            <img src="/img/frontend/bitmap_3.png" alt="">
+                            <h5 class="article-name">NATURE</h5>
+                            <p class="article-description">The term “boutique hotel” has been widely used in recent years, but what.</p>
+                        </div> 
+                        <div class="editor-pick-item chil-item ">
+                            <h5 class="article-name">EXPLORERS</h5>
+                            <p class="article-description">Kaytranada Channels Dilla, Embraces Up-Tempo Neo-Soul</p>
+                        </div> 
+                        <div class="editor-pick-item chil-item no-border">
+                            <h5 class="article-name">TRAVEL</h5>
+                            <p class="article-description">The Ghost Bring Lush Psych-Pop to the Bowery Ballroom</p>
+                        </div> 
+                        <button class="btn btn-more">more</button>
+                   
                 </div>
             </div>
         </div>
