@@ -4,7 +4,7 @@
 
 @section('content')
     <div id="wrap-top">
-        <figure style="background: url(&quot;https://www.viewretreats.com/uploads/gallery/970%20Lonely%20Bay%20-%20Lounge%20Area_1465100620.jpg&quot;) center center / cover; height: 412px;  background: #000000; opacity: 0.95;">
+        <figure style="background: url(&quot;https://www.viewretreats.com/uploads/gallery/970%20Lonely%20Bay%20-%20Lounge%20Area_1465100620.jpg&quot;) center center / cover; height: 412px;  background: rgba(0, 0, 0, 0.8);">
             <div class="container">
                 <div class="caption">
                     <h1 class="main-caption">Over 5.000 rooms</h1>
@@ -61,22 +61,38 @@
     </div> <!-- end feature agencies -->
 
     <div id="how-it-work">
-        
+        <div class="container">
+            <div class="head-1">HOW IT WORKS</div>
+            <h1 class="head-2">A Few Steps To Make Things Happen</h1>
+            <div class="type-user-nav">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item user-tenant">
+                        <a class="nav-link active" href="#">TENANT</a>
+                    </li>
+                    <li class="nav-item user-landlord">
+                        <a class="nav-link" href="#">LANDLORD</a>
+                    </li>
+                    <li class="nav-item user-agency">
+                        <a class="nav-link" href="#">AGENGY</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div> <!-- end how it work -->
 
     <div id="pricing">
         <div class="container">
             <div class="head-1">Pricing</div>
             <h1 class="head-2">Full Control, Flexible & Comfort</h1>
-            <div class="type-price">
+            <div class="type-price type-user-nav">
                 <ul class="nav nav-tabs">
-                  <li class="nav-item">
+                  <li class="nav-item user-tenant">
                     <a class="nav-link active" href="#">TENANT</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item user-landlord">
                     <a class="nav-link" href="#">LANDLORD</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item user-agency">
                     <a class="nav-link" href="#">AGENGY</a>
                   </li>
                 </ul>
@@ -159,6 +175,31 @@
                 <img src="{{asset('img/frontend/app-store-badge.png')}}" alt="">
                 <img src="{{asset('img/frontend/google-play-badge.png')}}" alt="">
             </div>
+            <div class="row intro-app justify-content-md-center">
+                <div class="col intro-left">
+                    <img src="{{asset('img/frontend/dream.png')}}" alt="">
+                    <h5 class="title-item">Your dream room</br>
+                        is in your hands!</h5>
+                    <p class="des-item">A whole lot of inspiration you can get from the vast variety.</p>
+                    <img src="{{asset('img/frontend/cash.png')}}" alt="">
+                    <h5 class="title-item">CASH, CASH</br>
+                        AND CASH!</h5>
+                    <p class="des-item">A set of 130 elements, perfectly fitting each other.</p>
+                </div>
+                <div class="col intro-center">
+                    <img src="{{asset('img/frontend/iphone.png')}}" alt="">
+                </div>
+                <div class="col intro-right">
+                    <img src="{{asset('img/frontend/fast.png')}}" alt="">
+                    <h5 class="title-item">Everything is</br>
+                        automated and Fast!</h5>
+                    <p class="des-item">A set of 130 elements, perfectly fitting each other.</p>
+                    <img src="{{asset('img/frontend/love.png')}}" alt="">
+                    <h5 class="title-item">YOU WILL</br>
+                        LOVE IT</h5>
+                    <p class="des-item">An excellent way of preparing a project’s wireframe.</p>
+                </div>
+            </div>
         </div>
     </div> <!-- end download our app -->
 
@@ -193,7 +234,7 @@
                                 <button class="btn btn-rnw-lg btn-rnw-light btn-view-promotion">VIEW PROMOTION</button>
                             </div>
                             <div class="col-6 img-article">
-                                <img src="/img/frontend/sample.jpg" alt="">
+                                <img src="/img/frontend/sample.png" alt="">
                             </div>
                         </div>
                     </div>

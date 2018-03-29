@@ -94,6 +94,15 @@ ul#account-menu li:last-child {
 ul#account-menu li.nav-item.seperate {
     padding: 0;
 }
+.lang-switcher .nav-link.dropdown-toggle:after {
+    content: '';
+    background: url(/img/frontend/dropdown_white.png);
+    width: 26px;
+    height: 15px;
+    border: none;
+    position: relative;
+    top: 2px;
+}
 .lang-switcher .country {
     font-weight: 600;
     color: rgba(255, 255, 255, 0.5);
@@ -200,12 +209,13 @@ form#search {
 .input-item.col.dropdown.align-items-center > a {
 	height: 53px;
 	line-height: 53px;
-	padding-left: 20px
+	padding-left: 20px;
+    width: 100%;
 }
 
 .input-items a.dropdown-toggle::after{
     content:'';
-    background: url("/img/frontend/black.png");
+    background: url("/img/frontend/dropdown_black.png");
     width: 26px;
     height: 15px;
     border: none;
@@ -218,6 +228,7 @@ form#search {
     background: #ddd;
     border-radius: 0;
     border: none;
+    margin: 0;
 }
 button#btn-search {
     position: relative;
@@ -249,7 +260,7 @@ div#search-form {
 }
 #search-form .refine-search::after{
 	content: '';
- 	background: url("/img/frontend/black.png");
+ 	background: url("/img/frontend/dropdown_black.png");
     width: 26px;
     height: 15px;
     border: none;
@@ -353,40 +364,41 @@ div#feature-agencies .view-detail:hover {
 }
 
 /*pricing*/
-div#pricing .type-price .nav-tabs {
+.type-user-nav .nav-tabs {
     height: 40px;
     border-radius: 20px;
     background-color: #ffffff;
     border: solid 1px #e1e1e1;
-    width: auto;
     width: 390px;
-    padding: 4px;
+    padding: 3px;
     margin: 44px auto 98px auto;
 }
-
-div#pricing .type-price .nav-tabs a.active {
+.type-user-nav .nav-tabs .nav-item{
+    margin: 0;
+}
+.type-user-nav .nav-tabs a.active {
     height: 32px;
     border-radius: 16px;
     background-color: #f8e71c;
     opacity: 1;
     width: 115px;
+    border: none;
 }
 
-div#pricing .type-price .nav-tabs a {
+.type-user-nav .nav-tabs a {
     font-family: Montserrat;
     font-size: 10px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.4;
- 
     text-align: center;
     color: #000000;
     opacity: 0.5;
     margin-right: 20px;
 }
 
-.type-price {
+.type-user-nav {
     text-align: center;
 }
 #pricing .package-name {
@@ -406,7 +418,6 @@ div#pricing .type-price .nav-tabs a {
     line-height: 1;
     letter-spacing: -5px;
     text-align: center;
-    color: #f8e71c;
     margin: 23px 0 10px 0;
     color: #3c3d41;
 }
@@ -873,4 +884,99 @@ span.icon-rnw.icon-error {
     top: 7px;
     margin-right: 10px;
     opacity: 0.4;
+}
+
+/*download app*/
+
+div#download-our-app {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+div#download-our-app {}
+
+div#download-our-app .head-1 {
+    color: #f8e71c;
+}
+
+div#download-our-app
+.head-2 {
+    width: 788px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+
+#download-our-app .row.store-app {
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+#download-our-app .row.store-app img {
+    margin: auto;
+}
+
+#download-our-app h5.title-item {
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 15px 0 15px;
+}
+
+#download-our-app p.des-item {
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#download-our-app .col.intro-left, #download-our-app .intro-right {
+    margin-top: 35px;
+    max-width: 210px;
+}
+
+#download-our-app .col.intro-center {
+    margin-left: 25px;
+    max-width: 430px;
+    margin-right: 25px;
+}
+
+/*how it work*/
+
+div#how-it-work {
+    background: rgba(0, 0, 0, 0.65);
+}
+div#how-it-work .type-user-nav .nav-tabs {
+    background: rgba(0, 0, 0, 0.15);
+}
+div#how-it-work .type-user-nav .nav-tabs a {
+    color: #fff;
+    opacity: 0.8;
+}
+div#how-it-work .type-user-nav .nav-tabs a.active {
+    color: #000000;
+}
+
+div#how-it-work .head-1 {
+    color: #f8e71c;
+}
+div#how-it-work .head-2 {
+    color: #ffffff;
+    width: 719px;
+}
+
+#how-it-work .type-user-nav {
+    margin-bottom: 60px;
 }

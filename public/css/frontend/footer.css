@@ -111,7 +111,7 @@ ul.link-footer li.link-footer-item:last-child {
 }
 #footer .select-item a.dropdown-toggle::after{
     content: '';
-    background: url(/img/frontend/white.png);
+    background: url(/img/frontend/dropdown_white.png);
     width: 26px;
     height: 15px;
     border: none;
