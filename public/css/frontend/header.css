@@ -960,6 +960,8 @@ div#how-it-work {
 }
 div#how-it-work .type-user-nav .nav-tabs {
     background: rgba(0, 0, 0, 0.15);
+    border: none;
+    padding: 4px;
 }
 div#how-it-work .type-user-nav .nav-tabs a {
     color: #fff;
@@ -979,4 +981,45 @@ div#how-it-work .head-2 {
 
 #how-it-work .type-user-nav {
     margin-bottom: 60px;
+}
+#how-it-work .step{
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 50px;
+    height: 1px;
+    background-color: #FFFFFF;
+}
+#how-it-work .step:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -5px;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: inherit;
+    background-color: #FFFFFF;
+}
+#how-it-work .step img {
+    position: absolute;
+    left: calc(50% - 20px);
+    top: -60px;
+}
+#how-it-work .step-name {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    top: 25px;
+}
+#how-it-work .step.step-active {
+    background: #f8e71c;
+}
+#how-it-work .step.step-active:after {
+    background: #f8e71c;
 }
