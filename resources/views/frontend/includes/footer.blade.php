@@ -32,7 +32,7 @@
 		            </div>
 		            <button class="btn btn-read">READ</button>
 		        </div>
-		        <div class="copy-right">© 2018 RNW - All Rights Reserved</div>	
+		        <div class="copy-right">&copy; 2018 RNW - All Rights Reserved</div>
 			</div>
 		</div>
 	</div>

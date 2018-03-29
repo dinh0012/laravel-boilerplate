@@ -151,7 +151,15 @@
     </div> <!--end we have-->
 
     <div id="download-our-app">
-
+        <div class="container">
+            <div class="head-1">Download Our App</div>
+            <h1 class="head-2">RNW - Easy Property</br>
+                Management & Advertisement</h1>
+            <div class="row store-app">
+                <img src="{{asset('img/frontend/app-store-badge.png')}}" alt="">
+                <img src="{{asset('img/frontend/google-play-badge.png')}}" alt="">
+            </div>
+        </div>
     </div> <!-- end download our app -->
 
     <div id="news-and-blog">
@@ -164,7 +172,7 @@
                         <div class="article  article-review">
                              <img src="/img/frontend/bitmap_3.png" alt="">
                             <div class="category-name category-review">Review</div>
-                            <h5 class="article-name">Taking Advantage of Bad Weather</h5>
+                            <a href="#"><h5 class="article-name">Taking Advantage of Bad Weather</h5></a>
                             <p class="article-description">Texas Holdem is by far the
                             most common for of…</p>
                             <div class="comment-total">
@@ -177,7 +185,7 @@
                         <div class="row article article-promotion">
                             <div class="col-6 text-article">
                                 <div class="category-name category-promotion">PROMOTION</div>
-                                <h5 class="article-name">Why Las Vegas Hotel Rooms For You</h5>
+                                <a href="#"><h5 class="article-name">Why Las Vegas Hotel Rooms For You</h5></a>
                                 <p class="article-description">It is not always possible to jet off
                                     half way around the world when
                                     you and your significant other
@@ -194,7 +202,7 @@
                         <div class="article article-sharing row" style="background: url(/img/frontend/bitmap_3@2x.png) no-repeat;">
                             <div class="category-name category-sharing">SHARING</div>
                             <div class="col align-self-end">
-                                <h5 class="article-name">A Guide To Rocky Mountain Vacations</h5>
+                                <a href="#"><h5 class="article-name">A Guide To Rocky Mountain Vacations</h5></a>
                                 <p class="article-description">Cancun is back, better
                                 than ever! Over a hundr…</p>
                             </div>
@@ -208,7 +216,7 @@
                         <div class="article article-review">
                             <img src="/img/frontend/bitmap_3.png" alt="">
                             <div class="category-name category-review">Review</div>
-                            <h5 class="article-name">Virginia Travel For Kids</h5>
+                            <a href="#"><h5 class="article-name">Virginia Travel For Kids</h5></a>
                             <p class="article-description">Here, I focus on a range of
                             items and features that…</p>
                             <div class="comment-total">
@@ -219,44 +227,68 @@
                     </div>
                     <div class="col-4">
                         <div class="article article-travel">
-                            <img src="/img/frontend/bitmap_3.png" alt="">
                             <div class="category-name category-travel">TRAVEL</div>
-                            <h5 class="article-name">The Sunglasses That Make The World Look Like Instagram
-                            </h5>
-                            <p class="article-description">Here, I focus on a range of
-                            items and features that…</p>
-                            <div class="comment-total">
-                                <span class="comment"><img src="/img/frontend/comment.png"> 15</span>
-                                <span class="favorite"><img src="/img/frontend/favorite.png"> 15</span>
+                            <a href="#"><h5 class="article-name">The Sunglasses That Make The World Look Like Instagram
+                            </h5></a>
+                            <div class="post-time">
+                                <span class="icon-clock icon-rnw"></span>
+                                <span class="time-of-post">12 april at 12:43</span>
+                            </div>
+                            <div class="col align-self-end author media items">
+                                <img class="mr-3" src="/img/frontend/sample.jpg" alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <div class="by mt-0">by</div>
+                                    <p class="author-name">ARTYOM
+                                        TARASOV
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-3 list-articles  editor-pick">
-                   
                         <div class="editor-pick-header">
                             EDITOR’S PICK
                         </div>
                         <div class="editor-pick-item first-item ">
                             <img src="/img/frontend/bitmap_3.png" alt="">
-                            <h5 class="article-name">NATURE</h5>
+                            <a href="#"><h5 class="article-name">NATURE</h5></a>
                             <p class="article-description">The term “boutique hotel” has been widely used in recent years, but what.</p>
                         </div> 
                         <div class="editor-pick-item chil-item ">
-                            <h5 class="article-name">EXPLORERS</h5>
+                            <a href="#"><h5 class="article-name">EXPLORERS</h5></a>
                             <p class="article-description">Kaytranada Channels Dilla, Embraces Up-Tempo Neo-Soul</p>
                         </div> 
                         <div class="editor-pick-item chil-item no-border">
-                            <h5 class="article-name">TRAVEL</h5>
+                            <a href="#"><h5 class="article-name">TRAVEL</h5></a>
                             <p class="article-description">The Ghost Bring Lush Psych-Pop to the Bowery Ballroom</p>
                         </div> 
                         <button class="btn btn-more">more</button>
-                   
                 </div>
+            </div>
+            <div class="btn-view-all">
+                <button id="view-all-news" class="btn btn-rnw-md btn-rnw-light btn-rnw">view all</button>
             </div>
         </div>
     </div> <!-- end news and blog -->
 
+    <div id="start-trial">
+        <div class="container">
+            <div class="head-1">Start a free trial</div>
+            <h1 class="head-2">Try It Now, You Will Love It!</h1>
+            <div class="row form-subscribe">
+                <form action="#" id="subscribe">
+                    {{--<input type="email" id="email-subscribe" placeholder="E-mail address">
+                    <button class="btn btn-submit-form btn-ok">OK</button>--}}
+                    <div class="input-group">
+                        <input type="email" id="email-subscribe" class="form-control" placeholder="E-mail address" required="">
+                        <button class="btn btn-submit-form btn-ok input-group-prepend">OK</button>
+                    </div>
+                </form>
+            </div>
+             <p class="note"><span class="icon-rnw icon-error"></span>Every month our subscribers get awesome updates</p>
+        </div>
+    </div>
 
 @endsection

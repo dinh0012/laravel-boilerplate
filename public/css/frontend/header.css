@@ -7,7 +7,7 @@ body * {
        letter-spacing: 2px;
 }
 .no-border {
-    border: none;
+    border: none !important;
 }
 .bg-black {
     background: #000000;
@@ -37,7 +37,12 @@ body * {
 .btn-rnw-md {
     width: 150px;
 }
-
+.icon-rnw {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
 .btn-rnw-light {
     background-color: transparent;
     border: solid 1px #dddddd;
@@ -143,7 +148,7 @@ div#wrap-top {
 }
 
 .caption h2 {
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
@@ -182,7 +187,7 @@ form#search {
     background-color: rgba(255, 255, 255, 0.2);
 }
 .input-item.col.dropdown.align-items-center a {
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -297,7 +302,7 @@ h1.head-2 {
 }
 
 .list-agencies p.description {
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -411,7 +416,7 @@ div#pricing .type-price .nav-tabs a {
 }
 
 #pricing .package-content {
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -465,7 +470,7 @@ div#pricing .type-price .nav-tabs a {
 
 #we-have .item-time {
     height: 27px;
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
@@ -480,7 +485,7 @@ div#pricing .type-price .nav-tabs a {
 
 #we-have .item-content {
     height: 48px;
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -544,7 +549,7 @@ div#news-and-blog img {
 }
 
 #news-and-blog p.article-description {
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -710,7 +715,7 @@ div#news-and-blog .col-6.text-article {
     padding-left: 20px;
     border: 0;
     width: 100%;
-    border-top: solid 1px;
+    border-top: solid 1px #eeeeee;
     /* margin-left: -15px; */
 }
 
@@ -724,4 +729,148 @@ div#news-and-blog .col-6.text-article {
 }
 .w-100.news-row {
     margin: 10px 0;
+}
+
+span.icon-clock.icon-rnw {
+    background: url(../../img/frontend/clock_icon.png) no-repeat;
+    top: 7px;
+}
+#news-and-blog .category-name.category-travel {
+    position: initial;
+    color: #000000;
+    width: 5px;
+    margin: 20px;
+}
+
+#news-and-blog .article.article-travel {
+    background-color: #f8e71c;
+}
+
+#news-and-blog .article-travel .article-name {
+    font-size: 16px;
+}
+
+#news-and-blog .post-time {
+    margin-left: 20px;
+    opacity: 0.5;
+
+}
+#news-and-blog .post-time span {
+    opacity: 0.8;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: normal;
+}
+#news-and-blog .article-travel .author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#news-and-blog .article-travel .author {
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 5px;
+    padding-left: 20px;
+}
+
+#news-and-blog .article-travel .media-body * {
+    width: 92.2px;
+    /* height: 28px; */
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #000000;
+}
+
+#news-and-blog .article-travel .media-body .by {
+    opacity: 0.5;
+    font-family: Open Sans;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 4px;
+}
+#news-and-blog .btn-view-all {
+    margin: 54px auto 66px;
+    text-align: center;
+}
+div#start-trial {
+   margin-bottom: 70px;
+}
+
+div#start-trial .form-subscribe {
+    text-align: center;
+}
+
+div#start-trial form#subscribe {
+    margin: 40px auto 15px;
+    width: 460px;
+    height: 64px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px #e1e1e1;
+}
+
+div#start-trial p.note {
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.17;
+    letter-spacing: normal;
+    color: #989898;
+}
+
+div#start-trial form#subscribe #email-subscribe {
+    width: 350px;
+    height: 64px;
+    width: 350px;
+    height: 64px;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #656b6f;
+    padding: 20px;
+}
+#start-trial .btn-submit-form.btn-ok {
+    width: 96px;
+    height: 64px;
+    border-radius: 4px;
+    background-color: #f8e71c;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #000000;
+}
+span.icon-rnw.icon-error {
+    background: url(../../img/frontend/error_black.png) no-repeat;
+    top: 7px;
+    margin-right: 10px;
+    opacity: 0.4;
 }

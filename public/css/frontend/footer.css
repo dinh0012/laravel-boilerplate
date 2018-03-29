@@ -67,13 +67,17 @@ ul.link-footer li.link-footer-item:last-child {
     letter-spacing: 2px;
     text-align: center;
     color: #000000;
+    position: relative;
+    top: -2px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 #footer .are-you-new a.dropdown-toggle {
     width: 224px;
     display: inline-block;
     padding-left: 15px;
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -86,7 +90,7 @@ ul.link-footer li.link-footer-item:last-child {
 
 #footer .copy-right {
     opacity: 0.5;
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 11px;
     font-weight: normal;
     font-style: normal;
