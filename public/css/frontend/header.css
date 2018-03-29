@@ -62,7 +62,6 @@ nav#header-top a {
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1;
     letter-spacing: 1px;
     color: #ffff;
     padding: 0;
@@ -106,6 +105,55 @@ ul#account-menu li.nav-item.seperate {
 .lang-switcher .country {
     font-weight: 600;
     color: rgba(255, 255, 255, 0.5);
+}
+#header .language-items a {
+    line-height: 32px;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #656b6f;
+    padding: 0 25px;
+    cursor: pointer;
+}
+#header .country-name {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgba(101, 107, 111, 0.4);
+    display: flex;
+    flex-direction: row;
+}
+#header .language-items a:hover, #header .language-items a.active {
+    background-color: #000000;
+    color: #f8e71c;
+}
+#header .language-items {
+    width: 160px;
+}
+#header .country-name span {
+    background: #fff;
+    padding:0 10px 0 0;
+}
+#header .country-name:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid rgba(101, 107, 111, 0.4);
+  margin: auto;
+}
+#header .language-items a.active:after {
+    content: '';
+    background: url(../../img/frontend/check_icon.png) no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    margin-left: 60px;
 }
 /*end header top*/
 
@@ -155,7 +203,11 @@ div#wrap-top {
     text-align: center;
     color: #ffffff;
 }
-
+h2.main-caption strong {
+    font-family: Open Sans;
+    font-size: 20px;
+    color: #fff;
+}
 .caption h2 {
     font-family: Open Sans;
     font-size: 20px;
