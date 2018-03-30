@@ -78,19 +78,20 @@
                 </ul>
             </div>
             <div class="row steps-to-work">
-                <div class="col step step-active">
+                <div class="col-2 step step-active">
                     <img src="{{asset('img/frontend/dream.png')}}" alt="">
                     <div class="step-name">Search & Find</div>
                 </div>
-                <div class="col step">
+                
+                <div class="col-2 step">
                     <img src="{{asset('img/frontend/contact.png')}}" alt="">
                     <div class="step-name">CONTACT</div>
                 </div>
-                <div class="col step">
+                <div class="col-2 step">
                     <img src="{{asset('img/frontend/paperworks.png')}}" alt="">
                     <div class="step-name">Paperworks</div>
                 </div>
-                <div class="col step">
+                <div class="col-2 step">
                     <img src="{{asset('img/frontend/love_white.png')}}" alt="">
                     <div class="step-name">Enjoy</div>
                 </div>
