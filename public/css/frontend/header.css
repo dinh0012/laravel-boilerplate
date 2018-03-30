@@ -435,6 +435,7 @@ div#feature-agencies .view-detail:hover {
     opacity: 1;
     width: 115px;
     border: none;
+    line-height: 18px;
 }
 
 .type-user-nav .nav-tabs a {
@@ -1040,11 +1041,12 @@ div#how-it-work .head-2 {
     margin-bottom: 50px;
     height: 1px;
     background-color: #FFFFFF;
+    padding: 0;
 }
 #how-it-work .step:after {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 100%;
     top: -5px;
     transform: translateX(-50%);
     width: 10px;
@@ -1055,7 +1057,7 @@ div#how-it-work .head-2 {
 }
 #how-it-work .step img {
     position: absolute;
-    left: calc(50% - 20px);
+    left: calc(100% - 20px);
     top: -60px;
 }
 #how-it-work .step-name {
@@ -1068,10 +1070,82 @@ div#how-it-work .head-2 {
     text-transform: uppercase;
     position: relative;
     top: 25px;
+    left:  75px;
+    width: 150px;
+}
+#how-it-work .type-user-nav .nav-tabs{
+    margin-bottom: 0;
 }
 #how-it-work .step.step-active {
     background: #f8e71c;
 }
 #how-it-work .step.step-active:after {
     background: #f8e71c;
+}
+#how-it-work .step.step-active .step-name {
+    color: #f8e71c;
+}
+.row.steps-to-work {
+    margin-top: 120px;
+}
+#how-it-work .view-instruction {
+    width: 205px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: solid 1px #ffffff;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 33px;
+}
+
+#how-it-work .btn-view-instruction {
+    text-align: center;
+    padding: 25px 0 80px;
+}
+#how-it-work .col.description-step {
+    max-width: calc(50% + 115px);
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+#how-it-work .title-current-step {
+    font-size: 11px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: 2px;
+    text-align: right;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-right: 5px;
+}
+
+#how-it-work .current-step {
+    margin-top: 45px;
+}
+#how-it-work .col.description-step ul {
+    padding: 0 15px;
+}
+
+#how-it-work .col.description-step ul li {
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
 }

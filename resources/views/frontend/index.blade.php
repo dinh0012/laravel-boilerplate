@@ -77,24 +77,46 @@
                     </li>
                 </ul>
             </div>
-            <div class="row steps-to-work">
-                <div class="col-2 step step-active">
-                    <img src="{{asset('img/frontend/dream.png')}}" alt="">
-                    <div class="step-name">Search & Find</div>
+        </div>
+
+        <div class="row steps-to-work">
+            <div class="col step step-active">
+                <img src="{{asset('img/frontend/dream.png')}}" alt="">
+                <div class="step-name ml-auto">Search & Find</div>
+            </div>
+
+            <div class="col step">
+                <img src="{{asset('img/frontend/contact.png')}}" alt="">
+                <div class="step-name ml-auto">CONTACT</div>
+            </div>
+            <div class="col step ml-auto">
+                <img src="{{asset('img/frontend/paperworks.png')}}" alt="">
+                <div class="step-name ml-auto">Paperworks</div>
+            </div>
+            <div class="col step">
+                <img src="{{asset('img/frontend/love_white.png')}}" alt="">
+                <div class="step-name ml-auto">Enjoy</div>
+            </div>
+            <div class="col step">
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row current-step">
+                <div class="col title-current-step ml-auto col-md-auto">
+                    How to find</br>
+                    your dream room!
                 </div>
-                
-                <div class="col-2 step">
-                    <img src="{{asset('img/frontend/contact.png')}}" alt="">
-                    <div class="step-name">CONTACT</div>
+                <div class="col description-step">
+                    People are wanting to fly to international destinations for vacations but planning a holiday getaway can easily turn into a stressful venture when the matter of costs comes up. However, airfare can be very expensive.</br>
+                    <ul>
+                        <li>Air fare by itself can kill the excitement.</li>
+                        <li>And when people already factor in accommodations, food, and shopping.</li>
+                    </ul>
                 </div>
-                <div class="col-2 step">
-                    <img src="{{asset('img/frontend/paperworks.png')}}" alt="">
-                    <div class="step-name">Paperworks</div>
-                </div>
-                <div class="col-2 step">
-                    <img src="{{asset('img/frontend/love_white.png')}}" alt="">
-                    <div class="step-name">Enjoy</div>
-                </div>
+            </div>
+            <div class="btn-view-instruction">
+                <a href="#" class="btn btn-rnw btn-rnw-light view-instruction">VIDEO INSTRUCTION</a>
             </div>
         </div>
     </div> <!-- end how it work -->
