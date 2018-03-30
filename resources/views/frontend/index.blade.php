@@ -13,7 +13,10 @@
                     <h2 class="main-caption">have been rented in <strong>Vietnam </strong>, take your chance before it’s gone</h2>
                 </div>  
                 @include('frontend.includes.form-search')
-            </div>  
+                <div id="btn-find-rom" class="show-mobile">
+                    <a href="#" class="btn btn-rnw btn-rnw-lg btn-rnw-yellow row justify-content-md-center" >Find Your Rooms</a>
+                </div>
+            </div>
         </figure>
     </div> <!-- end wrap top -->
 

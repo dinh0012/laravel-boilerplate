@@ -1,0 +1,35 @@
+
+@media (max-width: 992px) {
+    .caption h1 {
+        font-size: 60px;
+    }
+}
+@media (max-width: 768px) {
+    .caption h2,  .caption h2 strong {
+        font-size: 16px;;
+    }
+}
+@media (max-width: 567px) {
+    .show-mobile {
+        display: block;
+    }
+    .caption h2,  .caption h2 strong {
+        max-width: 300px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #search-form {
+        display:none;
+    }
+}
+@media (max-width: 375px){
+    .caption h2,  .caption h2 strong {
+        max-width: 220px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+div#btn-find-rom a {
+    margin: auto;
+}
