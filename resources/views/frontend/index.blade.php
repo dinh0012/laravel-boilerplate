@@ -1,7 +1,9 @@
 @extends('frontend.layouts.main')
 
 @section('title', app_name() . ' | '.__('navs.general.home'))
-
+@section('style')
+    <link href="{{ asset('css/frontend/home.css') }}" rel="stylesheet">
+@endsection
 @section('content')
     <div id="wrap-top">
         <figure style="background: url(&quot;https://www.viewretreats.com/uploads/gallery/970%20Lonely%20Bay%20-%20Lounge%20Area_1465100620.jpg&quot;) center center / cover; height: 412px;  background: rgba(0, 0, 0, 0.8);">
