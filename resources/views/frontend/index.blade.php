@@ -222,7 +222,7 @@
         </div>  
     </div> <!-- end pricing -->
 
-    <div id="we-have">
+    <div id="we-have" class="bg-grey">
         <div class="container">
             <div class="head-1">WE HAVE</div>
             <h1 class="head-2">Big Numbers To Prove Our Business</h1>
@@ -498,7 +498,7 @@
         </div>
     </div> <!-- end news and blog -->
 
-    <div id="start-trial">
+    <div id="start-trial" class="bg-grey">
         <div class="container">
             <div class="head-1">Start a free trial</div>
             <h1 class="head-2">Try It Now, You Will Love It!</h1>

@@ -6,6 +6,9 @@ body, * {
     font-stretch: normal;
        letter-spacing: 2px;
 }
+.bg-grey {
+    background: #f9f9f9;
+}
 .no-border {
     border: none !important;
 }

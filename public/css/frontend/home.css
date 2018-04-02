@@ -702,7 +702,7 @@ span.icon-clock.icon-rnw {
     text-align: center;
 }
 div#start-trial {
-    margin-bottom: 70px;
+    padding-bottom: 70px;
 }
 
 div#start-trial .form-subscribe {
@@ -731,9 +731,6 @@ div#start-trial p.note {
 }
 
 div#start-trial form#subscribe #email-subscribe {
-    width: 350px;
-    height: 64px;
-    width: 350px;
     height: 64px;
     font-family: Open Sans;
     font-size: 14px;

@@ -84,6 +84,7 @@
     }
     .type-user-nav .nav-tabs a{
         margin: 0;
+        padding: 0px 20px;
     }
     .type-user-nav .nav-tabs a+a{
         padding-left: 20px;
@@ -230,6 +231,12 @@
 
     #news-and-blog .btn-view-all {
         margin: 40px 0;
+    }
+    div#start-trial form#subscribe {
+        width: 335px;
+    }
+    div#start-trial {
+        padding-bottom: 35px;
     }
 
 }
