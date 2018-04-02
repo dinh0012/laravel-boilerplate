@@ -3,6 +3,7 @@
 @section('title', app_name() . ' | '.__('navs.general.home'))
 @section('style')
     <link href="{{ asset('css/frontend/home.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/frontend/home-mobile.css') }}" rel="stylesheet">
 @endsection
 @section('content')
     <div id="wrap-top">
@@ -25,17 +26,17 @@
             <div class="head-1">Featured Agencies</div>
             <h1 class="head-2">We Bring The Best Valuable To You</h1>
             <div class="list-agencies row">
-                <div class="items-left items col-5">
-                    <img src="/img/frontend/bitmap_3.png">
-                    <div class="content">
-                        <h5 class="title-agency">Johnny Poole</h5>
-                        <p class="description">Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola, body muscles and holding ones own breath.</p>
-                        <a href="#" class="view-detail"></a>
+                <div class="col-12 col-md-5 p-r-10 none-padding-l mobile-none-p">
+                    <div class="items-left items">
+                        <img src="/img/frontend/bitmap_3.png">
+                        <div class="content">
+                            <h5 class="title-agency">Johnny Poole</h5>
+                            <p class="description">Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola, body muscles and holding ones own breath.</p>
+                            <a href="#" class="view-detail"></a>
+                        </div>
                     </div>
-        
-                   
                 </div>
-                <div class="items-right  col">
+                <div class="items-right  col p-l-10 none-padding-r mobile-none-p">
                     <div class="media items">
                         <img class="mr-3" src="/img/frontend/bitmap.png" alt="Generic placeholder image">
                         <div class="media-body content">
@@ -46,7 +47,7 @@
                         </div>
                 
                     </div>
-                    <div class="media items">
+                    <div class="media items hidden-mobile">
                         <img class="mr-3" src="/img/frontend/bitmap_2.png" alt="Generic placeholder image">
                         <div class="media-body content">
                             <h5 class="title-agency mt-0">Jim Moss</h5>
@@ -85,30 +86,30 @@
         </div>
 
         <div class="row steps-to-work">
-            <div class="col step step-active">
+            <div class="col-sm step col-3 step-active col-mobile-dream">
                 <img src="{{asset('img/frontend/dream.png')}}" alt="">
                 <div class="step-name ml-auto">Search & Find</div>
             </div>
 
-            <div class="col step">
+            <div class="col-sm step col-3 col-mobile-contact">
                 <img src="{{asset('img/frontend/contact.png')}}" alt="">
                 <div class="step-name ml-auto">CONTACT</div>
             </div>
-            <div class="col step ml-auto">
+            <div class="col-sm step col-3 col-mobile-paperwork">
                 <img src="{{asset('img/frontend/paperworks.png')}}" alt="">
                 <div class="step-name ml-auto">Paperworks</div>
             </div>
-            <div class="col step">
+            <div class="col-sm step col-3 col-mobile-enjoy">
                 <img src="{{asset('img/frontend/love_white.png')}}" alt="">
                 <div class="step-name ml-auto">Enjoy</div>
             </div>
-            <div class="col step">
+            <div class="col-sm step col-3 hidden-mobile">
 
             </div>
         </div>
         <div class="container">
             <div class="row current-step">
-                <div class="col title-current-step ml-auto col-md-auto">
+                <div class="col-md col-sm-4 title-current-step ml-auto col-md-auto">
                     How to find</br>
                     your dream room!
                 </div>
@@ -121,7 +122,7 @@
                 </div>
             </div>
             <div class="btn-view-instruction">
-                <a href="#" class="btn btn-rnw btn-rnw-light view-instruction">VIDEO INSTRUCTION</a>
+                <a href="#" class="btn btn-rnw btn-rnw-light view-instruction">VIDEO INSTRUCTION <img src="{{asset('img/frontend/play-video.png')}}" alt=""></a>
             </div>
         </div>
     </div> <!-- end how it work -->
@@ -143,7 +144,50 @@
                   </li>
                 </ul>
             </div>
-            <div class="list-packages row">
+
+            <div id="carouselMobileListPackages" class="carousel slide list-packages row show-mobile" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselMobileListPackages" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselMobileListPackages" data-slide-to="1"></li>
+                    <li data-target="#carouselMobileListPackages" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner package-item col package-select">
+                    <div class="carousel-item active">
+                        <div class="package-name">PACKAGE 01</div>
+                        <div class="package-price">$50</div>
+                        <div class="package-content">
+                            Rent for 01 month</br>
+                            Upload / Manage 01 apartment</br>
+                            Landlord account</br>
+                        </div>
+                        <button class="btn btn-rnw btn-rnw-sm btn-rnw-light btn-get-it">Get It</button>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="package-name">PACKAGE 01</div>
+                        <div class="package-price">$50</div>
+                        <div class="package-content">
+                            Rent for 01 month</br>
+                            Upload / Manage 01 apartment</br>
+                            Landlord account</br>
+                        </div>
+                        <button class="btn btn-rnw btn-rnw-sm btn-rnw-light btn-get-it">Get It</button>
+
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="package-name">PACKAGE 01</div>
+                        <div class="package-price">$50</div>
+                        <div class="package-content">
+                            Rent for 01 month</br>
+                            Upload / Manage 01 apartment</br>
+                            Landlord account</br>
+                        </div>
+                        <button class="btn btn-rnw btn-rnw-sm btn-rnw-light btn-get-it">Get It</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-packages row hidden-mobile">
                 <div class="package-item col package-select">
                     <div class="package-name">PACKAGE 01</div>
                     <div class="package-price">$50</div>
@@ -182,7 +226,7 @@
         <div class="container">
             <div class="head-1">WE HAVE</div>
             <h1 class="head-2">Big Numbers To Prove Our Business</h1>
-            <div class="list-item-we-have row">
+            <div class="list-item-we-have row hidden-mobile">
                 <div class="item col">
                     <div class="item-name">AGENCIES</div>
                     <div class="item-quantity">2500</div>
@@ -207,7 +251,39 @@
                         We can drink in a day. It’s kinda useless,</br> but fun information about us.
                     </div>
                 </div>
-
+            </div>
+            <div id="carouselMobileWeHave" class="carousel slide list-item-we-have row show-mobile" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselMobileWeHave" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselMobileWeHave" data-slide-to="1"></li>
+                    <li data-target="#carouselMobileWeHave" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner item col">
+                    <div class="carousel-item active">
+                        <div class="item-name">AGENCIES</div>
+                        <div class="item-quantity">2500</div>
+                        <div class="item-time">Join per month</div>
+                        <div class="item-content">
+                            We can drink in a day. It’s kinda useless,</br> but fun information about us.
+                        </div>
+                    </div>
+                    <div class="carousel-item item col">
+                        <div class="item-name">PROPERTIES</div>
+                        <div class="item-quantity">1.6M</div>
+                        <div class="item-time">Rented in 2017</div>
+                        <div class="item-content">
+                            We can drink in a day. It’s kinda useless,</br> but fun information about us.
+                        </div>
+                    </div>
+                    <div class="carousel-item item col">
+                        <div class="item-name">LINKEDIN CONNECTION</div>
+                        <div class="item-quantity">2.890</div>
+                        <div class="item-time">Users per day</div>
+                        <div class="item-content">
+                            We can drink in a day. It’s kinda useless,</br> but fun information about us.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div> <!--end we have-->
@@ -221,7 +297,7 @@
                 <img src="{{asset('img/frontend/app-store-badge.png')}}" alt="">
                 <img src="{{asset('img/frontend/google-play-badge.png')}}" alt="">
             </div>
-            <div class="row intro-app justify-content-md-center">
+            <div class="row intro-app justify-content-md-center hidden-mobile">
                 <div class="col intro-left">
                     <img src="{{asset('img/frontend/dream.png')}}" alt="">
                     <h5 class="title-item">Your dream room</br>
@@ -246,6 +322,43 @@
                     <p class="des-item">An excellent way of preparing a project’s wireframe.</p>
                 </div>
             </div>
+            <div id="carouselMobileDownloadApp" class="carousel slide row intro-app justify-content-md-center show-mobile" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselMobileDownloadApp" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselMobileDownloadApp" data-slide-to="1"></li>
+                    <li data-target="#carouselMobileDownloadApp" data-slide-to="2"></li>
+                    <li data-target="#carouselMobileDownloadApp" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner item col">
+                    <div class="carousel-item active">
+                        <img src="{{asset('img/frontend/dream.png')}}" alt="">
+                        <h5 class="title-item">Your dream room</br>
+                            is in your hands!</h5>
+                        <p class="des-item">A whole lot of inspiration you can get from the vast variety.</p>
+                    </div>
+                    <div class="carousel-item item col">
+                        <img src="{{asset('img/frontend/cash.png')}}" alt="">
+                        <h5 class="title-item">CASH, CASH</br>
+                            AND CASH!</h5>
+                        <p class="des-item">A set of 130 elements, perfectly fitting each other.</p>
+                    </div>
+                    <div class="carousel-item item col">
+                        <img src="{{asset('img/frontend/fast.png')}}" alt="">
+                        <h5 class="title-item">Everything is</br>
+                            automated and Fast!</h5>
+                        <p class="des-item">A set of 130 elements, perfectly fitting each other.</p>
+                    </div>
+                    <div class="carousel-item item col">
+                        <img src="{{asset('img/frontend/love.png')}}" alt="">
+                        <h5 class="title-item">YOU WILL</br>
+                            LOVE IT</h5>
+                        <p class="des-item">An excellent way of preparing a project’s wireframe.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-center show-mobile">
+                <img src="{{asset('img/frontend/iphone.png')}}" alt="">
+            </div>
         </div>
     </div> <!-- end download our app -->
 
@@ -255,7 +368,7 @@
             <h1 class="head-2">Promotions & News </br>All The Best Select for You!</h1>
             <div class="row">
                 <div class="col-9 list-articles article-has-img row">
-                    <div class="col-4">
+                    <div class="col-4 p-r-10">
                         <div class="article  article-review">
                              <img src="/img/frontend/bitmap_3.png" alt="">
                             <div class="category-name category-review">Review</div>
@@ -268,7 +381,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-8 ">
+                    <div class="col-8 p-l-r-10">
                         <div class="row article article-promotion">
                             <div class="col-6 text-article">
                                 <div class="category-name category-promotion">PROMOTION</div>
@@ -285,7 +398,7 @@
                         </div>
                     </div>
                     <div class="w-100 news-row"></div>
-                    <div class="col-4">
+                    <div class="col-4 p-r-10">
                         <div class="article article-sharing row" style="background: url(/img/frontend/bitmap_3@2x.png) no-repeat;">
                             <div class="category-name category-sharing">SHARING</div>
                             <div class="col align-self-end">
@@ -299,7 +412,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 p-l-r-10">
                         <div class="article article-review">
                             <img src="/img/frontend/bitmap_3.png" alt="">
                             <div class="category-name category-review">Review</div>
@@ -312,7 +425,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 p-l-r-10">
                         <div class="article article-travel">
                             <div class="category-name category-travel">TRAVEL</div>
                             <a href="#"><h5 class="article-name">The Sunglasses That Make The World Look Like Instagram

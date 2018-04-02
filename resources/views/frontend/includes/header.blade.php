@@ -1,6 +1,5 @@
 <div id="header" class="bg-black">
-	
-	<nav id="header-top" class="navbar navbar-expand-lg  no-gutters">
+	<nav id="header-top" class="navbar navbar-expand-lg hidden-mobile  no-gutters">
 		<div class="container">
 		    <div class="col-sm-4 lang-switcher none-padding">
 			    <div class="nav-item dropdown">

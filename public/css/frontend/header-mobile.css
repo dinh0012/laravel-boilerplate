@@ -1,186 +1,33 @@
-body * {
-	font-family: 'Montserrat', sans-serif;
-	 font-size: 11px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-       letter-spacing: 2px;
-}
-.no-border {
-    border: none !important;
-}
-.bg-black {
-    background: #000000;
-} 
-.none-padding {
-	padding: 0;
-}
-.none-padding-l{
-	padding-left: 0;
-}
-.none-padding-r{
-	padding-right: 0;
-}
-.btn-rnw {
-    border-radius: 40px;
-    height: 45px;
-    font-family: Montserrat;
-    font-size: 10px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.4;
- 
-    text-align: center;
-    text-transform: uppercase;
-}
-.btn-rnw-md {
-    width: 150px;
-}
-.icon-rnw {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    position: relative;
-}
-.btn-rnw-light {
-    background-color: transparent;
-    border: solid 1px #dddddd;
-    margin: auto;
-}
-.btn-rnw-lg {
-    width: 204px;
-}
-a.btn-rnw{
-    padding: 15px 0;
-    line-height: 1.5;
-}
-
-.btn-rnw-yellow {
-    background-color: #f8e71c;
-    color: #000000;
-}
-/*header top*/
-nav#header-top a {
-    font-family: Montserrat;
-    font-size: 10px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: 1px;
-    color: #ffff;
-    padding: 0;
-}
-
-nav#header-top a.type-agency {
-    color: #f8e71c;
-}
-
-nav#header-top {
-    height: 30px;
-    border-bottom: solid 1px;
-    padding: 0
-}
-
-ul#account-menu {
-    text-align: right;
-    text-transform: uppercase;
-}
-ul#account-menu li {
-    padding: 0 8px 0 8px;
-}
-ul#account-menu li:first-child {
-    border-right: solid 2px rgba(249, 249, 249, 0.5); 
-}
-ul#account-menu li:last-child {
-    padding-right: 0;
-}
-ul#account-menu li.nav-item.seperate {
-    padding: 0;
-}
-.lang-switcher .nav-link.dropdown-toggle:after {
-    content: '';
-    background: url(/img/frontend/dropdown_white.png);
-    width: 26px;
-    height: 15px;
-    border: none;
-    position: relative;
-    top: 2px;
-}
-.lang-switcher .country {
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.5);
-}
-#header .language-items a {
-    line-height: 32px;
-    font-family: Open Sans;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #656b6f;
-    padding: 0 25px;
-    cursor: pointer;
-}
-#header .country-name {
-    margin-left: 15px;
-    margin-right: 15px;
-    font-size: 10px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: rgba(101, 107, 111, 0.4);
-    display: flex;
-    flex-direction: row;
-}
-#header .language-items a:hover, #header .language-items a.active {
-    background-color: #000000;
-    color: #f8e71c;
-}
-#header .language-items {
-    width: 160px;
-}
-#header .country-name span {
+.nav-mobile-toggle .icon-bar {
+    display: block;
+    width: 16px;
+    height: 2px;
     background: #fff;
-    padding:0 10px 0 0;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
 }
-#header .country-name:after{
-  content: "";
-  flex: 1 1;
-  border-bottom: 2px solid rgba(101, 107, 111, 0.4);
-  margin: auto;
+.nav-mobile-toggle .icon-bar+.icon-bar {
+    margin-top: 4px;
+    width: 26px;
 }
-#header .language-items a.active:after {
-    content: '';
-    background: url(../../img/frontend/check_icon.png) no-repeat;
-    display: inline-block;
-    width: 15px;
-    height: 10px;
-    margin-left: 60px;
-}
-/*end header top*/
 
-/*navigation*/
+@media (max-width: 768px){
+    .mobile-none-p{
+        padding: 0;
+    }
+}
 
-div#navbar a {
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #ffffff;
-    padding-right: 22px;
-    padding-left: 22px;
-}
-#navbar-menu ul.navbar-nav li:last-child a {
-	padding-right: 0
-}
-div#navbar nav {
-    padding-left: 0;
-    padding-right: 0;
+@media (max-width: 576px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #app .show-mobile {
+        display: block;
+    }
+
+    #app .hidden-mobile {
+        display: none;
+    }
 }

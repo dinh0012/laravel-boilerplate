@@ -68,7 +68,7 @@ ul.link-footer li.link-footer-item:last-child {
     text-align: center;
     color: #000000;
     position: relative;
-    top: -2px;
+    top: -3px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }

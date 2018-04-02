@@ -26,6 +26,7 @@ h2.main-caption strong {
     font-family: Open Sans;
     font-size: 20px;
     color: #fff;
+    line-height: 1.5;
 }
 .caption h2 {
     font-family: Open Sans;
@@ -166,6 +167,7 @@ h1.head-2 {
 }
 .list-agencies {
     margin-top: 55px;
+    padding: 0 15px;
 }
 
 .items-left img {
@@ -206,9 +208,9 @@ div#feature-agencies {
     padding: 0;
 }
 
-.items-left .content {
-    margin-left: 1rem;
-    margin-top: 25px;
+.list-agencies .items .content {
+    margin: 25px 20px 0 10px;
+
 }
 
 .items-right .media:last-child {
@@ -223,7 +225,6 @@ div#feature-agencies .view-detail {
     width: 25px;
     height: 25px;
     margin-left: auto;
-    margin-right: 15px;
     display: block;
 }
 div#feature-agencies .view-detail:hover {
@@ -254,7 +255,7 @@ div#feature-agencies .view-detail:hover {
     opacity: 1;
     width: 115px;
     border: none;
-    line-height: 18px;
+    line-height: 34px;
 }
 
 .type-user-nav .nav-tabs a {
@@ -263,11 +264,12 @@ div#feature-agencies .view-detail:hover {
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.4;
+    line-height: 32px;
     text-align: center;
     color: #000000;
     opacity: 0.5;
     margin-right: 20px;
+    padding-top: 0;
 }
 
 .type-user-nav {
@@ -474,10 +476,6 @@ div#news-and-blog img {
 
 #news-and-blog .article-promotion img {
     height: 100%;
-}
-div#news-and-blog [class*="col"]{
-    padding-left:10px;
-    padding-right:10px;
 }
 
 div#news-and-blog .col-6.img-article {
@@ -803,7 +801,7 @@ div#download-our-app
 }
 
 #download-our-app p.des-item {
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -917,7 +915,10 @@ div#how-it-work .head-2 {
     letter-spacing: 2px;
     text-align: center;
     color: #ffffff;
-    line-height: 33px;
+}
+#how-it-work .view-instruction img {
+    position: relative;
+    top: -2px;
 }
 
 #how-it-work .btn-view-instruction {
@@ -926,7 +927,7 @@ div#how-it-work .head-2 {
 }
 #how-it-work .col.description-step {
     max-width: calc(50% + 115px);
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -958,7 +959,7 @@ div#how-it-work .head-2 {
 }
 
 #how-it-work .col.description-step ul li {
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;

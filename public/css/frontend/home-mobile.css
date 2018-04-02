@@ -4,30 +4,209 @@
         font-size: 60px;
     }
 }
+
 @media (max-width: 768px) {
-    .caption h2,  .caption h2 strong {
-        font-size: 16px;;
+    .caption h2, .caption h2 strong {
+        font-size: 16px;
+    }
+
+     h1.head-2 {
+        font-size: 48px;
+        width: auto;
     }
 }
-@media (max-width: 567px) {
-    .show-mobile {
-        display: block;
+@media (max-width: 576px) {
+
+    #wrap-top .caption {
+        padding-top: 50px;
     }
     .caption h2,  .caption h2 strong {
         max-width: 300px;
         margin-left:auto;
         margin-right:auto;
+        line-height: 1.5;
     }
-    #search-form {
-        display:none;
+    .caption h2{
+        margin-bottom: 25px;
     }
+    .head-1 {
+        padding: 40px 0 10px 0;
+    }
+    h1.head-2{
+        font-size: 30px;
+        max-width: 100%;
+        line-height: 1.13;
+        letter-spacing: -1.2px;
+    }
+    .list-agencies {
+        margin-top: 23px;
+    }
+
 }
-@media (max-width: 375px){
+@media (max-width: 576px){
     .caption h2,  .caption h2 strong {
         max-width: 220px;
         margin-left:auto;
         margin-right:auto;
+        letter-spacing: -1px;
     }
+    .list-agencies {
+        padding: 0 24px;
+    }
+    .list-agencies > div+div {
+        margin-top: 20px;
+    }
+
+    .items-left .content{
+        margin-top: 20px;
+    }
+    .list-agencies .media.items {
+        display: block;
+    }
+    .list-agencies .media.items img {
+        width: 100%;
+    }
+    #feature-agencies .btn-view-all {
+        padding: 40px 0;
+    }
+    div#how-it-work .head-2 {
+        max-width: 310px;
+        width: auto;
+    }
+    .type-user-nav .nav-tabs {
+        max-width: 335px;
+        width: auto;
+        margin-bottom: 80px;
+
+    }
+    .type-user-nav .nav-tabs a.active{
+        width: 105px;
+    }
+    .type-user-nav .nav-tabs a{
+        margin: 0;
+    }
+    .type-user-nav .nav-tabs a+a{
+        padding-left: 20px;
+
+    }
+    .row.steps-to-work{
+        margin-top: 90px;
+    }
+    #how-it-work .current-step{
+        margin-top: 15px;
+    }
+    #how-it-work .type-user-nav {
+        margin-bottom: 42px;
+    }
+    .row.steps-to-work div{
+        flex: auto;
+    }
+    .col-mobile-dream {
+        max-width: 20%;
+    }
+
+    .col-mobile-contact {
+        max-width: 33%;
+    }
+
+    .col-mobile-paperwork {
+        max-width: 33%;
+    }
+
+    .col-mobile-enjoy {
+        max-width: 14%;
+    }
+    #how-it-work .step img{
+        position: absolute;
+        left: calc(100% - 13px);
+        top: -50px;
+        width: 30px;
+    }
+    #how-it-work .step-name{
+        top: 20px;
+        left: calc(100% - 62px);
+        width: 125px;
+        margin-left: 0 !important;
+    }
+
+    #how-it-work .col-mobile-enjoy div {
+        display: none;
+    }
+
+
+    #how-it-work .col-mobile-paperwork img {
+        opacity: 0.4;
+    }
+
+    #how-it-work .col-mobile-paperwork .step-name {
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.8) , rgba(0, 0, 0, 0.3));
+        background: -o-linear-gradient(right, rgba(255, 255, 255, 0.8) , rgba(0, 0, 0, 0.3));
+        background: -moz-linear-gradient(right, rgba(255, 255, 255, 0.8) , rgba(0, 0, 0, 0.3));
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.8) , rgba(0, 0, 0, 0.3));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    #how-it-work .col-mobile-enjoy:after {
+        display: none;
+    }
+
+    #how-it-work .col-mobile-enjoy * {
+        display: none;
+    }
+    #how-it-work .title-current-step br {
+        display: none;
+    }
+
+    #how-it-work .title-current-step {
+        text-align: left;
+        margin-bottom: 16px;
+    }
+    #how-it-work .col.description-step {
+        max-width: initial;
+    }
+    #how-it-work .view-instruction {
+        margin-right: auto;
+        margin-left: 0;
+    }
+    #pricing .package-price{
+        margin-top: 20px;
+    }
+    #pricing .package-item .btn {
+        margin: 75px auto 130px auto;
+    }
+    #pricing ol.carousel-indicators {
+        bottom: 30px;
+    }
+    #we-have .list-item-we-have.row{
+        padding-bottom: 85px;
+    }
+    div#we-have .carousel-indicators {
+        bottom: 30px;
+    }
+    #download-our-app .carousel-item *, #download-our-app .carousel-item {
+        text-align: center !important;
+    }
+
+    #download-our-app .carousel-item {
+        padding-bottom: 88px;
+    }
+
+    #download-our-app p.des-item {
+        width: 210px;
+        margin: auto;
+    }
+
+    #download-our-app ol.carousel-indicators {
+        bottom: 30px;
+    }
+    #download-our-app .intro-center.show-mobile img {
+        width: 307px;
+        margin: auto;
+        display: block;
+    }
+
+
 }
 
 div#btn-find-rom a {

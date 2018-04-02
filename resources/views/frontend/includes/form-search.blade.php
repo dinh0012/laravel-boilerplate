@@ -1,4 +1,4 @@
-<div id="search-form">
+<div id="search-form" class="hidden-mobile">
     <form id="search">
     <div class="input-items">
         <div class="input-item col dropdown align-items-center none-padding">
