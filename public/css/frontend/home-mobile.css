@@ -205,7 +205,32 @@
         margin: auto;
         display: block;
     }
+    #news-and-blog h5.article-name {
+        font-size: 10px;
+    }
 
+    #news-and-blog .list-articles.article-has-img.show-mobile {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #news-and-blog .article+.article {
+        margin-top: 20px;
+    }
+
+    #news-and-blog .article {
+        min-height: 390px;
+    }
+
+    #news-and-blog .col.align-self-end {
+        margin-bottom: 50px;
+    }
+    .comment-total img {
+        margin-right: 5px;
+    }
+
+    #news-and-blog .btn-view-all {
+        margin: 40px 0;
+    }
 
 }
 

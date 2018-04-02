@@ -366,8 +366,8 @@
         <div class="container">
             <div class="head-1">News and Blogs</div>
             <h1 class="head-2">Promotions & News </br>All The Best Select for You!</h1>
-            <div class="row">
-                <div class="col-9 list-articles article-has-img row">
+            <div class="row hidden-mobile">
+                <div class="col-9 list-articles article-has-img row ">
                     <div class="col-4 p-r-10">
                         <div class="article  article-review">
                              <img src="/img/frontend/bitmap_3.png" alt="">
@@ -465,6 +465,31 @@
                             <p class="article-description">The Ghost Bring Lush Psych-Pop to the Bowery Ballroom</p>
                         </div> 
                         <button class="btn btn-more">more</button>
+                </div>
+            </div>
+            <div class="list-articles article-has-img row show-mobile">
+                <div class="article  article-review">
+                    <img src="/img/frontend/bitmap_3.png" alt="">
+                    <div class="category-name category-review">Review</div>
+                    <a href="#"><h5 class="article-name">Taking Advantage of Bad Weather</h5></a>
+                    <p class="article-description">Texas Holdem is by far the
+                        most common for of…</p>
+                    <div class="comment-total">
+                        <span class="comment"><img src="/img/frontend/comment.png"> 15</span>
+                        <span class="favorite"><img src="/img/frontend/favorite.png"> 15</span>
+                    </div>
+                </div>
+                <div class="article article-sharing row" style="background: url(/img/frontend/bitmap_3@2x.png) no-repeat;">
+                    <div class="category-name category-sharing">SHARING</div>
+                    <div class="col align-self-end">
+                        <a href="#"><h5 class="article-name">A Guide To Rocky Mountain Vacations</h5></a>
+                        <p class="article-description">Cancun is back, better
+                            than ever! Over a hundr…</p>
+                    </div>
+                    <div class="comment-total">
+                        <span class="comment"><img src="/img/frontend/comment_white.png"> 15</span>
+                        <span class="favorite"><img src="/img/frontend/favorite_white.png"> 15</span>
+                    </div>
                 </div>
             </div>
             <div class="btn-view-all">
