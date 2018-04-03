@@ -7,7 +7,7 @@
 @endsection
 @section('content')
     <div id="wrap-top">
-        <figure style="background: url(&quot;https://www.viewretreats.com/uploads/gallery/970%20Lonely%20Bay%20-%20Lounge%20Area_1465100620.jpg&quot;) center center / cover; height: 412px;  background: rgba(0, 0, 0, 0.8);">
+        <figure style="background: url(&quot;https://www.viewretreats.com/uploads/gallery/970%20Lonely%20Bay%20-%20Lounge%20Area_1465100620.jpg&quot;) center center / cover; height: 520px;  background: rgba(0, 0, 0, 0.8);">
             <div class="container">
                 <div class="caption">
                     <h1 class="main-caption">Over 5.000 rooms</h1>
@@ -15,7 +15,36 @@
                 </div>  
                 @include('frontend.includes.form-search')
                 <div id="btn-find-rom" class="show-mobile">
-                    <a href="#" class="btn btn-rnw btn-rnw-lg btn-rnw-yellow row justify-content-md-center" >Find Your Rooms</a>
+                    <a href="#" type="button" data-toggle="modal" data-target="#findRoomModal" class="btn btn-rnw btn-rnw-lg btn-rnw-yellow row justify-content-md-center" >Find Your Rooms</a>
+                </div>
+                <div class="modal fade modal-rnw-full-screen modal-rnw" id="findRoomModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <img src="{{asset('/img/frontend/back.png')}}" alt="">
+                                </button>
+                                <h2 class="title-modal title-find-rom">Find your rooms</h2>
+                            </div>
+                            <div class="modal-body">
+                                <ul class="items-search list-group">
+                                    <li class="item-search list-group-item"><a href="#">City <span class="expand"></span></a></li>
+                                    <li class="item-search list-group-item"><a href="#">District<span class="expand"></span></a></li>
+                                    <li class="item-search list-group-item"><a href="#">Room type<span class="expand"></span></a></li>
+                                    <li class="item-search list-group-item"><a href="#">Surface area<span class="expand"></span></a></li>
+                                    <li class="item-search list-group-item"><a href="#">Price range (from - to)<span class="expand"></span></a></li>
+                                    <li class="item-search list-group-item"><a href="#">Radius<span class="expand"></span></a></li>
+                                    <li class="item-search list-group-item"><a href="#">Shared housing<span class="expand"></span></a></li>
+                                    <li class="item-search list-group-item"><a href="#">Capacity<span class="expand"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" class="btn btn-rnw btn-rnw-light btn-rnw-md">CLEAR</a>
+                                <a href="#" class="btn btn-rnw btn-rnw-yellow btn-rnw-md">SEARCH</a>
+                            </div>
+                           
+                        </div>
+                    </div>
                 </div>
             </div>
         </figure>
@@ -72,13 +101,13 @@
             <h1 class="head-2">A Few Steps To Make Things Happen</h1>
             <div class="type-user-nav">
                 <ul class="nav nav-tabs">
-                    <li class="nav-item user-tenant">
+                    <li class="nav-item user-tenant col-4">
                         <a class="nav-link active" href="#">TENANT</a>
                     </li>
-                    <li class="nav-item user-landlord">
+                    <li class="nav-item user-landlord col-4">
                         <a class="nav-link" href="#">LANDLORD</a>
                     </li>
-                    <li class="nav-item user-agency">
+                    <li class="nav-item user-agency col-4">
                         <a class="nav-link" href="#">AGENGY</a>
                     </li>
                 </ul>
@@ -133,13 +162,13 @@
             <h1 class="head-2">Full Control, Flexible & Comfort</h1>
             <div class="type-price type-user-nav">
                 <ul class="nav nav-tabs">
-                  <li class="nav-item user-tenant">
+                  <li class="nav-item user-tenant col-4">
                     <a class="nav-link active" href="#">TENANT</a>
                   </li>
-                  <li class="nav-item user-landlord">
+                  <li class="nav-item user-landlord col-4">
                     <a class="nav-link" href="#">LANDLORD</a>
                   </li>
-                  <li class="nav-item user-agency">
+                  <li class="nav-item user-agency col-4">
                     <a class="nav-link" href="#">AGENGY</a>
                   </li>
                 </ul>

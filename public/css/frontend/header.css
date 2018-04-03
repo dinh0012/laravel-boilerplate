@@ -94,6 +94,39 @@ a.btn-rnw{
 .carousel-indicators .active {
     background-color: #f8e71c;
 }
+div.modal-rnw-full-screen {
+    padding: 0 !important;
+}
+div.modal-rnw-full-screen .modal-dialog/*, div.modal-rnw-full-screen .modal-content*/ {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    margin: 0;
+}
+.modal-rnw button.close {
+    opacity: 1;
+    padding: 0;
+    float: inherit;
+}
+.modal-rnw button.close:hover {
+    opacity: 0.6;
+}
+.modal-rnw .modal-header {
+    display: block;
+}
+
+h2.title-modal {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
+    letter-spacing: -1.2px;
+    color: #000000;
+    margin: 16px 0 40px;
+}
+
 /*header top*/
 nav#header-top a {
     font-family: Montserrat;
@@ -106,30 +139,40 @@ nav#header-top a {
     padding: 0;
 }
 
-nav#header-top a.type-agency {
-    color: #f8e71c;
+#app .account-menu a {
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: #ffff;
+    padding: 0;
 }
 
+#app .account-menu a.type-agency {
+    color: #f8e71c;
+}
 nav#header-top {
     height: 30px;
     border-bottom: solid 1px;
     padding: 0
 }
 
-ul#account-menu {
+.account-menu {
     text-align: right;
     text-transform: uppercase;
 }
-ul#account-menu li {
+.account-menu li {
     padding: 0 8px 0 8px;
 }
-ul#account-menu li:first-child {
+.account-menu li:first-child {
     border-right: solid 2px rgba(249, 249, 249, 0.5); 
 }
-ul#account-menu li:last-child {
+.account-menu li:last-child {
     padding-right: 0;
 }
-ul#account-menu li.nav-item.seperate {
+.account-menu li.nav-item.seperate {
     padding: 0;
 }
 .lang-switcher .nav-link.dropdown-toggle:after {
@@ -194,11 +237,25 @@ ul#account-menu li.nav-item.seperate {
     height: 10px;
     margin-left: 60px;
 }
+
 /*end header top*/
 
 /*navigation*/
 
 div#navbar a {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    padding-right: 22px;
+    padding-left: 22px;
+}
+div.nav-bar-menu a {
     font-family: Montserrat;
     font-size: 14px;
     font-weight: normal;
@@ -218,3 +275,50 @@ div#navbar nav {
     padding-left: 0;
     padding-right: 0;
 }
+@media (max-width: 992px) and (min-width: 767px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+    .navbar-expand-lg .navbar-nav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    #header .nav-bar-meu a{
+        padding-left:20px;
+        padding-right: 0;
+    }
+    #header #logo img{
+        height: 40px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+    .navbar-expand-lg .navbar-nav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    #header .nav-bar-meu a{
+        padding-left:10px;
+        padding-right: 0;
+    }
+    #header #logo img{
+        height: 15px;
+    }
+}
+
+

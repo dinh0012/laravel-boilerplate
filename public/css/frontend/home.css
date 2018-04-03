@@ -21,6 +21,7 @@ div#wrap-top {
     letter-spacing: -4px;
     text-align: center;
     color: #ffffff;
+    padding-top: 80px;
 }
 h2.main-caption strong {
     font-family: Open Sans;
@@ -247,13 +248,13 @@ div#feature-agencies .view-detail:hover {
 }
 .type-user-nav .nav-tabs .nav-item{
     margin: 0;
+    padding: 0;
 }
 .type-user-nav .nav-tabs a.active {
     height: 32px;
     border-radius: 16px;
     background-color: #f8e71c;
     opacity: 1;
-    width: 115px;
     border: none;
     line-height: 34px;
 }
@@ -268,7 +269,6 @@ div#feature-agencies .view-detail:hover {
     text-align: center;
     color: #000000;
     opacity: 0.5;
-    margin-right: 20px;
     padding-top: 0;
 }
 

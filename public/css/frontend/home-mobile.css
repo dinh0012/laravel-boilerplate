@@ -4,7 +4,17 @@
         font-size: 60px;
     }
 }
+@media (max-width: 992px) and (min-width: 767px) {
+    div#download-our-app .head-2 {
+        width: 700px;
+    }
+    h1.head-2 {
+        font-size: 44px;
+    }
+}
+@media (max-width: 767px) and (min-width: 576px) {
 
+}
 @media (max-width: 768px) {
     .caption h2, .caption h2 strong {
         font-size: 16px;
@@ -240,7 +250,61 @@
     }
 
 }
+/*modal find room*/
+#findRoomModal .modal-body {
+    border: solid 1px #e1e1e1;
+    margin: auto 20px 35px;
+    padding: 0;
+    overflow: auto;
+}
 
+#findRoomModal .modal-header {
+    border: 0;
+    padding: 20px;
+}
+#findRoomModal .modal-content {
+    border: 0;
+}
+#findRoomModal li.item-search.list-group-item {
+    border: 0;
+    padding: 16px 20px;
+}
+#findRoomModal li.item-search:hover {
+    z-index: inherit;
+}
+#findRoomModal li.item-search+.item-search {
+    border-top: solid 1px rgba(221, 221, 221, 0.5);
+}
+
+#findRoomModal li.item-search.list-group-item a {
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    display: block;
+}
+span.expand {
+    background: url(../../img/frontend/dropdown_black.png);
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    right: 0;
+    top: 2px;
+    float: right;
+}
+#findRoomModal .modal-footer {
+    padding: 30px;
+}
+
+#findRoomModal .modal-footer > :not(:last-child) {
+    margin-right: 20px;
+}
 div#btn-find-rom a {
     margin: auto;
 }
