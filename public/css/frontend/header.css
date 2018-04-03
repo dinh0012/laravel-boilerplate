@@ -139,7 +139,7 @@ nav#header-top a {
     padding: 0;
 }
 
-#app .account-menu a {
+#app .account-menu #account-menu a {
     font-family: Montserrat;
     font-size: 10px;
     font-weight: bold;
@@ -150,7 +150,7 @@ nav#header-top a {
     padding: 0;
 }
 
-#app .account-menu a.type-agency {
+#app .account-menu #account-menu a.type-agency {
     color: #f8e71c;
 }
 nav#header-top {

@@ -1,0 +1,92 @@
+.input-placeholder {
+    position: relative;
+}
+.input-placeholder input {
+    font-size: 14px;
+}
+.input-placeholder input:valid + .placeholder {
+    display: none;
+}
+
+.placeholder {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    bottom: 0;
+    height: 14px;
+    left: 20px;
+    margin: auto;
+    color: rgba(204, 204, 204, 0.8);
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 14px;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: initial;
+
+}
+
+.placeholder span {
+    color: red;
+    font-size: 14px;
+    margin-left: 7px;
+}
+
+div#account-form ul li a {
+    font-family: Montserrat;
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #000000;
+    padding: 43px 0 15px 30px;
+    border: 0;
+}
+
+div#login input[type="text"], div#login  input[type="email"], div#login input[type="password"] {
+    height: 54px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px #e1e1e1;
+    padding: 15px 20px;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+}
+div#account-form ul li a.active {
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #1293e8;
+    border-bottom: solid;
+}
+
+div#loginFormModal #tab-account {
+    border: 0;
+    margin-bottom: 40px;
+}
+
+div#account-form ul li+li {
+    padding-left: 22px;
+}
+
+div#account-form .container {
+    padding: 0 60px;
+}
+div#account-form .modal-dialog {
+    margin-top: 150px;
+}
+
