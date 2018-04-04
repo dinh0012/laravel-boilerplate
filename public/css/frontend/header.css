@@ -113,6 +113,7 @@ div.modal-rnw-full-screen .modal-dialog/*, div.modal-rnw-full-screen .modal-cont
 }
 .modal-rnw .modal-header {
     display: block;
+    border: 0;
 }
 
 h2.title-modal {

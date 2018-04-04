@@ -544,5 +544,7 @@
              <p class="note"><span class="icon-rnw icon-error"></span>Every month our subscribers get awesome updates</p>
         </div>
     </div>
-
+@endsection
+@section('script')
+    <script src="{{ asset('js/home.js') }}" ></script>
 @endsection
