@@ -238,7 +238,7 @@ div#input-account-type {
     border: solid 1px #e1e1e1;
 }
 
-div#input-account-type select {
+div#loginFormModal select {
     border: 0;
     font-family: Open Sans;
     font-size: 14px;
@@ -276,7 +276,7 @@ div#input-account-type .placeholder span {
     font-size: 10px;
 }
 
-div#input-account-type select * {
+div#loginFormModal select * {
     font-family: Open Sans;
     font-size: 14px;
     font-weight: normal;
@@ -297,7 +297,6 @@ div#input-account-type .form-control:focus, div#input-account-type select:active
     box-shadow:none;
 }
 
-select.form-control.account-type {}
 
 div#input-account-type:after {
     content: '';
@@ -313,3 +312,155 @@ div#register .mb-10 {
     margin-bottom: -15px
 }
 
+#loginFormModal  #forgot-password-form {
+    display: none;
+}
+#loginFormModal .title-form {
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #000000;
+    margin: 20px auto 15px;
+}
+
+#loginFormModal p.message-form {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 40px;
+}
+
+#loginFormModal button#btn-reset-password {
+    margin: 40px auto 25px;
+}
+
+#loginFormModal .row.back-page a {
+    text-align: center;
+    margin: 0 auto 25px;
+}
+
+#loginFormModal .row.back-page a i {
+    font-size: 14px;
+    position: relative;
+    top: 3px;
+}
+
+#loginFormModal .agency-type{
+    display: none;
+    position: relative;
+}
+#form-type-account .upload-logo {
+    width: 124px !important;
+    height: 124px;
+    background-color: rgba(225, 225, 225, 0.3);
+    border: solid 1px #e1e1e1;
+    border-radius: 50%;
+    padding: 40px  25px;
+    margin: 0 15px;
+    text-align: center;
+    cursor: pointer;
+}
+#form-type-account .upload-logo span{
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    opacity:0.3;
+    width: 73px;
+    height: 44px;
+    display: inline-block;
+}
+div#loginFormModal div.select-inline select {
+    width: 100%;
+    height: 54px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px #e1e1e1;
+    padding-left: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-inline .input-placeholder {
+    padding: 0;
+}
+
+div.select-inline {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#select-inline .select-country, .select-gender {
+    margin-right: 15px;
+}
+
+.select-inline .input-placeholder.select-icon:after {
+    content: '';
+    background: url('../../../img/frontend/dropdown_black.png');
+    width: 26px;
+    height: 15px;
+    border: none;
+    position: absolute;
+    top: 22px;
+    right: 5px;
+}
+#loginFormModal .btn-next-form {
+    margin: 40px auto;
+}
+div#register {
+    position: relative;
+}
+.step-register {
+    position: absolute;
+    left: -60px;
+    top: 0;
+    display: none;
+}
+
+.step-register .step {
+    height: 48.5px;
+    border-left: solid 5px #e1e1e1;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: left;
+    padding-left: 10px;
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    display: flex;
+}
+
+.step-register .step.done {
+    border-left: solid 5px #f8e71c;
+}
+.register-step-form{
+    display: none;
+}
+#step-1{
+    display: block;
+}
+div#register-steps .btn-step-inline {
+    width: 160px;
+    height: 45px;
+    border-radius: 40px;
+
+}

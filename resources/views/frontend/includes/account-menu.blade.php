@@ -21,7 +21,10 @@
                     <i class="material-icons">clear</i>
                 </button>
             </div>
-            @include('frontend.includes.account.login-form')
+            <div id="account-form">
+                @include('frontend.includes.account.login-form')
+                @include('frontend.includes.account.forgot-password')
+            </div>
         </div>
     </div>
 </div>

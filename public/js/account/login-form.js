@@ -5,6 +5,12 @@ var accountLoinForm = function () {
             this.toggleVisiblityPassword();
             this.checkRememberMe();
             this.activeTabLoginForm();
+            this.forgotPassword();
+            this.backToLogin();
+            this.selectAccountAgency();
+            this.selectInputChange();
+            this.uploadLogo();
+            this.actionRegisterAgencyAccount();
         },
 
         checkRememberMe: function () {
@@ -47,11 +53,81 @@ var accountLoinForm = function () {
         },
         
         forgotPassword: function () {
-            var linkForgot = $('#forgot-password');
-            $(linkForgot).on('click', function () {
-                
+            var linkForgot = $('#forgot-password-link');
+            $(linkForgot).on('click', function (event) {
+                event.preventDefault();
+                $('#loginFormModal #forgot-password-form').show();
+                $('#loginFormModal #login-register').hide();
+
+            })
+        },
+
+        backToLogin: function () {
+            var linkBack = $('#back-to-login');
+            $(linkBack).on('click', function (event) {
+                event.preventDefault();
+                $('#loginFormModal #forgot-password-form').hide();
+                $('#loginFormModal #login-register').show();
+
+            })
+        },
+
+        selectAccountAgency: function () {
+            var selectInput = $('#loginFormModal .account-type');
+            $(selectInput).on('change', function (event) {
+                var value = selectInput.val();
+                if (value != 'agency') {
+                    $('.tenant-landlord-type').show();
+                    $('.agency-type').hide();
+                    $('.step-register').hide();
+                    return;
+                }
+                $('.tenant-landlord-type').hide();
+                $('.agency-type').show();
+                $('.step-register').show();
+
+
+            })
+        },
+
+        selectInputChange: function () {
+            var select = $('.select-inline select');
+            select.on('change', function () {
+                var value = $(this).val();
+                var placeholder = $(this).parent('.input-placeholder').find('.placeholder');
+                if (value) {
+                    placeholder.hide();
+                } else {
+                    placeholder.show();
+                }
+            })
+        },
+        
+        uploadLogo: function () {
+            $('.upload-logo').on('click', function () {
+               $('input[name=logo]').click();
+            });
+        },
+
+        actionRegisterAgencyAccount: function () {
+            var btn = $('.btn-step');
+            btn.on('click', function () {
+                var step = $(this).data('step');
+                console.log(step);
+                if (step == 1) {
+                    $('.input-account-type').show();
+                } else {
+                    $('.input-account-type').hide();
+                }
+                $('.step-register .step').removeClass('done');
+                for (var i = 1; i <= parseInt(step); i++) {
+                    $('.step-register .step-' + i).addClass('done');
+                }
+                $('.register-step-form').hide();
+                $('#step-' + step).show();
             })
         }
+
     };
 
 }();
