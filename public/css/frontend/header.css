@@ -256,6 +256,9 @@ div#navbar a {
     padding-right: 22px;
     padding-left: 22px;
 }
+.nav-bar-meu {
+    margin-left: auto;
+}
 div.nav-bar-menu a {
     font-family: Montserrat;
     font-size: 14px;
