@@ -23,7 +23,7 @@
 				<li class="link-footer-item"><a href="#">Privacy</a></li>
 			</ul>
 			<div class="col-12 col-md-4 are-you-new">
-				<div class="head-1">You are new?</div>
+				<div class="head-1 head-sm">You are new?</div>
 				<div class="input-group select-item dropdown align-items-center none-padding">
 					<a href="#" class="dropdown-toggle form-control" data-toggle="dropdown"
 					   aria-haspopup="true" aria-expanded="false">How to find listings?</a>

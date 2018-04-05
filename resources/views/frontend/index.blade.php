@@ -4,56 +4,16 @@
 @section('style')
     <link href="{{ asset('css/frontend/home.css') }}" rel="stylesheet">
     <link href="{{ asset('css/frontend/home-mobile.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/frontend/partial/search-form.css') }}" rel="stylesheet">
 @endsection
 @section('content')
-    <div id="wrap-top">
-        <figure style="background: url(&quot;https://www.viewretreats.com/uploads/gallery/970%20Lonely%20Bay%20-%20Lounge%20Area_1465100620.jpg&quot;) center center / cover; height: 520px;  background: rgba(0, 0, 0, 0.8);">
-            <div class="container">
-                <div class="caption">
-                    <h1 class="main-caption">Over 5.000 rooms</h1>
-                    <h2 class="main-caption">have been rented in <strong>Vietnam </strong>, take your chance before it’s gone</h2>
-                </div>  
-                @include('frontend.includes.form-search')
-                <div id="btn-find-rom" class="show-mobile">
-                    <a href="#" type="button" data-toggle="modal" data-target="#findRoomModal" class="btn btn-rnw btn-rnw-lg btn-rnw-yellow row justify-content-md-center" >Find Your Rooms</a>
-                </div>
-                <div class="modal fade modal-rnw-full-screen modal-rnw" id="findRoomModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <img src="{{asset('/img/frontend/back.png')}}" alt="">
-                                </button>
-                                <h2 class="title-modal title-find-rom">Find your rooms</h2>
-                            </div>
-                            <div class="modal-body">
-                                <ul class="items-search list-group">
-                                    <li class="item-search list-group-item"><a href="#">City <span class="expand"></span></a></li>
-                                    <li class="item-search list-group-item"><a href="#">District<span class="expand"></span></a></li>
-                                    <li class="item-search list-group-item"><a href="#">Room type<span class="expand"></span></a></li>
-                                    <li class="item-search list-group-item"><a href="#">Surface area<span class="expand"></span></a></li>
-                                    <li class="item-search list-group-item"><a href="#">Price range (from - to)<span class="expand"></span></a></li>
-                                    <li class="item-search list-group-item"><a href="#">Radius<span class="expand"></span></a></li>
-                                    <li class="item-search list-group-item"><a href="#">Shared housing<span class="expand"></span></a></li>
-                                    <li class="item-search list-group-item"><a href="#">Capacity<span class="expand"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="#" class="btn btn-rnw btn-rnw-light btn-rnw-md">CLEAR</a>
-                                <a href="#" class="btn btn-rnw btn-rnw-yellow btn-rnw-md">SEARCH</a>
-                            </div>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </figure>
-    </div> <!-- end wrap top -->
+    @include('frontend.includes.form-search')
+    <!-- end wrap top -->
 
     <div id="feature-agencies">
         <div class="container">
-            <div class="head-1">Featured Agencies</div>
-            <h1 class="head-2">We Bring The Best Valuable To You</h1>
+            <div class="head-1 head-sm">Featured Agencies</div>
+            <h1 class="head-2 head-lg">We Bring The Best Valuable To You</h1>
             <div class="list-agencies row">
                 <div class="col-12 col-md-5 p-r-10 none-padding-l mobile-none-p">
                     <div class="items-left items">
@@ -97,8 +57,8 @@
 
     <div id="how-it-work">
         <div class="container">
-            <div class="head-1">HOW IT WORKS</div>
-            <h1 class="head-2">A Few Steps To Make Things Happen</h1>
+            <div class="head-1 head-sm">HOW IT WORKS</div>
+            <h1 class="head-2 head-lg">A Few Steps To Make Things Happen</h1>
             <div class="type-user-nav">
                 <ul class="nav nav-tabs">
                     <li class="nav-item user-tenant col-4">
@@ -158,8 +118,8 @@
 
     <div id="pricing">
         <div class="container">
-            <div class="head-1">Pricing</div>
-            <h1 class="head-2">Full Control, Flexible & Comfort</h1>
+            <div class="head-1 head-sm">Pricing</div>
+            <h1 class="head-2 head-lg">Full Control, Flexible & Comfort</h1>
             <div class="type-price type-user-nav">
                 <ul class="nav nav-tabs">
                   <li class="nav-item user-tenant col-4">
@@ -253,8 +213,8 @@
 
     <div id="we-have" class="bg-grey">
         <div class="container">
-            <div class="head-1">WE HAVE</div>
-            <h1 class="head-2">Big Numbers To Prove Our Business</h1>
+            <div class="head-1 head-sm">WE HAVE</div>
+            <h1 class="head-2 head-lg">Big Numbers To Prove Our Business</h1>
             <div class="list-item-we-have row hidden-mobile">
                 <div class="item col">
                     <div class="item-name">AGENCIES</div>
@@ -319,8 +279,8 @@
 
     <div id="download-our-app">
         <div class="container">
-            <div class="head-1">Download Our App</div>
-            <h1 class="head-2">RNW - Easy Property</br>
+            <div class="head-1 head-sm">Download Our App</div>
+            <h1 class="head-2 head-lg">RNW - Easy Property</br>
                 Management & Advertisement</h1>
             <div class="row store-app">
                 <img src="{{asset('img/frontend/app-store-badge.png')}}" alt="">
@@ -393,8 +353,8 @@
 
     <div id="news-and-blog">
         <div class="container">
-            <div class="head-1">News and Blogs</div>
-            <h1 class="head-2">Promotions & News </br>All The Best Select for You!</h1>
+            <div class="head-1 head-sm">News and Blogs</div>
+            <h1 class="head-2 head-lg">Promotions & News </br>All The Best Select for You!</h1>
             <div class="row hidden-mobile">
                 <div class="col-9 list-articles article-has-img row ">
                     <div class="col-4 p-r-10">
@@ -529,8 +489,8 @@
 
     <div id="start-trial" class="bg-grey">
         <div class="container">
-            <div class="head-1">Start a free trial</div>
-            <h1 class="head-2">Try It Now, You Will Love It!</h1>
+            <div class="head-1 head-sm">Start a free trial</div>
+            <h1 class="head-2 head-lg">Try It Now, You Will Love It!</h1>
             <div class="row form-subscribe">
                 <form action="#" id="subscribe">
                     {{--<input type="email" id="email-subscribe" placeholder="E-mail address">

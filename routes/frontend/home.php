@@ -5,6 +5,9 @@
  * All route names are prefixed with 'frontend.'.
  */
 Route::get('/', 'HomeController@index')->name('index');
+Route::get('/find-room', function () {
+     return view('frontend.find-room');
+})->name('find-room');
 Route::get('contact', 'ContactController@index')->name('contact');
 Route::post('contact/send', 'ContactController@send')->name('contact.send');
 

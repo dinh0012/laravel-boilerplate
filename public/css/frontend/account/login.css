@@ -491,9 +491,6 @@ div#register-steps .icon-address {
     margin-left: 20px;
     margin-right: 20px;
 }
-.flex-item {
-    display: flex;
-}
 .flex-item label.checkbox{
     margin-top: 5px;
 }

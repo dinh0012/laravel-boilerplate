@@ -62,6 +62,25 @@ body, * {
 .btn-rnw-md {
     width: 150px;
 }
+.head-sm {
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    color: #000000;
+    text-transform: uppercase;
+}
+.head-lg {
+    font-size: 52px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: -2px;
+    color: #000000;
+    margin: auto;
+}
 .icon-rnw {
     display: inline-block;
     width: 20px;
@@ -184,6 +203,22 @@ nav#header-top {
 }
 .account-menu li.nav-item.seperate {
     padding: 0;
+}
+.text-opensans-14{
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.flex-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 .lang-switcher .nav-link.dropdown-toggle:after {
     content: '';
