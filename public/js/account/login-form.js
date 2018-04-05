@@ -3,21 +3,23 @@ var accountLoinForm = function () {
 
         init: function () {
             this.toggleVisiblityPassword();
-            this.checkRememberMe();
+            this.checkBox();
             this.activeTabLoginForm();
-            this.forgotPassword();
+            this.showForgotPassword();
+            this.handleForgotPassword();
             this.backToLogin();
             this.selectAccountAgency();
             this.selectInputChange();
             this.uploadLogo();
             this.actionRegisterAgencyAccount();
+            this.clickSelectFileAgencyAccount();
         },
 
-        checkRememberMe: function () {
+        checkBox: function () {
             var checkbox = $('.checkbox-input');
             checkbox.on('change', function () {
                 var img = $(this).parent('.checkbox').find('img')
-                if (checkbox.is(':checked')) {
+                if ($(this).is(':checked')) {
                     img.attr('src', '/img/frontend/check_on.png')
                 } else {
                     img.attr('src', '/img/frontend/check_off.png')
@@ -51,13 +53,23 @@ var accountLoinForm = function () {
                 }
             });
         },
-        
-        forgotPassword: function () {
+
+        showForgotPassword: function () {
             var linkForgot = $('#forgot-password-link');
             $(linkForgot).on('click', function (event) {
                 event.preventDefault();
                 $('#loginFormModal #forgot-password-form').show();
                 $('#loginFormModal #login-register').hide();
+
+            })
+        },
+
+        handleForgotPassword: function () {
+            var btnForgotPassword = $('#btn-reset-password');
+            $(btnForgotPassword).on('click', function (event) {
+                event.preventDefault();
+                $('.send-success').show();
+                $('.forgot-form').hide();
 
             })
         },
@@ -125,6 +137,15 @@ var accountLoinForm = function () {
                 }
                 $('.register-step-form').hide();
                 $('#step-' + step).show();
+            })
+        },
+
+        clickSelectFileAgencyAccount: function () {
+            var link = $('.link-select-file');
+            link.on('click', function (event) {
+                event.preventDefault();
+                var inputFile = $(this).parent('.input-upload-agency').children('.input-upload-file');
+                inputFile.click();
             })
         }
 

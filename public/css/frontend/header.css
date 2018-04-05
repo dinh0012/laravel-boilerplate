@@ -49,6 +49,15 @@ body, * {
     text-align: center;
     text-transform: uppercase;
     padding: 0;
+    margin: auto;
+}
+
+.btn-rnw-160 {
+    width: 160px;
+}
+
+.btn-rnw-340 {
+    width: 340px;
 }
 .btn-rnw-md {
     width: 150px;

@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="form-check">
-                    <label class="form-check-label" for="rememberMe">
+                    <label class="form-check-label text-form-account" for="rememberMe">
                         <label class="checkbox">
                             <input type="checkbox" class="form-check-input checkbox-input" id="rememberMe">
                             <div class="check">
@@ -43,17 +43,17 @@
                 </div>
                 <div class="row">
                     <button type="submit" id="login-rnw"
-                            class="btn-login-rnw btn btn-login-form btn-rnw btn-rnw-yellow">SIGN IN
+                            class="btn-login-rnw btn btn-login-form btn-rnw-340 btn-rnw btn-rnw-yellow">SIGN IN
                     </button>
                 </div>
                 <p id="login-or-text">OR</p>
                 <div class="row btn-fb">
-                    <button type="submit" id="login-fb" class="btn-login-fb btn btn-login-form btn-rnw btn-rnw-yellow">
+                    <button type="submit" id="login-fb" class="btn-login-fb btn btn-login-form btn-rnw-340 btn-rnw btn-rnw-yellow">
                         SIGN IN with facebook
                     </button>
                     <img src="{{asset('/img/frontend/fb.png')}}" alt="">
                 </div>
-                <p id="term-conditions-text">By signing in you accept the <a href="" class="link-rnw">Terms of
+                <p id="term-conditions-text" class="text-form-account">By signing in you accept the <a href="" class="link-rnw">Terms of
                         Conditions</a></p>
             </form>
         </div>
@@ -117,7 +117,7 @@
                         </div>
                     </div>
                     <div class="form-check mb-10">
-                        <label class="form-check-label" for="rememberMeSignUp">
+                        <label class="form-check-label text-form-account" for="rememberMeSignUp">
                             <label class="checkbox">
                                 <input type="checkbox" class="form-check-input checkbox-input" id="rememberMeSignUp">
                                 <div class="check">
@@ -128,7 +128,7 @@
                         </label>
                     </div>
                     <div class="form-check">
-                        <label class="form-check-label" for="tipsAndTricks">
+                        <label class="form-check-label text-form-account" for="tipsAndTricks">
                             <label class="checkbox">
                                 <input type="checkbox" class="form-check-input checkbox-input" id="tipsAndTricks">
                                 <div class="check">
@@ -140,19 +140,19 @@
                     </div>
                     <div class="row">
                         <button type="submit" id="register-rnw"
-                                class="btn btn-login-form btn-rnw btn-rnw-yellow btn-login-rnw">
+                                class="btn btn-login-form btn-rnw-340 btn-rnw btn-rnw-yellow btn-login-rnw">
                             SIGN UP
                         </button>
                     </div>
                     <p id="login-or-text">OR</p>
                     <div class="row btn-fb">
                         <button type="submit" id="register-fb"
-                                class="btn btn-login-form btn-rnw btn-rnw-yellow btn-login-fb">
+                                class="btn btn-login-form btn-rnw-340 btn-rnw btn-rnw-yellow btn-login-fb">
                             SIGN UP with facebook
                         </button>
                         <img src="{{asset('/img/frontend/fb.png')}}" alt="">
                     </div>
-                    <p id="term-conditions-text">By signing up you accept the <a href="" class="link-rnw">Terms of
+                    <p id="term-conditions-text" class="text-form-account">By signing up you accept the <a href="" class="link-rnw">Terms of
                             Conditions</a></p>
                 </div>
 
