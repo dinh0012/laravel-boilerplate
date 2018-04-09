@@ -58,3 +58,17 @@ var CustomSelect = function () {
         }
     }
 }();
+
+$('#btn-search').on('click', function () {
+    var form = $('#search');
+    form.submit();
+    $('.search-room').show();
+    $('.page-find-room').hide();
+    $('#wrap-top').hide();
+})
+$('#search').on('submit', function () {
+    $('.search-room').show();
+    $('.page-find-room').hide();
+    $('#wrap-top').hide();
+    return false;
+});
