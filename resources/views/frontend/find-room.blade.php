@@ -10,7 +10,7 @@
     @include('frontend.includes.form-search')
     <!-- end wrap top -->
 
-    <div id="wrap-page">
+    <div id="wrap-page" class="page-find-room">
         <div class="container">
             <div class="group-room">
                 <div class="row group-title-rooms head-sm align-items-center">
@@ -21,7 +21,7 @@
                 </div>
                 <div class="items-room">
                     <div class="row items-row">
-                        <div class="col item-room">
+                        <div class="col-3 item-room">
                             <div class="room-img">
                                 <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
                                 <div class="sale-off">10% OFF</div>
@@ -52,7 +52,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col item-room">
+                        <div class="col-3 item-room">
                             <div class="room-img">
                                 <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
                                 <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col item-room">
+                        <div class="col-3 item-room">
                             <div class="room-img">
                                 <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
                                 <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
@@ -112,7 +112,274 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col item-room">
+                        <div class="col-3 item-room">
+                            <div class="room-img">
+                                <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
+                                <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
+                            </div>
+                            <div class="room-info">
+                                <div class="room-title flex-item justify-content-between">
+                                    <h2>
+                                        <a class="head-sm" href="#">Cozy Room</a>
+                                    </h2>
+                                    <span class="head-sm more-action-room">...</span>
+                                </div>
+                                <div class="room-price-location flex-item">
+                                    <div class="price">
+                                        $50/month
+                                    </div>
+                                    <div class="dot-price-location">•</div>
+                                    <div class="location"> Ho Chi Minh</div>
+                                </div>
+                                <div class="room-description">
+                                    <p class="text-opensans-14">Texas Holdem is by far the
+                                        most common for of…</p>
+                                </div>
+                                <div class="room-rating-tag flex-item">
+                                    <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
+                                    <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
+                                    <div class="status status-rented">Rented</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Popular-->
+            <div class="group-room">
+                <div class="row group-title-rooms head-sm align-items-center">
+                    <div class="col group-title">Popular</div>
+                    <div class="col link-view-all ">
+                        <a class="head-sm ml-auto align-items-center flex-item" href="#">view all (245) <i class="material-icons">trending_flat</i></a>
+                    </div>
+                </div>
+                <div class="items-room">
+                    <div class="row items-row">
+                        <div class="col-3 item-room">
+                            <div class="room-img">
+                                <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
+                                <div class="sale-off">10% OFF</div>
+                                <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
+                            </div>
+                            <div class="room-info">
+                                <div class="room-title flex-item justify-content-between">
+                                    <h2>
+                                        <a class="head-sm" href="#">Texas Holdem is by far the
+                                            most common for of…</a>
+                                    </h2>
+                                    <span class="head-sm more-action-room">...</span>
+                                </div>
+                                <div class="room-price-location flex-item">
+                                    <div class="price">
+                                        $50/month
+                                    </div>
+                                    <div class="dot-price-location">•</div>
+                                    <div class="location"> Ho Chi Minh</div>
+                                </div>
+                                <div class="room-description">
+                                    <p class="text-opensans-14">Texas Holdem is by far the
+                                        most common for of..</p>
+                                </div>
+                                <div class="room-rating-tag flex-item">
+                                    <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
+                                    <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 item-room">
+                            <div class="room-img">
+                                <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
+                                <div class="sale-off">20% OFF</div>
+                                <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
+                            </div>
+                            <div class="room-info">
+                                <div class="room-title flex-item justify-content-between">
+                                    <h2>
+                                        <a class="head-sm" href="#">roof top</a>
+                                    </h2>
+                                    <span class="head-sm more-action-room">...</span>
+                                </div>
+                                <div class="room-price-location flex-item">
+                                    <div class="price">
+                                        $50/month
+                                    </div>
+                                    <div class="dot-price-location">•</div>
+                                    <div class="location">Can Tho</div>
+                                </div>
+                                <div class="room-description">
+                                    <p class="text-opensans-14">Texas Holdem is by far the
+                                        most common for of…</p>
+                                </div>
+                                <div class="room-rating-tag flex-item">
+                                    <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
+                                    <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 item-room">
+                            <div class="room-img">
+                                <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
+                                <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
+                            </div>
+                            <div class="room-info">
+                                <div class="room-title flex-item justify-content-between">
+                                    <h2>
+                                        <a class="head-sm" href="#">Cozy Room</a>
+                                    </h2>
+                                    <span class="head-sm more-action-room">...</span>
+                                </div>
+                                <div class="room-price-location flex-item">
+                                    <div class="price">
+                                        $50/month
+                                    </div>
+                                    <div class="dot-price-location">•</div>
+                                    <div class="location"> Ho Chi Minh</div>
+                                </div>
+                                <div class="room-description">
+                                    <p class="text-opensans-14">Texas Holdem is by far the
+                                        most common for of…</p>
+                                </div>
+                                <div class="room-rating-tag flex-item">
+                                    <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
+                                    <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
+                                    <div class="status status-rented">Rented</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 item-room">
+                            <div class="room-img">
+                                <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
+                                <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
+                            </div>
+                            <div class="room-info">
+                                <div class="room-title flex-item justify-content-between">
+                                    <h2>
+                                        <a class="head-sm" href="#">Cozy Room</a>
+                                    </h2>
+                                    <span class="head-sm more-action-room">...</span>
+                                </div>
+                                <div class="room-price-location flex-item">
+                                    <div class="price">
+                                        $50/month
+                                    </div>
+                                    <div class="dot-price-location">•</div>
+                                    <div class="location"> Ho Chi Minh</div>
+                                </div>
+                                <div class="room-description">
+                                    <p class="text-opensans-14">Texas Holdem is by far the
+                                        most common for of…</p>
+                                </div>
+                                <div class="room-rating-tag flex-item">
+                                    <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
+                                    <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
+                                    <div class="status status-rented">Rented</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--ho chi minh-->
+            <div class="group-room">
+                <div class="row group-title-rooms head-sm align-items-center">
+                    <div class="col group-title">Ho Chi Minh</div>
+                    <div class="col link-view-all ">
+                        <a class="head-sm ml-auto align-items-center flex-item" href="#">view all (245) <i class="material-icons">trending_flat</i></a>
+                    </div>
+                </div>
+                <div class="items-room">
+                    <div class="row items-row">
+                        <div class="col-3 item-room">
+                            <div class="room-img">
+                                <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
+                                <div class="sale-off">10% OFF</div>
+                                <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
+                            </div>
+                            <div class="room-info">
+                                <div class="room-title flex-item justify-content-between">
+                                    <h2>
+                                        <a class="head-sm" href="#">Next to snowy mou…</a>
+                                    </h2>
+                                    <span class="head-sm more-action-room">...</span>
+                                </div>
+                                <div class="room-price-location flex-item">
+                                    <div class="price">
+                                        $50/month
+                                    </div>
+                                    <div class="dot-price-location">•</div>
+                                    <div class="location"> Ho Chi Minh</div>
+                                </div>
+                                <div class="room-description">
+                                    <p class="text-opensans-14">Texas Holdem is by far the
+                                        most common for of..</p>
+                                </div>
+                                <div class="room-rating-tag flex-item">
+                                    <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
+                                    <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 item-room">
+                            <div class="room-img">
+                                <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
+                                <div class="sale-off">20% OFF</div>
+                                <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
+                            </div>
+                            <div class="room-info">
+                                <div class="room-title flex-item justify-content-between">
+                                    <h2>
+                                        <a class="head-sm" href="#">roof top</a>
+                                    </h2>
+                                    <span class="head-sm more-action-room">...</span>
+                                </div>
+                                <div class="room-price-location flex-item">
+                                    <div class="price">
+                                        $50/month
+                                    </div>
+                                    <div class="dot-price-location">•</div>
+                                    <div class="location">Can Tho</div>
+                                </div>
+                                <div class="room-description">
+                                    <p class="text-opensans-14">Texas Holdem is by far the
+                                        most common for of…</p>
+                                </div>
+                                <div class="room-rating-tag flex-item">
+                                    <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
+                                    <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 item-room">
+                            <div class="room-img">
+                                <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
+                                <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
+                            </div>
+                            <div class="room-info">
+                                <div class="room-title flex-item justify-content-between">
+                                    <h2>
+                                        <a class="head-sm" href="#">Vintage room</a>
+                                    </h2>
+                                    <span class="head-sm more-action-room">...</span>
+                                </div>
+                                <div class="room-price-location flex-item">
+                                    <div class="price">
+                                        $50/month
+                                    </div>
+                                    <div class="dot-price-location">•</div>
+                                    <div class="location"> Ho Chi Minh</div>
+                                </div>
+                                <div class="room-description">
+                                    <p class="text-opensans-14">Texas Holdem is by far the
+                                        most common for of…</p>
+                                </div>
+                                <div class="room-rating-tag flex-item">
+                                    <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
+                                    <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
+                                    <div class="status status-rented">Rented</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 item-room">
                             <div class="room-img">
                                 <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
                                 <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
