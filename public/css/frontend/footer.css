@@ -73,25 +73,41 @@ ul.link-footer li.link-footer-item:last-child {
     border-bottom-left-radius: 0;
     display: inline-block;
 }
-
-#footer .are-you-new a.dropdown-toggle {
-    /*max-width: 224px;*/
-    display: inline-block;
+#footer .select-item:after{
+    content: '';
+    background: url(../../img/frontend/dropdown_white.png);
+    width: 26px;
+    height: 20px;
+    border: none;
+    position: absolute;
+    right: 80px;
+}
+#footer .are-you-new select {
     padding-left: 15px;
     font-family: Open Sans;
     font-size: 14px;
     font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-   line-height: 42px;
+    line-height: 42px;
     letter-spacing: 0px;
     text-align: left;
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.15);
     height: 45px;
     border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
 }
-
+#footer .are-you-new select * {
+    color: #000000;
+}
 #footer .copy-right {
     opacity: 0.5;
     font-family: Open Sans;

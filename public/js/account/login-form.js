@@ -3,7 +3,6 @@ var accountLoinForm = function () {
 
         init: function () {
             this.toggleVisiblityPassword();
-            this.checkBox();
             this.activeTabLoginForm();
             this.showForgotPassword();
             this.handleForgotPassword();
@@ -15,18 +14,6 @@ var accountLoinForm = function () {
             this.clickSelectFileAgencyAccount();
         },
 
-        checkBox: function () {
-            var checkbox = $('.checkbox-input');
-            checkbox.on('change', function () {
-                var img = $(this).parent('.checkbox').find('img')
-                if ($(this).is(':checked')) {
-                    img.attr('src', '/img/frontend/check_on.png')
-                } else {
-                    img.attr('src', '/img/frontend/check_off.png')
-                }
-            })
-
-        },
         
         activeTabLoginForm: function () {
             $('.link-account-form').on('click', function () {

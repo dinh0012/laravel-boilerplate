@@ -10,9 +10,7 @@ body {
 .checkbox-input {
     display: none;
 }
-.checkbox-input {
-    display: none;
-}
+
 .form-check-label {
     cursor: pointer;
 }
@@ -259,6 +257,24 @@ h2.title-modal {
     letter-spacing: -1.2px;
     color: #000000;
     margin: 16px 0 40px;
+}
+.form-check-label i.icon-checkbox-blank {
+    color: #e1e1e1;
+}
+span.checkbox-label {
+    line-height: 24px;
+}
+.form-check-label .icon-checkbox {
+    color: #70c611;
+}
+.form-check-label .check {
+    width: auto;
+    display: flex;
+    margin-right: 15px;
+}
+
+.form-check-label {
+    display: flex;
 }
 
 /*header top*/

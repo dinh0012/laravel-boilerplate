@@ -183,24 +183,21 @@
             </div>
             <div class="form-check mb-10">
                 <label class="form-check-label text-form-account flex-item" for="acceptTermAndCon">
-                    <label class="checkbox">
-                        <input type="checkbox" class="form-check-input checkbox-input" id="acceptTermAndCon">
-                        <div class="check">
-                            <img src="/img/frontend/check_off.png" alt="remember password">
-                        </div>
-                    </label>
-                    By checking this box you accept and agree
+                    <input type="checkbox" class="form-check-input checkbox-input" id="acceptTermAndCon">
+                    <div class="check">
+                        <i class="material-icons icon-checkbox-blank">check_box_outline_blank</i>
+                    </div>
+                    <span>By checking this box you accept and agree
                     with the <a href="#" class="link-rnw">Terms of Conditions</a>
+                    </span>
                 </label>
             </div>
             <div class="form-check">
                 <label class="form-check-label text-form-account flex-item" for="acceptCookie">
-                    <label class="checkbox">
                         <input type="checkbox" class="form-check-input checkbox-input" id="acceptCookie">
                         <div class="check">
-                            <img src="/img/frontend/check_off.png" alt="remember password">
+                            <i class="material-icons icon-checkbox-blank">check_box_outline_blank</i>
                         </div>
-                    </label>
                     By checking this box you accept the
                     cookie statement
                 </label>

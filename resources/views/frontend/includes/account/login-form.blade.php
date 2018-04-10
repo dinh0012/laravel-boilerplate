@@ -31,12 +31,10 @@
                 </div>
                 <div class="form-check">
                     <label class="form-check-label text-form-account" for="rememberMe">
-                        <label class="checkbox">
-                            <input type="checkbox" class="form-check-input checkbox-input" id="rememberMe">
-                            <div class="check">
-                                <img src="/img/frontend/check_off.png" alt="remember password">
-                            </div>
-                        </label>
+                        <input type="checkbox" class="form-check-input checkbox-input" id="rememberMe">
+                        <div class="check">
+                            <i class="material-icons icon-checkbox-blank">check_box_outline_blank</i>
+                        </div>
                         Remember me
                     </label>
                     <a href="#" id="forgot-password-link" class="link-forgot-pw link-rnw">Forgot password? </a>
@@ -118,23 +116,19 @@
                     </div>
                     <div class="form-check mb-10">
                         <label class="form-check-label text-form-account" for="rememberMeSignUp">
-                            <label class="checkbox">
-                                <input type="checkbox" class="form-check-input checkbox-input" id="rememberMeSignUp">
-                                <div class="check">
-                                    <img src="/img/frontend/check_off.png" alt="remember password">
-                                </div>
-                            </label>
+                            <input type="checkbox" class="form-check-input checkbox-input" id="rememberMeSignUp">
+                            <div class="check">
+                                <i class="material-icons icon-checkbox-blank">check_box_outline_blank</i>
+                            </div>
                             Remember me
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label text-form-account" for="tipsAndTricks">
-                            <label class="checkbox">
-                                <input type="checkbox" class="form-check-input checkbox-input" id="tipsAndTricks">
-                                <div class="check">
-                                    <img src="/img/frontend/check_off.png" alt="remember password">
-                                </div>
-                            </label>
+                            <input type="checkbox" class="form-check-input checkbox-input" id="tipsAndTricks">
+                            <div class="check">
+                                <i class="material-icons icon-checkbox-blank">check_box_outline_blank</i>
+                            </div>
                             Keep me up to date with Tips & Tricks!
                         </label>
                     </div>

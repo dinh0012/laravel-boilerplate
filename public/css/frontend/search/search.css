@@ -91,6 +91,9 @@ strong {
     border: solid 1px #ededed;
 }
 
+.filter-item + .filter-item {
+    margin-top: 13px;
+}
 .container-filter {
     padding-right: 10px;
     margin-top: 20px;

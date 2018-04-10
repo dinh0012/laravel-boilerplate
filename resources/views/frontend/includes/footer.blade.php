@@ -25,11 +25,15 @@
 			<div class="col-12 col-md-4 are-you-new">
 				<div class="head-1 head-sm">You are new?</div>
 				<div class="input-group select-item dropdown align-items-center none-padding">
-					<a href="#" class="dropdown-toggle form-control" data-toggle="dropdown"
+					<select name="" class="select-are-you-new" id="">
+						<option value="aaa">How to find listings?</option>
+						<option value="aaa">How to find listings2?</option>
+					</select>
+					{{--<a href="#" class="dropdown-toggle form-control" data-toggle="dropdown"
 					   aria-haspopup="true" aria-expanded="false">How to find listings?</a>
 					<div class="dropdown-menu " aria-labelledby="navbarDropdownLanguageLink">
 						<a href="#" class="dropdown-item">How to find listings?</a>
-					</div>
+					</div>--}}
 
 					<button class="btn btn-submit-form btn-ok input-group-prepend btn btn-read">READ</button>
 				</div>
