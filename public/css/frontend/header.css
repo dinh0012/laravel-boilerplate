@@ -1,10 +1,24 @@
-body, * {
+body {
 	font-family: 'Montserrat', sans-serif;
 	 font-size: 11px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
-       letter-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+.checkbox-input {
+    display: none;
+}
+.checkbox-input {
+    display: none;
+}
+.form-check-label {
+    cursor: pointer;
+}
+label.checkbox {
+    margin-bottom: 0px;
+    margin-right: 10px;
 }
 .bg-grey {
     background: #f9f9f9;
@@ -137,6 +151,7 @@ body, * {
     text-transform: uppercase;
     padding: 0;
     margin: auto;
+    color: #000000;
 }
 
 .btn-rnw-fw {
