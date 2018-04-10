@@ -24,14 +24,17 @@
                     <div class="row items-row">
                         <div class="col-3 item-room">
                             <div class="room-img">
-                                <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
+                                <a class="head-sm" href="/room-detail">
+                                    <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
+                                </a>
                                 <div class="sale-off">10% OFF</div>
                                 <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
                             </div>
                             <div class="room-info">
                                 <div class="room-title flex-item justify-content-between">
                                     <h2>
-                                        <a class="head-sm" href="#">Cozy Room</a>
+                                        <a class="head-sm" href="/room-detail">Roof Top Wooden room
+                                            At District 3</a>
                                     </h2>
                                     <span class="head-sm more-action-room">...</span>
                                 </div>
@@ -737,14 +740,17 @@
                             <div class="row items-row">
                                 <div class="col-4 item-room">
                                     <div class="room-img">
-                                        <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
+                                        <a class="head-sm" href="/room-detail">
+                                            <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
+                                        </a>
                                         <div class="sale-off">10% OFF</div>
                                         <div class="bookmark bookmarked"><i class="material-icons">bookmark</i></div>
                                     </div>
                                     <div class="room-info">
                                         <div class="room-title flex-item justify-content-between">
                                             <h2>
-                                                <a class="head-sm" href="#">Cozy Room</a>
+                                                <a class="head-sm" href="/room-detail">Roof Top Wooden room
+                                                    At District 3</a>
                                             </h2>
                                             <span class="head-sm more-action-room">...</span>
                                         </div>

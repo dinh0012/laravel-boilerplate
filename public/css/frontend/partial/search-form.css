@@ -61,13 +61,13 @@ h2.main-caption strong {
     height: 53px;
 }
 .input-items .border{
-    border: solid 0.5px rgba(221, 221, 221, 0.5);;
+    border: solid 0.5px rgba(221, 221, 221, 0.5) !important;
 }
 form#search {
     padding: 16px 20px 44px 20px;
     background-color: rgba(255, 255, 255, 0.2);
 }
-.input-item.col.dropdown.align-items-center a {
+.input-item.col.dropdown.align-items-center .rnw-select {
     font-family: Open Sans;
     font-size: 14px;
     font-weight: normal;
@@ -78,29 +78,15 @@ form#search {
     text-align: left;
     color: #000000;
 }
-.input-item.col.dropdown.align-items-center > a {
+.input-item.col.dropdown.align-items-center .rnw-select {
     height: 53px;
     line-height: 53px;
     padding-left: 20px;
     width: 100%;
 }
-
-.input-items a.dropdown-toggle::after{
-    content:'';
+.input-item.rnw-select-arrow.arrow-black:after{
     background: url("../../../img/frontend/dropdown_black.png");
-    width: 26px;
-    height: 15px;
-    border: none;
     right: 10px;
-    position: absolute;
-    top: 16px;
-}
-.input-items .dropdown-menu.show {
-    width: 100%;
-    background: #ddd;
-    border-radius: 0;
-    border: none;
-    margin: 0;
 }
 button#btn-search {
     position: relative;

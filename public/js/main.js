@@ -16,8 +16,9 @@ $('#search').on('submit', function () {
 var RNWMainJs = function () {
     return {
         init: function () {
-            console.log(11);
             this.checkBox();
+            this.sliderFullHeight();
+            this.changeBgHeader();
         },
 
         checkBox: function () {
@@ -30,9 +31,22 @@ var RNWMainJs = function () {
                     icon.addClass('icon-checkbox-blank').removeClass('icon-checkbox').text('check_box_outline_blank');
                 }
             })
-
         },
+        sliderFullHeight: function () {
+            var sliderContainer = $('.rnw-slider-full');
+            var height = $(document).height();
+            console.log(height);
+            sliderContainer.find('figure').height(height)
+        },
+        changeBgHeader: function () {
+            $(window).scroll(function () {
+                $(document).scrollTop() > 2 ?  $("#header").removeClass("hasslide") : $("#header").addClass("hasslide")
+            });
+        }
     }
 }();
-RNWMainJs.init();
+$(document).ready(function () {
+    RNWMainJs.init();
+
+})
 

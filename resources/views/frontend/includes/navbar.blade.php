@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-black">
+<nav class="navbar navbar-expand-lg">
     <div id="logo">
         <a href="{{url('/')}}" title=""><img src="{{asset('img/frontend/logo.png')}}"></a>
     </div>

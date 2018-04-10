@@ -1,6 +1,7 @@
 .wrap-search{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(0, 0, 0, 0.03);
 }
 .wrap-search .input-form {
     padding-right: 10px;

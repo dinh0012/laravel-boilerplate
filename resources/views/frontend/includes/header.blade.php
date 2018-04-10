@@ -1,4 +1,4 @@
-<div id="header" class="bg-black">
+<div id="header" class="bg-black hasslide">
     <nav id="header-top" class="navbar navbar-expand-lg hidden-mobile  no-gutters">
         <div class="container">
             <div class="col-sm-4 lang-switcher none-padding">
@@ -17,7 +17,7 @@
     <div class="modal fade modal-rnw-full-screen modal-rnw" id="menuModal" tabindex="-1" role="dialog"
          aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content row bg-black">
+            <div class="modal-content row">
                 <div class="modal-header  align-items-center">
                     <div class="col-3 logo-mobile">
                         <a href="{{url('/')}}" title="">

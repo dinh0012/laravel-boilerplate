@@ -24,8 +24,8 @@
 			</ul>
 			<div class="col-12 col-md-4 are-you-new">
 				<div class="head-1 head-sm">You are new?</div>
-				<div class="input-group select-item dropdown align-items-center none-padding">
-					<select name="" class="select-are-you-new" id="">
+				<div class="input-group rnw-select-arrow select-item dropdown align-items-center none-padding">
+					<select name="" class="rnw-select" id="">
 						<option value="aaa">How to find listings?</option>
 						<option value="aaa">How to find listings2?</option>
 					</select>
