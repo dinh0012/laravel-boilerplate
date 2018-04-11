@@ -73,7 +73,7 @@
                                 </div>
                                 <div class="room-btn col-4 align-self-center">
                                     <button class="btn btn-rnw btn-rnw-light btn-rnw-120 ">Message</button>
-                                    <button class="btn btn-rnw btn-rnw-yellow btn-rnw-120 ">Rent</button>
+                                    <button class="btn btn-rnw btn-rnw-yellow btn-rnw-120 justify-content-center">Rent<span class="arrow-rent align-self-center"><i class="material-icons">keyboard_arrow_down</i></span></button>
                                 </div>
                             </div>
 

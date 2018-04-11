@@ -65,8 +65,30 @@
 
 .room-detail-box-header .room-btn .btn+.btn {
     margin-left: 16px;
+    display: inline-flex;
 }
 
+span.arrow-rent {
+    display: flex;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #000000;
+    border-radius: 50%;
+    line-height: 45px;
+    margin-left: 20px;
+}
+
+button.btn.btn-rnw.btn-rnw-yellow.btn-rnw-120 {
+    display: inline-flex;
+}
+
+span.arrow-rent i {
+    color: #ffff;
+    padding: 5px;
+    display: list-item;
+    list-style: none;
+}
 .room-detail-in-slider .room-detail-box-header i {
     padding-right: 21px;
 }
