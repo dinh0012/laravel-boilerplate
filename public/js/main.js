@@ -34,7 +34,7 @@ var RNWMainJs = function () {
         },
         sliderFullHeight: function () {
             var sliderContainer = $('.rnw-slider-full');
-            var height = $(document).height();
+            var height = $(window).height();
             console.log(height);
             sliderContainer.find('figure').height(height)
         },
@@ -47,6 +47,5 @@ var RNWMainJs = function () {
 }();
 $(document).ready(function () {
     RNWMainJs.init();
-
 })
 

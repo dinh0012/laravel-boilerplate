@@ -51,6 +51,33 @@ select.rnw-select {
     width: 1%;
     margin-bottom: 0;
 }
+.breadcrumb {
+    background: #fff;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.rnw-breadcrumb img {
+    height: 24px;
+}
+.rnw-breadcrumb * {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.rnw-breadcrumb span.current-page {
+    font-weight: bold;
+}
+
+.rnw-breadcrumb {
+    margin-bottom: 5px;
+}
 .bg-grey {
     background: #f9f9f9;
 }
@@ -184,6 +211,10 @@ select.rnw-select {
     margin: auto;
     color: #000000;
 }
+
+.bookmark.bookmarked {
+    background-color: #f8e71c;
+}
 .carousel-control:hover i {
     color: #f8e71c;
 }
@@ -193,6 +224,9 @@ select.rnw-select {
 .btn-rnw-160 {
     width: 160px;
 }
+.btn-rnw-190 {
+    width: 190px;
+}
 
 .btn-rnw-340 {
     width: 340px;
@@ -200,12 +234,25 @@ select.rnw-select {
 .btn-rnw-md {
     width: 150px;
 }
+.btn-rnw-120 {
+    width: 120px;
+}
 .head-sm {
     font-size: 10px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.4;
+    color: #000000;
+    text-transform: uppercase;
+}
+.head-md {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
     color: #000000;
     text-transform: uppercase;
 }
@@ -465,6 +512,9 @@ div#navbar a {
     color: #ffffff;
     padding-right: 22px;
     padding-left: 22px;
+}
+div#logo a {
+    padding-left: 0;
 }
 .nav-bar-meu {
     margin-left: auto;

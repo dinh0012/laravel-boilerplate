@@ -80,9 +80,6 @@
 .items-room .items-row {
     margin: 20px -10px;
 }
-.bookmark.bookmarked {
-    background-color: #f8e71c;
-}
 
 .bookmark.bookmarked i {
     color: #000;

@@ -118,6 +118,7 @@ div#loginFormModal .form-check {
     text-align: left;
     margin-top: 25px;
     margin-bottom: 25px;
+    display: flex;
 }
 
 #loginFormModal.form-group {
@@ -150,8 +151,7 @@ label.form-check-label img {
     vertical-align: bottom;
 }
 #loginFormModal a.link-forgot-pw {
-
-    float: right;
+    margin-left: auto;
 }
 #loginFormModal a.link-rnw {
     font-family: Open Sans;
