@@ -12,7 +12,7 @@
         <a class="nav-link link-login link-account-form" data-toggle="modal" data-target="#loginFormModal" href="#">sign in</a>
     </li>
 </ul>
-<div class="modal fade modal-rnw" id="loginFormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade modal-rnw modal-rnw-main " id="loginFormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">

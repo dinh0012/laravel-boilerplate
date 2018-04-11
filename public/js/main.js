@@ -17,6 +17,7 @@ var RNWMainJs = function () {
     return {
         init: function () {
             this.checkBox();
+            this.checkRadio();
             this.sliderFullHeight();
             this.changeBgHeader();
         },
@@ -32,12 +33,30 @@ var RNWMainJs = function () {
                 }
             })
         },
+
+        checkRadio: function () {
+            var radio = $('.input-radio');
+            radio.on('change', function () {
+                var icon = $(this).parent('.form-check-label').find('i')
+                if ($(this).is(':checked')) {
+                    var nameCheck = $(this).attr('name');
+                    var inputsRadio = $('input[type=radio][name=' + nameCheck + ']');
+                    var icons = inputsRadio.parent('.form-check-label').find('i');
+                    icons.removeClass('checked').addClass('unchecked').text('radio_button_unchecked');
+                    icon.removeClass('unchecked').addClass('checked').text('radio_button_checked');
+                } else {
+
+                }
+            })
+        },
+
         sliderFullHeight: function () {
             var sliderContainer = $('.rnw-slider-full');
             var height = $(window).height();
             console.log(height);
             sliderContainer.find('figure').height(height)
         },
+
         changeBgHeader: function () {
             $(window).scroll(function () {
                 $(document).scrollTop() > 2 ?  $("#header").removeClass("hasslide") : $("#header").addClass("hasslide")

@@ -89,6 +89,22 @@ span.arrow-rent i {
     display: list-item;
     list-style: none;
 }
+.dropdown-menu.dropdown-item-rent.show {
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 20px 30px 0 rgba(0, 10, 18, 0.05);
+    border: 0;
+    right: calc(100% - 150px) !important;
+    left: inherit !important;
+}
+.dropdown-item-rent a.dropdown-item {
+    color: #656b6f;
+}
+
+.dropdown-item-rent a.dropdown-item:hover {
+    background-color: #000000;
+    color: #f8e71c;
+}
 .room-detail-in-slider .room-detail-box-header i {
     padding-right: 21px;
 }
@@ -364,4 +380,20 @@ img {
 }
 .review-item + .review-item {
     margin-top: 16px;
+}
+div#end-contract-form {
+    margin: 20px 40px 40px 40px;
+    text-align: center;
+}
+
+p.text-end-contract {
+    margin: 25px auto 25px;
+}
+
+.radio-item-end-contract+ .radio-item-end-contract {
+    margin-top: 20px;
+}
+
+.btn-end-contract {
+    margin-top: 40px;
 }

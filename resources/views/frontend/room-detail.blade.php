@@ -73,7 +73,19 @@
                                 </div>
                                 <div class="room-btn col-4 align-self-center">
                                     <button class="btn btn-rnw btn-rnw-light btn-rnw-120 ">Message</button>
-                                    <button class="btn btn-rnw btn-rnw-yellow btn-rnw-120 justify-content-center">Rent<span class="arrow-rent align-self-center"><i class="material-icons">keyboard_arrow_down</i></span></button>
+                                    <button type="button"
+                                            class="btn btn-rnw btn-rnw-yellow btn-rnw-120 justify-content-center"
+                                            id="dropdownRentButton"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rent
+                                        <span class="arrow-rent align-self-center"><i class="material-icons">keyboard_arrow_down</i></span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-item-rent text-opensans-14"
+                                         aria-labelledby="dropdownRentButton">
+                                        <a class="dropdown-item" href="#">Request contract Renewal</a>
+                                        <a class="dropdown-item" href="#">Terminate contract</a>
+                                        <a data-toggle="modal" data-target="#endContractModal" href="#"
+                                           class="dropdown-item end-contract">End Contract</a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -328,11 +340,20 @@
                         <h1 class="header-block head-md">about the landlord</h1>
                         <div class="body-block">
                             <p class="overview text-opensans-14">
-                                I'm a Londoner who fell in love with Sydney over 2 years ago and never looked back. I would love to share the famous coastal walk with you, the very first thing I did when I arrived to Sydney, and still my favourite thing to do here. I've loved walking since I first learnt to walk :) I've always been drawn to the ocean as I find the water so calming and restorative. The views…
+                                I'm a Londoner who fell in love with Sydney over 2 years ago and never looked back. I
+                                would love to share the famous coastal walk with you, the very first thing I did when I
+                                arrived to Sydney, and still my favourite thing to do here. I've loved walking since I
+                                first learnt to walk :) I've always been drawn to the ocean as I find the water so
+                                calming and restorative. The views…
                                 <a href="#" class="link-rnw more-link">more</a>
                             </p>
                             <p class="read-more text-opensans-14">
-                                I'm a Londoner who fell in love with Sydney over 2 years ago and never looked back. I would love to share the famous coastal walk with you, the very first thing I did when I arrived to Sydney, and still my favourite thing to do here. I've loved walking since I first learnt to walk :) I've always been drawn to the ocean as I find the water so calming and restorative. The views always been drawn to the ocean as I find the water so calming and restorative.
+                                I'm a Londoner who fell in love with Sydney over 2 years ago and never looked back. I
+                                would love to share the famous coastal walk with you, the very first thing I did when I
+                                arrived to Sydney, and still my favourite thing to do here. I've loved walking since I
+                                first learnt to walk :) I've always been drawn to the ocean as I find the water so
+                                calming and restorative. The views always been drawn to the ocean as I find the water so
+                                calming and restorative.
                                 <a href="#" class="link-rnw less-link">less</a>
                             </p>
                         </div>
@@ -430,7 +451,8 @@
                                             <i class="material-icons">star</i>
                                         </div>
                                         <p class="text-opensans-14">
-                                            Unlike pop-culture’s current obsession with bleak, heavy drama <span class="font-italic">(Game Of Thrones, Breaking Bad, we’re talking to you)</span>
+                                            Unlike pop-culture’s current obsession with bleak, heavy drama <span
+                                                    class="font-italic">(Game Of Thrones, Breaking Bad, we’re talking to you)</span>
                                         </p>
                                     </div>
                                 </div>
@@ -450,13 +472,15 @@
                                             <i class="material-icons">star</i>
                                         </div>
                                         <p class="text-opensans-14">
-                                            Unlike pop-culture’s current obsession with bleak, heavy drama <span class="font-italic">(Game Of Thrones, Breaking Bad, we’re talking to you)</span>
+                                            Unlike pop-culture’s current obsession with bleak, heavy drama <span
+                                                    class="font-italic">(Game Of Thrones, Breaking Bad, we’re talking to you)</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="btn-show-all text-center">
-                                <a href="" class="btn btn-rnw btn-rnw-light btn-rnw-190 btn-show-all">Show all reviews</a>
+                                <a href="" class="btn btn-rnw btn-rnw-light btn-rnw-190 btn-show-all">Show all
+                                    reviews</a>
                             </div>
                         </div>
                     </div>
@@ -464,7 +488,67 @@
                 </div>
             </div>
         </div>
-
+    </div>
+    <div class="modal fade modal-rnw modal-rnw-main " id="endContractModal" tabindex="-1" role="dialog"
+         aria-labelledby="endContractModal"
+         aria-hidden="true">
+        <div role="document" class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><i
+                                class="material-icons">clear</i></button>
+                </div>
+                <div id="end-contract-form">
+                    <div class="head-sm end-contract-header">End Contract</div>
+                    <div class="end-contract-form text-opensans-14">
+                        <p class="text-end-contract">Please give us a reason why you want to end this contract</p>
+                        <div class="flex-item radio-item-end-contract align-self-center">
+                            <label for="endcontract1" class="form-check-label">
+                                <input type="radio" id="endcontract1" hidden name="end_tract"
+                                       class=" input-radio hidden">
+                                <div class="check">
+                                    <i class="material-icons unchecked">radio_button_unchecked</i>
+                                </div>
+                                <span class="radio-label">Found a new Location</span>
+                            </label>
+                        </div>
+                        <div class="flex-item radio-item-end-contract align-self-center">
+                            <label for="endcontract2" class="form-check-label">
+                                <input type="radio" id="endcontract2" hidden name="end_tract"
+                                       class=" input-radio hidden">
+                                <div class="check">
+                                    <i class="material-icons unchecked">radio_button_unchecked</i>
+                                </div>
+                                <span class="radio-label"> Unsatisfied with the room</span>
+                            </label>
+                        </div>
+                        <div class="flex-item radio-item-end-contract align-self-center">
+                            <label for="endcontract3" class="form-check-label">
+                                <input type="radio" id="endcontract3" hidden name="end_tract"
+                                       class=" input-radio hidden">
+                                <div class="check">
+                                    <i class="material-icons unchecked">radio_button_unchecked</i>
+                                </div>
+                                <span class="radio-label">Unsatisfied with the landlord</span>
+                            </label>
+                        </div>
+                        <div class="flex-item radio-item-end-contract align-self-center">
+                            <label for="endcontract4" class="form-check-label">
+                                <input type="radio" id="endcontract4" hidden name="end_tract"
+                                       class=" input-radio hidden">
+                                <div class="check">
+                                    <i class="material-icons unchecked">radio_button_unchecked</i>
+                                </div>
+                                <span class="radio-label">Other</span>
+                            </label>
+                        </div>
+                        <div class="btn-end-contract">
+                            <button class="btn btn-rnw btn-rnw-yellow btn-rnw-fw">End Contract</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 

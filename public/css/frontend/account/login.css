@@ -218,18 +218,6 @@ i.toggle-show-pass {
 #loginFormModal input.password {
     padding-right: 46px;
 }
-#loginFormModal .close {
-    margin: 0;
-    width: 30px;
-    height: 30px;
-}
-
-#loginFormModal .close i {
-    font-size: 20px;
-}
-#loginFormModal .modal-header {
-    padding: 0;
-}
 #loginFormModal .row.btn-fb {
     position: relative;
 }

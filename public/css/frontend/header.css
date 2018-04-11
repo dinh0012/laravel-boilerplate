@@ -6,7 +6,12 @@ body {
     font-stretch: normal;
     letter-spacing: 2px;
 }
-
+.form-check-label i {
+    color: #e1e1e1;
+}
+.form-check-label i.checked {
+    color: #70c611;
+}
 .checkbox-input {
     display: none;
 }
@@ -51,6 +56,7 @@ select.rnw-select {
     width: 1%;
     margin-bottom: 0;
 }
+
 .breadcrumb {
     background: #fff;
     margin-top: 25px;
@@ -329,6 +335,19 @@ div.modal-rnw-full-screen .modal-dialog/*, div.modal-rnw-full-screen .modal-cont
     border: 0;
 }
 
+.modal-rnw button.close {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+
+.modal-rnw-main .close i {
+    font-size: 20px;
+}
+.modal-rnw-main .modal-header {
+    padding: 0;
+}
 h2.title-modal {
     font-family: Montserrat;
     font-size: 30px;
