@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-12 col-md logo">
-				<img class="logo" src="{{asset('img/frontend/logo.png')}}" />
+				<img class="logo" src="{{asset('img/frontend/logo_2.png')}}" />
 				<div class="social-links">
 					<a href="#"><img src="{{asset('/img/frontend/facebook-icon.png')}}"></a>
 					<a href="#"><img src="{{asset('/img/frontend/twiter.png')}}"></a>

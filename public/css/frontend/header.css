@@ -555,9 +555,37 @@ div.nav-bar-menu a {
 	padding-right: 0
 }
 div#navbar nav {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
 }
+div#logo img {
+    width: 40px;
+}
+
+div#navbar-menu li.nav-item {
+    height: 70px;
+}
+
+
+div#navbar-menu li.nav-item a {
+    line-height: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+div#navbar-menu li.nav-item.active a {
+    color: #f8e71c;
+}
+
+div#navbar-menu li.nav-item a:hover {
+    color: #f8e71c;
+}
+div#navbar-menu li.nav-item.active{
+    border-bottom: solid 4px #f8e71c;
+}
+div#navbar-menu li.nav-item:hover {
+    color: #f8e71c;
+    border-bottom: solid 4px #f8e71c;
+}
+
 @media (max-width: 992px) and (min-width: 767px) {
     .navbar-expand-lg .navbar-collapse {
         display: -webkit-box !important;

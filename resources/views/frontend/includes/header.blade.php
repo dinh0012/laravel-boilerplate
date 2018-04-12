@@ -21,7 +21,7 @@
                 <div class="modal-header  align-items-center">
                     <div class="col-3 logo-mobile">
                         <a href="{{url('/')}}" title="">
-                            <span class="pic"><img src="{{asset('img/frontend/logo.png')}}"></span>
+                            <span class="pic"><img src="{{asset('img/frontend/logo_1.png')}}"></span>
                         </a>
                     </div>
                     <div class="col lang-switcher-mobile lang-switcher"> @include('frontend.includes.lang-switcher')</div>
