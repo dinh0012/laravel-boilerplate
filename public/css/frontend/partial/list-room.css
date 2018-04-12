@@ -9,7 +9,7 @@
     font-size: 18px;
     margin-left: 10px;
 }
-.page-find-room .group-room:last-child {
+.group-room:last-child {
     margin-bottom: 80px;
 }
 .items-room .room-img {

@@ -9,7 +9,10 @@ div#wrap-top {
     text-align: center;
     color: #ffff;
 }
-
+.container.text-in-bg {
+    position: relative;
+    top: calc(50% - 150px);
+}
 .caption h1 {
     font-family: Montserrat;
     font-size: 82px;
@@ -20,8 +23,9 @@ div#wrap-top {
     letter-spacing: -4px;
     text-align: center;
     color: #ffffff;
-    padding-top: 80px;
+
 }
+
 h2.main-caption strong {
     font-family: Open Sans;
     font-size: 20px;
@@ -40,6 +44,11 @@ h2.main-caption strong {
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 40px;
 }
+.input-search-name-agency input {
+    height: 53px;
+    width: 100%;
+    border: 0;
+}
 .input-items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -49,7 +58,6 @@ h2.main-caption strong {
     border-radius: 4px;
     background-color: #ffffff;
     border: solid 1px #e1e1e1;
-    height: 108px;
 }
 .input-item{
     display: -webkit-box;

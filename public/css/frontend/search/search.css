@@ -1,5 +1,5 @@
 .wrap-search{
-    padding-top: 20px;
+    padding-top: 120px;
     padding-bottom: 20px;
     background: rgba(0, 0, 0, 0.03);
 }
@@ -15,7 +15,75 @@
 .wrap-search .input-form .select-with-label {
     padding: 0;
 }
+.input-text-search {
+    padding: 0;
+    margin: 0;
+    border-right: 0;
+}
+.input-text-search input:focus{
+    border: 0 !important;
+    box-shadow: none;
+}
+.input-text-search input {
+    height: 34px;
+    border: 0;
+    width: 100%;
+    border: 0;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+    padding-top: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    padding-left: 15px;
+}
+.form-group.input-text-search.col i {
+    position: absolute;
+    font-size: 20px;
+    padding-bottom: 8px;
+    right: 6px;
+}
+.input-text-search .placeholder {
+    opacity: 0.5;
+    font-family: Open Sans;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 10px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #656b6f;
+    margin: 10px 0 0 0;
+    left: 15px;
+    /* position: inherit; */
+    display: block !important;
+}
 
+.input-text-search .input-placeholder {
+    height: 54px;
+    -webkit-box-align: end !important;
+    -ms-flex-align: end !important;
+    align-items: flex-end !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border: solid 1px #e1e1e1;
+    border-radius: 4px;
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
 .wrap-search .input-form .select-with-label .input-placeholder {border-left: 0;border-right: 0; border-radius: 0}
 .wrap-search .input-form .select-with-label:first-child .input-placeholder{
     border-left: solid 1px #e1e1e1;

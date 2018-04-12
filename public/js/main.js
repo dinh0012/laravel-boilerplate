@@ -5,11 +5,13 @@ $('#btn-search').on('click', function () {
     form.submit();
     $('.search-room').show();
     $('.page-find-room').hide();
+    $('.page-find-agency').hide();
     $('#wrap-top').hide();
 })
 $('#search').on('submit', function () {
     $('.search-room').show();
     $('.page-find-room').hide();
+    $('.page-find-agency').hide();
     $('#wrap-top').hide();
     return false;
 });

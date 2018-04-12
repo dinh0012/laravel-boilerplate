@@ -1,64 +1,26 @@
-<div id="wrap-top">
-    <figure style="background: url(&quot;https://www.viewretreats.com/uploads/gallery/970%20Lonely%20Bay%20-%20Lounge%20Area_1465100620.jpg&quot;) center center / cover; height: 520px;  background: rgba(0, 0, 0, 0.8);">
-        <div class="container">
+<?php
+    $currentRoute = \Request::route()->getName();
+    if ($currentRoute == 'frontend.find-agency') {
+        $mainCaption1 = 'Over 500 agencies';
+        $mainCaption2 = 'with all best services in <strong>Vietnam </strong>. Choose one and increase your revenue!';
+        $formSearchType = 'frontend.includes.form-search-type.find-agency';
+    } elseif ($currentRoute == 'frontend.find-room' || $currentRoute == 'frontend.index') {
+        $mainCaption1 = 'Over 5.000 rooms';
+        $mainCaption2 = 'have been rented in <strong>Vietnam </strong>, take your chance before it’s gone';
+        $formSearchType = 'frontend.includes.form-search-type.find-room';
+    }
+?>
+
+
+<div id="wrap-top" class="rnw-slider-full">
+    <figure style="background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('/img/frontend/room.jpg') center center / cover; height: 506px;">
+        <div class="container text-in-bg">
             <div class="caption">
-                <h1 class="main-caption">Over 5.000 rooms</h1>
-                <h2 class="main-caption">have been rented in <strong>Vietnam </strong>, take your chance before it’s gone</h2>
+                <h1 class="main-caption">{{$mainCaption1}}</h1>
+                <h2 class="main-caption">{!! $mainCaption2 !!}</h2>
             </div>
             <div id="search-form" class="hidden-mobile">
-                <form id="search">
-                    <div class="input-items">
-                        <div class="rnw-select-arrow arrow-black input-item col dropdown align-items-center none-padding">
-                            <select name="" class="select-are-you-new rnw-select" id="">
-                                <option value="aaa">City</option>
-                                <option value="aaa">City</option>
-                            </select>
-                        </div>
-                        <div class="rnw-select-arrow arrow-black input-item col dropdown align-items-center none-padding">
-                            <select name="" class="select-are-you-new rnw-select" id="">
-                                <option value="aaa">District</option>
-                                <option value="aaa">District</option>
-                            </select>
-                        </div>
-                        <div class="rnw-select-arrow arrow-black input-item col dropdown align-items-center none-padding">
-                            <select name="" class="select-are-you-new rnw-select" id="">
-                                <option value="aaa">Room Type</option>
-                                <option value="aaa">Room Type</option>
-                            </select>
-                        </div>
-                        <div class="rnw-select-arrow arrow-black input-item col dropdown align-items-center none-padding">
-                            <select name="" class="select-are-you-new rnw-select" id="">
-                                <option value="aaa">Surface area</option>
-                                <option value="aaa">Surface area</option>
-                            </select>
-                        </div>
-                        <div class="w-100 border"></div>
-                        <div class="rnw-select-arrow arrow-black input-item col dropdown align-items-center none-padding">
-                            <select name="" class="select-are-you-new rnw-select" id="">
-                                <option value="aaa">Price range (from - to)</option>
-                                <option value="aaa">Price range (from - to)</option>
-                            </select>
-                        </div>
-                        <div class="rnw-select-arrow arrow-black input-item col dropdown align-items-center none-padding">
-                            <select name="" class="select-are-you-new rnw-select" id="">
-                                <option value="aaa">Radius</option>
-                                <option value="aaa">Radius</option>
-                            </select>
-                        </div>
-                        <div class="rnw-select-arrow arrow-black input-item col dropdown align-items-center none-padding">
-                            <select name="" class="select-are-you-new rnw-select" id="">
-                                <option value="aaa">Shared housing</option>
-                                <option value="aaa">Shared housing</option>
-                            </select>
-                        </div>
-                        <div class="rnw-select-arrow arrow-black input-item col dropdown align-items-center none-padding">
-                            <select name="" class="select-are-you-new rnw-select" id="">
-                                <option value="aaa">Capacity</option>
-                                <option value="aaa">Capacity</option>
-                            </select>
-                        </div>
-                    </div>
-                </form>
+                @include($formSearchType)
                 <button id="btn-search" class="btn btn-rnw btn-rnw-lg btn-rnw-yellow">SEARCH</button>
                 <div class="refine-search ml-auto">Refine your search</div>
             </div>
