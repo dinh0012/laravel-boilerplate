@@ -79,7 +79,7 @@
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rent
                                         <span class="arrow-rent align-self-center"><i class="material-icons">keyboard_arrow_down</i></span>
                                     </button>
-                                    <div class="dropdown-menu dropdown-item-rent text-opensans-14"
+                                    <div class="dropdown-menu dropdown-menu-rnw dropdown-item-rent text-opensans-14"
                                          aria-labelledby="dropdownRentButton">
                                         <a class="dropdown-item" href="#">Request contract Renewal</a>
                                         <a class="dropdown-item" href="#">Terminate contract</a>

@@ -24,8 +24,19 @@ $filterArray = [
         'name' => 'Furniture',
         'items' => ['Furniture', 'Unfurniture'],
     ],
-
 ];
+
+$results = [
+    'name' => 'Roof Top Wooden room At District 3',
+    'price' => '$50/month',
+    'link_detail' => '/room-detail',
+    'city' => 'Ho Chi Minh',
+    'description' => 'Texas Holdem is by far the
+                            most common for of…',
+    'rate' => '4.6',
+    'review' => '156',
+    'rented' => true
+]
 ?>
 
 @extends('frontend.layouts.main')
@@ -66,7 +77,7 @@ $filterArray = [
                                         <a class="head-sm" href="/room-detail">Roof Top Wooden room
                                             At District 3</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"                                       id="dropdownRentButton"                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                        <i class="material-icons">more_horiz</i>                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="price">
@@ -96,7 +107,7 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="#">Cozy Room</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"                                       id="dropdownRentButton"                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                        <i class="material-icons">more_horiz</i>                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="price">
@@ -126,7 +137,7 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="#">Cozy Room</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"                                       id="dropdownRentButton"                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                        <i class="material-icons">more_horiz</i>                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="price">
@@ -156,7 +167,7 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="#">Cozy Room</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"                                       id="dropdownRentButton"                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                        <i class="material-icons">more_horiz</i>                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="price">
@@ -201,7 +212,7 @@ $filterArray = [
                                         <a class="head-sm" href="#">Texas Holdem is by far the
                                             most common for of…</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"                                       id="dropdownRentButton"                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                        <i class="material-icons">more_horiz</i>                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="price">
@@ -231,7 +242,7 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="#">roof top</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"                                       id="dropdownRentButton"                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                        <i class="material-icons">more_horiz</i>                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="price">
@@ -260,7 +271,7 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="#">Cozy Room</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"                                       id="dropdownRentButton"                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                        <i class="material-icons">more_horiz</i>                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="price">
@@ -290,7 +301,7 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="#">Cozy Room</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"                                       id="dropdownRentButton"                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                        <i class="material-icons">more_horiz</i>                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="price">
@@ -334,7 +345,7 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="#">Next to snowy mou…</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"                                       id="dropdownRentButton"                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                        <i class="material-icons">more_horiz</i>                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="price">
@@ -364,7 +375,7 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="#">roof top</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"                                       id="dropdownRentButton"                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                        <i class="material-icons">more_horiz</i>                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="price">
@@ -393,7 +404,7 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="#">Vintage room</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"                                       id="dropdownRentButton"                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                        <i class="material-icons">more_horiz</i>                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="price">
@@ -423,7 +434,7 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="#">Cozy Room</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"                                       id="dropdownRentButton"                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                        <i class="material-icons">more_horiz</i>                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="price">

@@ -28,9 +28,10 @@
     flex-grow: 1;
     max-width: 90%;
 }
-
+.room-title {
+    margin-bottom: 5px;
+}
 .room-title h2 {
-    padding-bottom: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -39,6 +40,9 @@
     -ms-flex-pack: justify !important;
     justify-content: space-between !important;
     text-shadow: 0 0 black;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
 }
 .bookmark {
     top: 0;
@@ -70,6 +74,29 @@
     padding-left: 10px;
     background: url(../../../img/frontend/bg-sale-off.png) center no-repeat;
     width: 79px;
+}
+.more-action-room {
+    width: 24px;
+    height: 24px;
+    display:block;
+    text-align: center;
+    padding-top: 5px;
+    background-color:#fff;
+    -webkit-appearance: inherit !important;
+}
+.more-action-room:hover {
+    border-radius: 4px;
+    background-color: #f8e71c;
+    box-shadow: 0 20px 30px 0 rgba(0, 10, 18, 0.05);
+}
+.more-action-room:focus {
+    border-radius: 4px;
+    background-color: #f8e71c;
+    box-shadow: 0 20px 30px 0 rgba(0, 10, 18, 0.05);
+}
+
+.more-action-room i {
+    font-size: 14px;
 }
 
 .items-room .item-room {

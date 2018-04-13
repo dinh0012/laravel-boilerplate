@@ -24,8 +24,18 @@ $filterArray = [
         'items' => ['3 months', '6 months', '1 years', '3 years'],
     ],
 ];
-?>
 
+$results = [
+    'name' => 'John Service',
+    'service' => 'Full Service',
+    'link_detail' => '/agency-detail',
+    'city' => 'Ho Chi Minh',
+    'description' => 'Texas Holdem is by far the
+                            most common for of…',
+    'rate' => '4.6',
+    'review' => '156',
+]
+?>
 
 
 
@@ -46,7 +56,8 @@ $filterArray = [
                 <div class="row group-title-rooms head-sm align-items-center">
                     <div class="col group-title">Featured Agencies</div>
                     <div class="col link-view-all ">
-                        <a class="head-sm ml-auto align-items-center flex-item" href="#">view all (345) <i class="material-icons">trending_flat</i></a>
+                        <a class="head-sm ml-auto align-items-center flex-item" href="#">view all (345) <i
+                                    class="material-icons">trending_flat</i></a>
                     </div>
                 </div>
                 <div class="items-room">
@@ -64,7 +75,11 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="/agency-detail">John Service</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"
+                                       id="dropdownRentButton"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_horiz</i>
+                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="service">
@@ -96,7 +111,18 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="/agency-detail">John Service</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"
+                                       id="dropdownRentButton"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_horiz</i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-item-rent text-opensans-14"
+                                         aria-labelledby="dropdownRentButton">
+                                        <a class="dropdown-item" href="#">Request contract Renewal</a>
+                                        <a class="dropdown-item" href="#">Terminate contract</a>
+                                        <a data-toggle="modal" data-target="#endContractModal" href="#"
+                                           class="dropdown-item end-contract">End Contract</a>
+                                    </div>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="service">
@@ -128,7 +154,11 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="/agency-detail">John Service</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"
+                                       id="dropdownRentButton"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_horiz</i>
+                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="service">
@@ -160,7 +190,11 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="/agency-detail">John Service</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"
+                                       id="dropdownRentButton"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_horiz</i>
+                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="service">
@@ -187,7 +221,8 @@ $filterArray = [
                 <div class="row group-title-rooms head-sm align-items-center">
                     <div class="col group-title">Popular</div>
                     <div class="col link-view-all ">
-                        <a class="head-sm ml-auto align-items-center flex-item" href="#">view all (245) <i class="material-icons">trending_flat</i></a>
+                        <a class="head-sm ml-auto align-items-center flex-item" href="#">view all (245) <i
+                                    class="material-icons">trending_flat</i></a>
                     </div>
                 </div>
                 <div class="items-room">
@@ -205,7 +240,11 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="/agency-detail">John Service</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"
+                                       id="dropdownRentButton"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_horiz</i>
+                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="service">
@@ -237,7 +276,11 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="/agency-detail">John Service</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"
+                                       id="dropdownRentButton"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_horiz</i>
+                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="service">
@@ -269,7 +312,11 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="/agency-detail">John Service</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"
+                                       id="dropdownRentButton"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_horiz</i>
+                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="service">
@@ -301,7 +348,11 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="/agency-detail">John Service</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"
+                                       id="dropdownRentButton"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_horiz</i>
+                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="service">
@@ -328,7 +379,8 @@ $filterArray = [
                 <div class="row group-title-rooms head-sm align-items-center">
                     <div class="col group-title">Ho Chi Minh</div>
                     <div class="col link-view-all ">
-                        <a class="head-sm ml-auto align-items-center flex-item" href="#">view all (245) <i class="material-icons">trending_flat</i></a>
+                        <a class="head-sm ml-auto align-items-center flex-item" href="#">view all (245) <i
+                                    class="material-icons">trending_flat</i></a>
                     </div>
                 </div>
                 <div class="items-room">
@@ -346,7 +398,11 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="/agency-detail">John Service</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"
+                                       id="dropdownRentButton"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_horiz</i>
+                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="service">
@@ -378,7 +434,11 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="/agency-detail">John Service</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"
+                                       id="dropdownRentButton"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_horiz</i>
+                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="service">
@@ -410,7 +470,11 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="/agency-detail">John Service</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"
+                                       id="dropdownRentButton"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_horiz</i>
+                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="service">
@@ -442,7 +506,11 @@ $filterArray = [
                                     <h2>
                                         <a class="head-sm" href="/agency-detail">John Service</a>
                                     </h2>
-                                    <span class="head-sm more-action-room">...</span>
+                                    <a class="head-sm more-action-room" href="#"
+                                       id="dropdownRentButton"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_horiz</i>
+                                    </a>
                                 </div>
                                 <div class="room-price-location flex-item">
                                     <div class="service">
@@ -574,428 +642,7 @@ $filterArray = [
                 </div>
                 <div class="row search-body">
                     @include('frontend.includes.find.filter-panel')
-                    <div class="search-item-result col-9">
-                        <div class="items-room">
-                            <div class="row items-row">
-                                <div class="col-4 item-room">
-                                    <div class="room-img">
-                                        <a class="head-sm" href="/agency-detail">
-                                            <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
-                                        </a>
-                                        <div class="sale-off">10% OFF</div>
-                                        <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
-                                    </div>
-                                    <div class="room-info">
-                                        <div class="room-title flex-item justify-content-between">
-                                            <h2>
-                                                <a class="head-sm" href="/agency-detail">John Service</a>
-                                            </h2>
-                                            <span class="head-sm more-action-room">...</span>
-                                        </div>
-                                        <div class="room-price-location flex-item">
-                                            <div class="service">
-                                                Full Service
-                                            </div>
-                                            <div class="dot-price-location">•</div>
-                                            <div class="location"> Ho Chi Minh</div>
-                                        </div>
-                                        <div class="room-description">
-                                            <p class="text-opensans-14">Texas Holdem is by far the
-                                                most common for of…</p>
-                                        </div>
-                                        <div class="room-rating-tag flex-item">
-                                            <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
-                                            <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 item-room">
-                                    <div class="room-img">
-                                        <a class="head-sm" href="/agency-detail">
-                                            <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
-                                        </a>
-                                        <div class="sale-off">10% OFF</div>
-                                        <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
-                                    </div>
-                                    <div class="room-info">
-                                        <div class="room-title flex-item justify-content-between">
-                                            <h2>
-                                                <a class="head-sm" href="/agency-detail">John Service</a>
-                                            </h2>
-                                            <span class="head-sm more-action-room">...</span>
-                                        </div>
-                                        <div class="room-price-location flex-item">
-                                            <div class="service">
-                                                Full Service
-                                            </div>
-                                            <div class="dot-price-location">•</div>
-                                            <div class="location"> Ho Chi Minh</div>
-                                        </div>
-                                        <div class="room-description">
-                                            <p class="text-opensans-14">Texas Holdem is by far the
-                                                most common for of…</p>
-                                        </div>
-                                        <div class="room-rating-tag flex-item">
-                                            <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
-                                            <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 item-room">
-                                    <div class="room-img">
-                                        <a class="head-sm" href="/agency-detail">
-                                            <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
-                                        </a>
-                                        <div class="sale-off">10% OFF</div>
-                                        <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
-                                    </div>
-                                    <div class="room-info">
-                                        <div class="room-title flex-item justify-content-between">
-                                            <h2>
-                                                <a class="head-sm" href="/agency-detail">John Service</a>
-                                            </h2>
-                                            <span class="head-sm more-action-room">...</span>
-                                        </div>
-                                        <div class="room-price-location flex-item">
-                                            <div class="service">
-                                                Full Service
-                                            </div>
-                                            <div class="dot-price-location">•</div>
-                                            <div class="location"> Ho Chi Minh</div>
-                                        </div>
-                                        <div class="room-description">
-                                            <p class="text-opensans-14">Texas Holdem is by far the
-                                                most common for of…</p>
-                                        </div>
-                                        <div class="room-rating-tag flex-item">
-                                            <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
-                                            <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 item-room">
-                                    <div class="room-img">
-                                        <a class="head-sm" href="/agency-detail">
-                                            <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
-                                        </a>
-                                        <div class="sale-off">10% OFF</div>
-                                        <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
-                                    </div>
-                                    <div class="room-info">
-                                        <div class="room-title flex-item justify-content-between">
-                                            <h2>
-                                                <a class="head-sm" href="/agency-detail">John Service</a>
-                                            </h2>
-                                            <span class="head-sm more-action-room">...</span>
-                                        </div>
-                                        <div class="room-price-location flex-item">
-                                            <div class="service">
-                                                Full Service
-                                            </div>
-                                            <div class="dot-price-location">•</div>
-                                            <div class="location"> Ho Chi Minh</div>
-                                        </div>
-                                        <div class="room-description">
-                                            <p class="text-opensans-14">Texas Holdem is by far the
-                                                most common for of…</p>
-                                        </div>
-                                        <div class="room-rating-tag flex-item">
-                                            <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
-                                            <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 item-room">
-                                    <div class="room-img">
-                                        <a class="head-sm" href="/agency-detail">
-                                            <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
-                                        </a>
-                                        <div class="sale-off">10% OFF</div>
-                                        <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
-                                    </div>
-                                    <div class="room-info">
-                                        <div class="room-title flex-item justify-content-between">
-                                            <h2>
-                                                <a class="head-sm" href="/agency-detail">John Service</a>
-                                            </h2>
-                                            <span class="head-sm more-action-room">...</span>
-                                        </div>
-                                        <div class="room-price-location flex-item">
-                                            <div class="service">
-                                                Full Service
-                                            </div>
-                                            <div class="dot-price-location">•</div>
-                                            <div class="location"> Ho Chi Minh</div>
-                                        </div>
-                                        <div class="room-description">
-                                            <p class="text-opensans-14">Texas Holdem is by far the
-                                                most common for of…</p>
-                                        </div>
-                                        <div class="room-rating-tag flex-item">
-                                            <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
-                                            <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 item-room">
-                                    <div class="room-img">
-                                        <a class="head-sm" href="/agency-detail">
-                                            <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
-                                        </a>
-                                        <div class="sale-off">10% OFF</div>
-                                        <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
-                                    </div>
-                                    <div class="room-info">
-                                        <div class="room-title flex-item justify-content-between">
-                                            <h2>
-                                                <a class="head-sm" href="/agency-detail">John Service</a>
-                                            </h2>
-                                            <span class="head-sm more-action-room">...</span>
-                                        </div>
-                                        <div class="room-price-location flex-item">
-                                            <div class="service">
-                                                Full Service
-                                            </div>
-                                            <div class="dot-price-location">•</div>
-                                            <div class="location"> Ho Chi Minh</div>
-                                        </div>
-                                        <div class="room-description">
-                                            <p class="text-opensans-14">Texas Holdem is by far the
-                                                most common for of…</p>
-                                        </div>
-                                        <div class="room-rating-tag flex-item">
-                                            <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
-                                            <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 item-room">
-                                    <div class="room-img">
-                                        <a class="head-sm" href="/agency-detail">
-                                            <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
-                                        </a>
-                                        <div class="sale-off">10% OFF</div>
-                                        <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
-                                    </div>
-                                    <div class="room-info">
-                                        <div class="room-title flex-item justify-content-between">
-                                            <h2>
-                                                <a class="head-sm" href="/agency-detail">John Service</a>
-                                            </h2>
-                                            <span class="head-sm more-action-room">...</span>
-                                        </div>
-                                        <div class="room-price-location flex-item">
-                                            <div class="service">
-                                                Full Service
-                                            </div>
-                                            <div class="dot-price-location">•</div>
-                                            <div class="location"> Ho Chi Minh</div>
-                                        </div>
-                                        <div class="room-description">
-                                            <p class="text-opensans-14">Texas Holdem is by far the
-                                                most common for of…</p>
-                                        </div>
-                                        <div class="room-rating-tag flex-item">
-                                            <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
-                                            <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 item-room">
-                                    <div class="room-img">
-                                        <a class="head-sm" href="/agency-detail">
-                                            <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
-                                        </a>
-                                        <div class="sale-off">10% OFF</div>
-                                        <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
-                                    </div>
-                                    <div class="room-info">
-                                        <div class="room-title flex-item justify-content-between">
-                                            <h2>
-                                                <a class="head-sm" href="/agency-detail">John Service</a>
-                                            </h2>
-                                            <span class="head-sm more-action-room">...</span>
-                                        </div>
-                                        <div class="room-price-location flex-item">
-                                            <div class="service">
-                                                Full Service
-                                            </div>
-                                            <div class="dot-price-location">•</div>
-                                            <div class="location"> Ho Chi Minh</div>
-                                        </div>
-                                        <div class="room-description">
-                                            <p class="text-opensans-14">Texas Holdem is by far the
-                                                most common for of…</p>
-                                        </div>
-                                        <div class="room-rating-tag flex-item">
-                                            <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
-                                            <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 item-room">
-                                    <div class="room-img">
-                                        <a class="head-sm" href="/agency-detail">
-                                            <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
-                                        </a>
-                                        <div class="sale-off">10% OFF</div>
-                                        <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
-                                    </div>
-                                    <div class="room-info">
-                                        <div class="room-title flex-item justify-content-between">
-                                            <h2>
-                                                <a class="head-sm" href="/agency-detail">John Service</a>
-                                            </h2>
-                                            <span class="head-sm more-action-room">...</span>
-                                        </div>
-                                        <div class="room-price-location flex-item">
-                                            <div class="service">
-                                                Full Service
-                                            </div>
-                                            <div class="dot-price-location">•</div>
-                                            <div class="location"> Ho Chi Minh</div>
-                                        </div>
-                                        <div class="room-description">
-                                            <p class="text-opensans-14">Texas Holdem is by far the
-                                                most common for of…</p>
-                                        </div>
-                                        <div class="room-rating-tag flex-item">
-                                            <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
-                                            <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 item-room">
-                                    <div class="room-img">
-                                        <a class="head-sm" href="/agency-detail">
-                                            <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
-                                        </a>
-                                        <div class="sale-off">10% OFF</div>
-                                        <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
-                                    </div>
-                                    <div class="room-info">
-                                        <div class="room-title flex-item justify-content-between">
-                                            <h2>
-                                                <a class="head-sm" href="/agency-detail">John Service</a>
-                                            </h2>
-                                            <span class="head-sm more-action-room">...</span>
-                                        </div>
-                                        <div class="room-price-location flex-item">
-                                            <div class="service">
-                                                Full Service
-                                            </div>
-                                            <div class="dot-price-location">•</div>
-                                            <div class="location"> Ho Chi Minh</div>
-                                        </div>
-                                        <div class="room-description">
-                                            <p class="text-opensans-14">Texas Holdem is by far the
-                                                most common for of…</p>
-                                        </div>
-                                        <div class="room-rating-tag flex-item">
-                                            <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
-                                            <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 item-room">
-                                    <div class="room-img">
-                                        <a class="head-sm" href="/agency-detail">
-                                            <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
-                                        </a>
-                                        <div class="sale-off">10% OFF</div>
-                                        <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
-                                    </div>
-                                    <div class="room-info">
-                                        <div class="room-title flex-item justify-content-between">
-                                            <h2>
-                                                <a class="head-sm" href="/agency-detail">John Service</a>
-                                            </h2>
-                                            <span class="head-sm more-action-room">...</span>
-                                        </div>
-                                        <div class="room-price-location flex-item">
-                                            <div class="service">
-                                                Full Service
-                                            </div>
-                                            <div class="dot-price-location">•</div>
-                                            <div class="location"> Ho Chi Minh</div>
-                                        </div>
-                                        <div class="room-description">
-                                            <p class="text-opensans-14">Texas Holdem is by far the
-                                                most common for of…</p>
-                                        </div>
-                                        <div class="room-rating-tag flex-item">
-                                            <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
-                                            <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 item-room">
-                                    <div class="room-img">
-                                        <a class="head-sm" href="/agency-detail">
-                                            <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
-                                        </a>
-                                        <div class="sale-off">10% OFF</div>
-                                        <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
-                                    </div>
-                                    <div class="room-info">
-                                        <div class="room-title flex-item justify-content-between">
-                                            <h2>
-                                                <a class="head-sm" href="/agency-detail">John Service</a>
-                                            </h2>
-                                            <span class="head-sm more-action-room">...</span>
-                                        </div>
-                                        <div class="room-price-location flex-item">
-                                            <div class="service">
-                                                Full Service
-                                            </div>
-                                            <div class="dot-price-location">•</div>
-                                            <div class="location"> Ho Chi Minh</div>
-                                        </div>
-                                        <div class="room-description">
-                                            <p class="text-opensans-14">Texas Holdem is by far the
-                                                most common for of…</p>
-                                        </div>
-                                        <div class="room-rating-tag flex-item">
-                                            <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
-                                            <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 item-room">
-                                    <div class="room-img">
-                                        <a class="head-sm" href="/agency-detail">
-                                            <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
-                                        </a>
-                                        <div class="sale-off">10% OFF</div>
-                                        <div class="bookmark"><i class="material-icons">bookmark_border</i></div>
-                                    </div>
-                                    <div class="room-info">
-                                        <div class="room-title flex-item justify-content-between">
-                                            <h2>
-                                                <a class="head-sm" href="/agency-detail">John Service</a>
-                                            </h2>
-                                            <span class="head-sm more-action-room">...</span>
-                                        </div>
-                                        <div class="room-price-location flex-item">
-                                            <div class="service">
-                                                Full Service
-                                            </div>
-                                            <div class="dot-price-location">•</div>
-                                            <div class="location"> Ho Chi Minh</div>
-                                        </div>
-                                        <div class="room-description">
-                                            <p class="text-opensans-14">Texas Holdem is by far the
-                                                most common for of…</p>
-                                        </div>
-                                        <div class="room-rating-tag flex-item">
-                                            <div class="vote"><i class="material-icons icon-star">star</i>4.6</div>
-                                            <div class="tag"><i class="material-icons icon-loyalty">loyalty</i>156</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @include('frontend.includes.find.room-results')
                 </div>
                 <div class="row text-center see-more-item">
                     <a href="#" class="btn btn-rnw btn-rnw-light btn-rnw-md">SEE MORE</a>
