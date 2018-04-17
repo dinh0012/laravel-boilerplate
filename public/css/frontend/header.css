@@ -32,6 +32,7 @@ label.checkbox {
     border: none;
     position: absolute;
     right: 80px;
+    top: 17px;
 }
 select.rnw-select {
     padding-left: 15px;
