@@ -4,7 +4,7 @@
             @for ($i = 1; $i < 12; $i++)
                 <div class="col-4 item-room">
                 <div class="room-img">
-                    <a class="head-sm" href="/room-detail">
+                    <a class="head-sm" href="{{$results['link_detail']}}">
                         <img src="{{asset('/img/frontend/bitmap@2x.png')}}" alt="">
                     </a>
                     <div class="sale-off">10% OFF</div>
@@ -15,13 +15,13 @@
                         <h2>
                             <a class="head-sm" href="{{$results['link_detail']}}">{{$results['name']}}</a>
                         </h2>
-                        <div class="dropleft">
-                            <a class="head-sm more-action-room" href="#" id="{{'more-action' . $i}}" data-toggle="dropdown"
+                        <div class="dropdown-rnw">
+                            <a class="head-sm more-action-room title-dropdown" href="#" id="{{'more-action' . $i}}" data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false">
                                 <i class="material-icons">more_horiz</i>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-rnw dropdown-item-more-action text-opensans-14"
-                                 aria-labelledby="{{'#more-action' . $i}}" >
+                            <div class="dropdown-menu dropdown-menu-rnw dropdown-item-more-action text-opensans-14 dropdown-menu-right"
+                                 aria-labelledby="{{'#more-action' . $i}}" x-placement="bottom-end" >
                                 <a class="dropdown-item" href="#">Share</a>
                                 <a class="dropdown-item" href="#">Hire</a>
                             </div>
