@@ -8,8 +8,8 @@
 
 @section('content')
 
-    <div id="room-detail">
-        <div class="room-slider detail-slider rnw-slider-full">
+    <div id="agency-detail">
+        <div class="agency-slider detail-slider rnw-slider-full">
             <div id="room-image-slider" data-ride="carousel"
                  class="carousel slide list-packages row">
 
@@ -33,11 +33,11 @@
                                     <img src="{{asset('img/frontend/logo_white.png')}}" alt="">
                                 </a>
                                 <span>/ </span>
-                                <a href="/find-room" class="link-breadcrumb">
-                                    Find room
+                                <a href="/find-agency" class="link-breadcrumb">
+                                    Find Agency
                                 </a>
                                 <span>/ </span>
-                                <span class="current-page">Search Result</span>
+                                <span class="current-page">John Service</span>
                             </div>
                             <ol class="carousel-indicators ml-auto">
                                 <li data-target="#room-image-slider" data-slide-to="0" class=""></li>
@@ -50,20 +50,24 @@
                             <div class="room-action flex-item">
                                 <div class=" ml-auto">
                                     <i class="material-icons">share</i>
-                                    <i class="material-icons">notifications_none</i>
                                     <i class="material-icons bookmark bookmarked">bookmark</i>
                                 </div>
                             </div>
                             <div class="row room-detail-box-header">
-                                <div class="room-name col-3 align-self-center">
-                                    <h2 class="name head-sm">Roof Top Wooden room At District 3</h2>
-                                    <h2 class="price head-sm">$35/month</h2>
+                                <div class="room-name col-3 align-self-center media align-items-center">
+                                    <img src="/img/frontend/agency.png" alt="" class="avatar-agency">
+                                    <div class="name-agency media-body  flex-item align-items-center">
+                                        <div>
+                                            <h2 class="name head-sm">John Service</h2>
+                                            <h2 class="type-user">Agency</h2>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="room-add col">
                                     <div class="address text-opensans-14"><i class="material-icons">location_on</i>
-                                        District 3, HCM
+                                        Ho Chi Minh
                                     </div>
-                                    <span class="time-min text-opensans-14"><i class="material-icons">date_range</i>Rent min 1 year</span>
+                                    <span class="agency-languae text-opensans-14"><i class="material-icons">translate</i>Vietnamese / English</span>
                                 </div>
                                 <div class="room-ratting col-2">
                                     <div class="vote text-opensans-14"><i class="material-icons icon-star">star</i>4.6
@@ -76,16 +80,8 @@
                                     <button type="button"
                                             class="btn btn-rnw btn-rnw-yellow btn-rnw-120 justify-content-center"
                                             id="dropdownRentButton"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rent
-                                        <span class="arrow-rent align-self-center"><i class="material-icons">keyboard_arrow_down</i></span>
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hire</span>
                                     </button>
-                                    <div class="dropdown-menu dropdown-menu-rnw dropdown-item-rent text-opensans-14"
-                                         aria-labelledby="dropdownRentButton">
-                                        <a class="dropdown-item" href="#">Request contract Renewal</a>
-                                        <a class="dropdown-item" href="#">Terminate contract</a>
-                                        <a data-toggle="modal" data-target="#endContractModal" href="#"
-                                           class="dropdown-item end-contract">End Contract</a>
-                                    </div>
                                 </div>
                             </div>
 
@@ -109,21 +105,18 @@
             <div class="flex-item">
                 <div class="col-3 room-information">
                     <div class="head-md">
-                        Room Information
+                        we provide
                     </div>
                     <ul class="list-info-room">
-                        <li><i class="material-icons">business</i>Apartment</li>
-                        <li><i class="material-icons">aspect_ratio</i>65m2</li>
-                        <li><i class="material-icons">event_seat</i>Furnished</li>
-                        <li><i class="material-icons">pets</i>Pets Allowance</li>
-                        <li><i class="material-icons">wifi</i>Wifi</li>
-                        <li><i class="material-icons">flash_on</i>$10</li>
-                        <li><i class="material-icons">local_atm</i>$70</li>
+                        <li><i class="material-icons">face</i>Find tenants</li>
+                        <li><i class="material-icons">account_balance</i>Find properties</li>
+                        <li><i class="material-icons">format_paint</i>Decoration</li>
+                        <li><i class="material-icons">flash_on</i>Electricity</li>
                     </ul>
                 </div>
                 <div class="col-9 room-detail content">
                     <div class="block-content room-introduction">
-                        <h1 class="header-block head-md">Introduction</h1>
+                        <h1 class="header-block head-md">About ‘John Service’</h1>
                         <div class="body-block">
                             <p class="overview text-opensans-14">
                                 I'm a Londoner who fell in love with Sydney over 2 years ago and never looked back. I
@@ -168,199 +161,10 @@
 
                         </div>
                     </div>
-                    <div class="block-content room-availability">
-                        <div class="flex-item header-availability">
-                            <h1 class="header-block head-md">Availability</h1>
-                            <div class="note-availability text-opensans-14 ml-auto">
-                                <span class="icon-note-availability"></span>
-                                <span class="text-note">Available</span>
-                                <span class="text-note">Not available</span>
-                            </div>
-                        </div>
-                        <div class="body-block flex-item">
-                            <div class="col-4 date-picker">
-                                <div class="year-title head-md">
-                                    2018
-                                </div>
-                                <div class="months text-opensans-14">
-                                    <div class="flex-item ">
-                                        <div class="month-label col">
-                                            <span class="month-text month-not-available">Jan</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Feb</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Mar</span>
-                                        </div>
-                                    </div>
-                                    <div class="flex-item">
 
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Apr</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">May</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Jun</span>
-                                        </div>
-                                    </div>
-                                    <div class="flex-item">
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Jul</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Agu</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Sep</span>
-                                        </div>
-                                    </div>
-                                    <div class="flex-item">
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Oct</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Nov</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Dec</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4 date-picker">
-                                <div class="year-title head-md">
-                                    2019
-                                </div>
-                                <div class="months text-opensans-14">
-                                    <div class="flex-item ">
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Jan</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Feb</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Mar</span>
-                                        </div>
-                                    </div>
-                                    <div class="flex-item">
-
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Apr</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">May</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Jun</span>
-                                        </div>
-                                    </div>
-                                    <div class="flex-item">
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Jul</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Agu</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Sep</span>
-                                        </div>
-                                    </div>
-                                    <div class="flex-item">
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Oct</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Nov</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-available">Dec</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4 date-picker">
-                                <div class="year-title head-md">
-                                    2020
-                                </div>
-                                <div class="months text-opensans-14">
-                                    <div class="flex-item ">
-                                        <div class="month-label col">
-                                            <span class="month-text month-not-available">Jan</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-not-available">Feb</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-not-available">Mar</span>
-                                        </div>
-                                    </div>
-                                    <div class="flex-item">
-
-                                        <div class="month-label col">
-                                            <span class="month-text month-not-available">Apr</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-not-available">May</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-not-available">Jun</span>
-                                        </div>
-                                    </div>
-                                    <div class="flex-item">
-                                        <div class="month-label col">
-                                            <span class="month-text month-not-available">Jul</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-not-available">Agu</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-not-available">Sep</span>
-                                        </div>
-                                    </div>
-                                    <div class="flex-item">
-                                        <div class="month-label col">
-                                            <span class="month-text month-not-available">Oct</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-not-available">Nov</span>
-                                        </div>
-                                        <div class="month-label col">
-                                            <span class="month-text month-not-available">Dec</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="block-content room-about">
-                        <h1 class="header-block head-md">about the landlord</h1>
-                        <div class="body-block">
-                            <p class="overview text-opensans-14">
-                                I'm a Londoner who fell in love with Sydney over 2 years ago and never looked back. I
-                                would love to share the famous coastal walk with you, the very first thing I did when I
-                                arrived to Sydney, and still my favourite thing to do here. I've loved walking since I
-                                first learnt to walk :) I've always been drawn to the ocean as I find the water so
-                                calming and restorative. The views…
-                                <a href="#" class="link-rnw more-link">more</a>
-                            </p>
-                            <p class="read-more text-opensans-14">
-                                I'm a Londoner who fell in love with Sydney over 2 years ago and never looked back. I
-                                would love to share the famous coastal walk with you, the very first thing I did when I
-                                arrived to Sydney, and still my favourite thing to do here. I've loved walking since I
-                                first learnt to walk :) I've always been drawn to the ocean as I find the water so
-                                calming and restorative. The views always been drawn to the ocean as I find the water so
-                                calming and restorative.
-                                <a href="#" class="link-rnw less-link">less</a>
-                            </p>
-                        </div>
+                        <h1 class="header-block head-md">My score compared to others nearby</h1>
                         <div class="compare-landlord">
-                            <div class="compare-header text-opensans-14">
-                                Compare this landlord with others
-                            </div>
                             <div class="compare-body flex-item">
                                 <div class="col compare-col compare-types">
                                     <div class="landlord-name-avatar landlord-cell"></div>

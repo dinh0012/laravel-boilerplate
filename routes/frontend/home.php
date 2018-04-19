@@ -14,6 +14,9 @@ Route::get('/find-agency', function () {
 Route::get('/room-detail', function () {
     return view('frontend.room-detail');
 })->name('room-detail');
+Route::get('/agency-detail', function () {
+    return view('frontend.agency-detail');
+})->name('agency-detail');
 
 Route::get('contact', 'ContactController@index')->name('contact');
 Route::post('contact/send', 'ContactController@send')->name('contact.send');
