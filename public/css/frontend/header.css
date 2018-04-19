@@ -32,6 +32,7 @@ label.checkbox {
     border: none;
     position: absolute;
     right: 80px;
+    top: 17px;
 }
 select.rnw-select {
     padding-left: 15px;
@@ -407,7 +408,7 @@ nav#header-top a {
     font-style: normal;
     font-stretch: normal;
     letter-spacing: 1px;
-    color: #ffff;
+    color: #fff;
     padding: 0;
 }
 
