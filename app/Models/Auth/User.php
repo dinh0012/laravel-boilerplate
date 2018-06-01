@@ -64,4 +64,9 @@ class User extends Authenticatable
      * @var array
      */
     protected $appends = ['full_name'];
+
+    const TENANT_TYPE = 1;
+    const LANDLORD_TYPE = 2;
+    const AGENCY_TYPE = 3;
+
 }

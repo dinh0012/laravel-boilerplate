@@ -102,12 +102,14 @@ class UserRepository extends BaseRepository
                                     // If users require approval or needs to confirm email
                 'confirmed'         => config('access.users.requires_approval') || config('access.users.confirm_email') ? 0 : 1,
             ]);
-
             if ($user) {
                 /*
                  * Add the default site role to the new user
                  */
+               // dd($user);
+
                 $user->assignRole(config('access.users.default_role'));
+
             }
 
             /*

@@ -15,7 +15,7 @@ class UserTableSeeder extends Seeder
      *
      * @return void
      */
-    public function run()1
+    public function run()
     {
         $this->disableForeignKeys();
 

@@ -8,6 +8,7 @@ use App\Helpers\Frontend\Auth\Socialite;
 use App\Events\Frontend\Auth\UserRegistered;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use App\Repositories\Frontend\Auth\UserRepository;
+use Symfony\Component\Routing\Route;
 
 /**
  * Class RegisterController.
@@ -28,6 +29,11 @@ class RegisterController extends Controller
      */
     public function __construct(UserRepository $userRepository)
     {
+        $routeCollection = \Illuminate\Support\Facades\Route::getRoutes();
+        foreach ($routeCollection as $value) {
+            //dd($value)
+        }
+       // dd($routeCollection);
         $this->userRepository = $userRepository;
     }
 
@@ -61,6 +67,7 @@ class RegisterController extends Controller
      */
     public function register(RegisterRequest $request)
     {
+
         $user = $this->userRepository->create($request->only('first_name', 'last_name', 'email', 'password'));
 
         // If the user must confirm their email or their account requires approval,
