@@ -6,6 +6,16 @@ body {
     font-stretch: normal;
     letter-spacing: 2px;
 }
+.form-control {
+    border: solid 1px #e1e1e1;
+}
+.form-control:focus {
+    -webkit-box-shadow: 0 0 0 0.2px rgba(0, 123, 255, 0.25);
+    box-shadow: 0 0 0 0.2px rgba(0, 123, 255, 0.25);
+}
+form .rnw-invalid, .rnw-invalid {
+    border: solid 1px #ff0000bf;
+}
 .form-check-label i {
     color: #e1e1e1;
 }

@@ -16,10 +16,10 @@ class GetComponentsViewController extends Controller
 {
     public function getRegisterFormView($typeRegister) {
         if ($typeRegister == User::TENANT_TYPE || $typeRegister == User::LANDLORD_TYPE) {
-            return view('frontend.components.register-tenant-landlord-form')->render();
+            return view('frontend.includes.components.register-tenant-landlord-form')->render();
         }
         if ($typeRegister == User::AGENCY_TYPE) {
-            return view('frontend.components.register-agency-form')->render();
+            return view('frontend.includes.components.register-agency-form')->render();
         }
         return response(['mgs' => 'Has not type user'], 500);
     }

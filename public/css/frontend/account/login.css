@@ -8,7 +8,7 @@
 .input-placeholder input {
     font-size: 14px;
 }
-.input-placeholder input:valid + .placeholder {
+.input-placeholder input.has-value + .placeholder {
     display: none;
 }
 
@@ -67,7 +67,6 @@ div#loginFormModal input[type="text"], div#loginFormModal input[type="email"], d
     height: 54px;
     border-radius: 4px;
     background-color: #ffffff;
-    border: solid 1px #e1e1e1;
     padding: 15px 20px;
     font-family: Open Sans;
     font-size: 14px;
@@ -351,7 +350,6 @@ div#register .mb-10 {
 }
 
 #loginFormModal .agency-type{
-    display: none;
     position: relative;
 }
 #form-type-account .upload-logo {
@@ -424,7 +422,6 @@ div#register {
     position: absolute;
     left: -60px;
     top: 0;
-    display: none;
 }
 
 .step-register .step {

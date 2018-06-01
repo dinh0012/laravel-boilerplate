@@ -1,7 +1,9 @@
-var accountLoinForm = function () {
-    return {
-
-        init: function () {
+(function () {
+    if (!RNW.Account) {
+        RNW.Account = {};
+    }
+    RNW.Account.Auth = {
+        initialize: function() {
             this.toggleVisiblityPassword();
             this.activeTabLoginForm();
             this.showForgotPassword();
@@ -12,22 +14,69 @@ var accountLoinForm = function () {
             this.uploadLogo();
             this.actionRegisterAgencyAccount();
             this.clickSelectFileAgencyAccount();
+            this.onSubmitRegisterForm();
         },
 
-        
+        onSubmitRegisterForm: function () {
+            $(document).on('submit', $('#register-form'), function (e) {
+                var form = $('#register-form');
+                e.preventDefault();
+                if (!RNW.Module.Validate.requiredInputs(form)) {
+                    return false;
+                }
+                var url = '/register';
+                var data = form.serializeArray()
+                RNW.Module.Ajax.initSubmit(url, 'POST', data, $('#register-rnw'), success, fail);
+
+                function success(res) {
+                    console.log(res)
+                }
+                function fail(res) {
+                    var errorFields = res.responseJSON.errors;
+                    console.log(errorFields);
+                    if (!errorFields) {
+                        return;
+                    }
+                    var fieldsName = Object.keys(errorFields);
+                    if (fieldsName.indexOf('password') != -1) {
+                        fieldsName.push('password_confirmation')
+                    }
+                    console.log(fieldsName)
+                    fieldsName.forEach(function (field, key) {
+                        console.log(field);
+                        $(form).find('*[name='+ field + ']').addClass(RNW.Module.Validate.classInvalid);
+                        console.log($(form).find('*[name='+ field + ']'))
+
+                    })
+                }
+                return false;
+            })
+        },
+        sendRequestRegister: function () {
+
+        },
+
         activeTabLoginForm: function () {
             $('.link-account-form').on('click', function () {
                 if ($(this).is('.link-login')) {
                     $('#login-tab').tab('show');
-
                     return;
                 }
                 $('#register-tab').tab('show');
-            })
+            }.bind(this))
+        },
+        loadFormRegisterSuccess: function (data) {
+            $('#form-type-user').html(data);
+        },
+
+        getComponentRegisterForm: function (typeUser) {
+            var url = '/get-component/get-register-form/' + typeUser;
+            RNW.Module.Ajax.initSubmit(url, 'GET', [], '', this.loadFormRegisterSuccess);
         },
 
         toggleVisiblityPassword: function () {
-            $('.toggle-show-pass').on('click', function () {
+           // $('.toggle-show-pass').on('click', function () {
+                $(document).delegate(".toggle-show-pass", "click", function(e){
                 var inputPW = $(this).parent('.input-placeholder').find('.password')
                 if ($(this).hasClass('is-show-pass')){
                     $(this).text('visibility');
@@ -75,18 +124,16 @@ var accountLoinForm = function () {
             var selectInput = $('#loginFormModal .account-type');
             $(selectInput).on('change', function (event) {
                 var value = selectInput.val();
-                if (value != 'agency') {
-                    $('.tenant-landlord-type').show();
+                $('#input-user-type').val(value);
+                if (value != '3') {
+                    this.getComponentRegisterForm(1);
+                    /*$('.tenant-landlord-type').show();
                     $('.agency-type').hide();
-                    $('.step-register').hide();
+                    $('.step-register').hide();*/
                     return;
                 }
-                $('.tenant-landlord-type').hide();
-                $('.agency-type').show();
-                $('.step-register').show();
-
-
-            })
+                this.getComponentRegisterForm(3);
+            }.bind(this))
         },
 
         selectInputChange: function () {
@@ -101,10 +148,10 @@ var accountLoinForm = function () {
                 }
             })
         },
-        
+
         uploadLogo: function () {
             $('.upload-logo').on('click', function () {
-               $('input[name=logo]').click();
+                $('input[name=logo]').click();
             });
         },
 
@@ -135,8 +182,9 @@ var accountLoinForm = function () {
                 inputFile.click();
             })
         }
+    }
+})();
 
-    };
-
-}();
-accountLoinForm.init();
+$(document).ready(function() {
+    RNW.Account.Auth.initialize();
+})

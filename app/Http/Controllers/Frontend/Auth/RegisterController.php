@@ -67,14 +67,16 @@ class RegisterController extends Controller
      */
     public function register(RegisterRequest $request)
     {
-
-        $user = $this->userRepository->create($request->only('first_name', 'last_name', 'email', 'password'));
-
+        $user = $this->userRepository->create($request->only('first_name', 'last_name', 'email', 'password', 'user_type'));
         // If the user must confirm their email or their account requires approval,
         // create the account but don't log them in.
         if (config('access.users.confirm_email') || config('access.users.requires_approval')) {
             event(new UserRegistered($user));
-
+            if ($request->ajax()) {
+                return response(['mgs' => config('access.users.requires_approval') ?
+                    __('exceptions.frontend.auth.confirmation.created_pending') :
+                    __('exceptions.frontend.auth.confirmation.created_confirm')]);
+            }
             return redirect($this->redirectPath())->withFlashSuccess(
                 config('access.users.requires_approval') ?
                     __('exceptions.frontend.auth.confirmation.created_pending') :
@@ -84,7 +86,6 @@ class RegisterController extends Controller
             auth()->login($user);
 
             event(new UserRegistered($user));
-
             return redirect($this->redirectPath());
         }
     }

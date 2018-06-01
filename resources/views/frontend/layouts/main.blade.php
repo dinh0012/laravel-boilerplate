@@ -46,8 +46,8 @@
         {!! script(mix('js/frontend.js')) !!}
         @stack('after-scripts')
         @yield('script')
-        <script src="{{asset('/js/main.js')}}"></script>
         <script src="{{asset('/js/module.js')}}"></script>
+        <script src="{{asset('/js/main.js')}}"></script>
         <script src="{{asset('/js/account/login-form.js')}}"></script>
         @include('frontend.includes.footer')
     </body>

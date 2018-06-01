@@ -29,6 +29,7 @@ class RegisterRequest extends FormRequest
     public function rules()
     {
         return [
+            'user_type'           => 'required|integer|max:1',
             'first_name'           => 'required|string|max:191',
             'last_name'            => 'required|string|max:191',
             'email'                => ['required', 'string', 'email', 'max:191', Rule::unique('users')],

@@ -1,3 +1,4 @@
+var RNW = {};
 (function () {
     if (!RNW.Module) {
         RNW.Module = {};
@@ -12,7 +13,7 @@
             });
         },
         initSubmit: function (url, type, data, button, callbackSuccess, callbackFails) {
-            if (typeof button !== 'undefined') {
+            if (button && typeof button !== 'undefined') {
                 button.prop('disabled', true);
             }
 
@@ -38,25 +39,61 @@
                     callbackSuccess(response);
                 }
                 setTimeout(function () {
-                    if (typeof button !== 'undefined') {
+                    if (button && typeof button !== 'undefined') {
                         button.prop('disabled', false);
                     }
-                }, 3000)
+                }, 300)
             });
             
             ajax.fail(function (response) {
+                setTimeout(function () {
+                    if (button && typeof button !== 'undefined') {
+                        button.prop('disabled', false);
+                    }
+                }, 300)
                 if (typeof callbackFails === 'function') {
                     callbackFails(response);
                     return;
                 }
-                if (callback(response)) {
-                    return;
+            })
+        }
+    }
+
+    RNW.Module.Validate = {
+        classInvalid: 'rnw-invalid',
+
+        requiredInputs: function($form) {
+            var inputs = $form.find('input[rnw-required], textarea[rnw-required], select[rnw-required]');
+            var validate = true;
+            inputs.each(function (key, $el) {
+                var value = $($el).val();
+                if (!value || value == '') {
+                    $($el).addClass(this.classInvalid);
+                    validate = false;
+                } else {
+                    $($el).removeClass(this.classInvalid);
+                }
+            }.bind(this))
+
+            return validate;
+        },
+
+        onShowHidePlaceholderInputs: function () {
+            var inputs = $('input[rnw-required], textarea[rnw-required]');
+            $(document).delegate(inputs,"keyup",function(e){
+                var value = $(this).val();
+                if (value || value != '') {
+                    $(this).addClass('has-value');
+                } else {
+                    $(this).removeClass('has-value');
                 }
             })
         }
     }
 })();
 
-$(document).on('ready', function () {
+$(document).ready(function() {
     RNW.Module.Ajax.initialize();
+    RNW.Module.Validate.onShowHidePlaceholderInputs();
+
 })

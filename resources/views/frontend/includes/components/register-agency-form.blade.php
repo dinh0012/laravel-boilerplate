@@ -236,3 +236,9 @@
     </div>
 
 </div>
+<div class="step-register step-register-agency">
+    <div class="step step-1 done">01</div>
+    <div class="step step-2">02</div>
+    <div class="step step-3">03</div>
+    <div class="step step-4">04</div>
+</div>

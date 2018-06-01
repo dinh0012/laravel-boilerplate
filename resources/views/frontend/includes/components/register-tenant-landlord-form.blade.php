@@ -1,7 +1,9 @@
-<div class="tenant-landlord-type">
+<form id="register-form" class="tenant-landlord-type" method="POST" action="{{route('frontend.auth.register.post')}}">
+    {{csrf_field()}}
+    <input type="hidden" name="user_type" id="input-user-type" value="1">
     <div class="form-group">
         <div class="input-placeholder">
-            <input type="text" name="first_name" class="form-control first-name" required>
+            <input type="text" name="first_name" class="form-control first-name" rnw-required>
             <div class="placeholder">
                 First name <span>*</span>
             </div>
@@ -9,7 +11,7 @@
     </div>
     <div class="form-group">
         <div class="input-placeholder">
-            <input type="text" name="last_name" class="form-control last-name" required>
+            <input type="text" name="last_name" class="form-control last-name" rnw-required>
             <div class="placeholder">
                 Last name <span>*</span>
             </div>
@@ -17,7 +19,7 @@
     </div>
     <div class="form-group">
         <div class="input-placeholder">
-            <input type="text" name="email" class="form-control email" required>
+            <input type="text" name="email" class="form-control email" rnw-required>
             <div class="placeholder">
                 Email <span>*</span>
             </div>
@@ -25,7 +27,7 @@
     </div>
     <div class="form-group">
         <div class="input-placeholder">
-            <input type="password" name="password" class="form-control password" required>
+            <input type="password" name="password" class="form-control password" rnw-required>
             <div class="placeholder">
                 Password <span>*</span>
             </div>
@@ -34,9 +36,9 @@
     </div>
     <div class="form-group">
         <div class="input-placeholder">
-            <input type="password" name="confirm_password"
+            <input type="password" name="password_confirmation"
                    class="form-control confirm-password password"
-                   required>
+                   rnw-required>
             <div class="placeholder">
                 Confirm password <span>*</span>
             </div>
@@ -78,4 +80,4 @@
     <p id="term-conditions-text" class="text-form-account">
         By signing up you accept the <a href="" class="link-rnw">Terms of Conditions</a>
     </p>
-</div>
+</form>
