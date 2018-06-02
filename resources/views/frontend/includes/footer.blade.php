@@ -1,3 +1,4 @@
+@include('frontend.includes.components.modal')
 <footer id="footer">
 	<div class="container">
 		<div class="row align-items-center">

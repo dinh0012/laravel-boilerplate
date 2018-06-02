@@ -1,4 +1,4 @@
-#loginFormModal .modal-dialog {
+.account-modal .modal-dialog {
     margin-top: 150px;
     max-width: 460px;
 }
@@ -62,8 +62,10 @@ div#account-form ul li a {
     border: 0;
     text-transform: uppercase;
 }
-
-div#loginFormModal input[type="text"], div#loginFormModal input[type="email"], div#loginFormModal input[type="password"] {
+.account-modal-content {
+    text-align: center;
+}
+.account-modal input[type="text"], .account-modal input[type="email"], .account-modal input[type="password"] {
     height: 54px;
     border-radius: 4px;
     background-color: #ffffff;
@@ -90,7 +92,7 @@ div#account-form ul li a.active {
     border-bottom: solid;
 }
 
-div#loginFormModal #tab-account {
+.account-modal #tab-account {
     border: 0;
     margin-bottom: 40px;
 }
@@ -105,14 +107,14 @@ div#account-form .container {
 div#account-form .modal-dialog {
     margin-top: 150px;
 }
-#loginFormModal {
+.account-modal {
     text-transform: initial;
 }
-div#loginFormModal input.checkbox-input {
+.account-modal input.checkbox-input {
     display: none;
 }
 
-div#loginFormModal .form-check {
+.account-modal .form-check {
     padding: 0;
     text-align: left;
     margin-top: 25px;
@@ -120,17 +122,17 @@ div#loginFormModal .form-check {
     display: flex;
 }
 
-#loginFormModal.form-group {
+.account-modal.form-group {
     margin-bottom: 15px;
 }
 
-#loginFormModal .form-check
+.account-modal .form-check
 .checkbox {
     margin-right: 10px;
     cursor: pointer;
 }
 
-#loginFormModal .form-check
+.account-modal .form-check
 label.form-check-label {
 /*    font-family: Open Sans;
     font-size: 14px;
@@ -145,14 +147,14 @@ label.form-check-label {
     cursor: pointer;
     //display: flex;
 }
-#loginFormModal .form-check
+.account-modal .form-check
 label.form-check-label img {
     vertical-align: bottom;
 }
-#loginFormModal a.link-forgot-pw {
+.account-modal a.link-forgot-pw {
     margin-left: auto;
 }
-#loginFormModal a.link-rnw {
+body .account-modal a.link-rnw {
     font-family: Open Sans;
     font-size: 13px;
     font-weight: normal;
@@ -164,7 +166,7 @@ label.form-check-label img {
     color: #1293e8;
 }
 /*
-#loginFormModal .btn-login-form {
+.account-modal .btn-login-form {
     width: 340px;
     height: 45px;
     margin: auto;
@@ -214,14 +216,14 @@ i.toggle-show-pass {
     font-size: 21px;
     cursor: pointer;
 }
-#loginFormModal input.password {
+.account-modal input.password {
     padding-right: 46px;
 }
-#loginFormModal .row.btn-fb {
+.account-modal .row.btn-fb {
     position: relative;
 }
 
-#loginFormModal .row.btn-fb img {
+.account-modal .row.btn-fb img {
     position: absolute;
     top: 15px;
     left: 45px;
@@ -239,7 +241,7 @@ div#input-account-type {
     border: solid 1px #e1e1e1;
 }
 
-div#loginFormModal select {
+.account-modal select {
     border: 0;
     font-family: Open Sans;
     font-size: 14px;
@@ -277,7 +279,7 @@ div#input-account-type .placeholder span {
     font-size: 10px;
 }
 
-div#loginFormModal select * {
+.account-modal select * {
     font-family: Open Sans;
     font-size: 14px;
     font-weight: normal;
@@ -313,10 +315,10 @@ div#register .mb-10 {
     margin-bottom: -15px
 }
 
-#loginFormModal  #forgot-password-form {
+.account-modal  #forgot-password-form {
     display: none;
 }
-#loginFormModal .title-form {
+.account-modal .title-form {
     font-size: 10px;
     font-weight: bold;
     font-style: normal;
@@ -329,27 +331,27 @@ div#register .mb-10 {
     text-transform: uppercase;
 }
 
-#loginFormModal p.message-form {
+.account-modal p.message-form {
     text-align: center;
     margin-bottom: 40px;
 }
 
-#loginFormModal button#btn-reset-password {
+.account-modal button#btn-reset-password {
     margin: 40px auto 25px;
 }
 
-#loginFormModal .row.back-page a {
+.account-modal .row.back-page a {
     text-align: center;
     margin: 0 auto 25px;
 }
 
-#loginFormModal .row.back-page a i {
+.account-modal .row.back-page a i {
     font-size: 14px;
     position: relative;
     top: 3px;
 }
 
-#loginFormModal .agency-type{
+.account-modal .agency-type{
     position: relative;
 }
 #form-type-account .upload-logo {
@@ -378,7 +380,7 @@ div#register .mb-10 {
     height: 44px;
     display: inline-block;
 }
-div#loginFormModal div.select-inline select {
+.account-modal div.select-inline select {
     width: 100%;
     height: 54px;
     border-radius: 4px;
@@ -412,7 +414,7 @@ div.select-inline {
     top: 17px;
     right: 5px;
 }
-#loginFormModal .btn-next-form {
+.account-modal .btn-next-form {
     margin: 40px auto;
 }
 div#register {
@@ -491,7 +493,7 @@ div#register-steps .icon-address {
     margin-top: 30px;
     margin-bottom: 0;
 }
-.send-success {
+#send-success {
     display: none;
 }
 button#get-password {

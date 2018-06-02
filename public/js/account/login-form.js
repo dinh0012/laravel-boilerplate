@@ -7,7 +7,6 @@
             this.toggleVisiblityPassword();
             this.activeTabLoginForm();
             this.showForgotPassword();
-            this.handleForgotPassword();
             this.backToLogin();
             this.selectAccountAgency();
             this.selectInputChange();
@@ -15,6 +14,79 @@
             this.actionRegisterAgencyAccount();
             this.clickSelectFileAgencyAccount();
             this.onSubmitRegisterForm();
+            this.onSubmitLoginForm();
+            this.onSubmitForgotPassword();
+
+        },
+
+        onSubmitForgotPassword: function () {
+            $(document).on('submit', $('#reset-form'), function (e) {
+                var form = $('#reset-form');
+                e.preventDefault();
+                if (!RNW.Module.Validate.requiredInputs(form)) {
+                    return false;
+                }
+                var url = form.attr('action');
+                var data = form.serializeArray()
+                RNW.Module.Ajax.initSubmit(url, 'POST', data, $('#btn-reset-password'), success, fail);
+
+                function success(res) {
+                    if (!res.success) {
+                        return;
+                    }
+                    $('#send-success').show();
+                    $('#forgot-password-form').hide();
+                }
+                function fail(res) {
+                    var errorFields = res.responseJSON.errors;
+                    if (!errorFields) {
+                        return;
+                    }
+                    var fieldsName = ['email'];
+                    fieldsName.forEach(function (field, key) {
+                        $(form).find('*[name='+ field + ']').addClass(RNW.Module.Validate.classInvalid);
+                    })
+                }
+                return false;
+            })
+            /*var btnForgotPassword = $('#btn-reset-password');
+            $(btnForgotPassword).on('click', function (event) {
+                event.preventDefault();
+                $('.send-success').show();
+                $('.forgot-form').hide();
+
+            })*/
+        },
+
+        onSubmitLoginForm: function () {
+            $(document).on('submit', $('#login-form'), function (e) {
+                var form = $('#login-form');
+                e.preventDefault();
+                if (!RNW.Module.Validate.requiredInputs(form)) {
+                    return false;
+                }
+                var url = '/login';
+                var data = form.serializeArray()
+                RNW.Module.Ajax.initSubmit(url, 'POST', data, $('#login-rnw'), success, fail);
+
+                function success(res) {
+                    if (!res.success) {
+                        return;
+                    }
+                    location.reload();
+                }
+                function fail(res) {
+                    var errorFields = res.responseJSON.errors;
+                    if (!errorFields) {
+                        return;
+                    }
+                    var fieldsName = ['email', 'password'];
+                    fieldsName.forEach(function (field, key) {
+                        $(form).find('*[name='+ field + ']').addClass(RNW.Module.Validate.classInvalid);
+                    })
+                }
+                return false;
+            })
         },
 
         onSubmitRegisterForm: function () {
@@ -29,7 +101,10 @@
                 RNW.Module.Ajax.initSubmit(url, 'POST', data, $('#register-rnw'), success, fail);
 
                 function success(res) {
-                    console.log(res)
+                    if (!res.success) {
+                        return;
+                    }
+                    RNW.Module.Main.showModal($('#accountVerify'))
                 }
                 function fail(res) {
                     var errorFields = res.responseJSON.errors;
@@ -46,7 +121,6 @@
                         console.log(field);
                         $(form).find('*[name='+ field + ']').addClass(RNW.Module.Validate.classInvalid);
                         console.log($(form).find('*[name='+ field + ']'))
-
                     })
                 }
                 return false;
@@ -58,12 +132,15 @@
 
         activeTabLoginForm: function () {
             $('.link-account-form').on('click', function () {
+                $('#loginFormModal .content-view').hide();
+                $('#loginFormModal #login-register').show();
                 if ($(this).is('.link-login')) {
                     $('#login-tab').tab('show');
-                    return;
+                } else {
+                    $('#register-tab').tab('show');
                 }
-                $('#register-tab').tab('show');
-            }.bind(this))
+                RNW.Module.Main.showModal($('#loginFormModal'))
+            })
         },
         loadFormRegisterSuccess: function (data) {
             $('#form-type-user').html(data);
@@ -96,16 +173,6 @@
                 event.preventDefault();
                 $('#loginFormModal #forgot-password-form').show();
                 $('#loginFormModal #login-register').hide();
-
-            })
-        },
-
-        handleForgotPassword: function () {
-            var btnForgotPassword = $('#btn-reset-password');
-            $(btnForgotPassword).on('click', function (event) {
-                event.preventDefault();
-                $('.send-success').show();
-                $('.forgot-form').hide();
 
             })
         },

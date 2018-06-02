@@ -75,7 +75,7 @@ class RegisterController extends Controller
             if ($request->ajax()) {
                 return response(['mgs' => config('access.users.requires_approval') ?
                     __('exceptions.frontend.auth.confirmation.created_pending') :
-                    __('exceptions.frontend.auth.confirmation.created_confirm')]);
+                    __('exceptions.frontend.auth.confirmation.created_confirm'), 'success' => true]);
             }
             return redirect($this->redirectPath())->withFlashSuccess(
                 config('access.users.requires_approval') ?

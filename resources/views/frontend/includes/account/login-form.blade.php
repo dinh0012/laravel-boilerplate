@@ -1,4 +1,4 @@
-<div class="container" id="login-register">
+<div class="container content-view" id="login-register">
     <ul class="nav nav-tabs justify-content-md-center" id="tab-account" role="tablist">
         <li class="nav-item">
             <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login"
@@ -11,7 +11,8 @@
     </ul>
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="home-tab">
-            <form id="login-form">
+            <form id="login-form" method="POST" action="{{route('frontend.auth.login.post')}}">
+                {{csrf_field()}}
                 <div class="form-group">
                     <div class="input-placeholder">
                         <input type="text" name="email" class="form-control" rnw-required>
@@ -22,7 +23,7 @@
                 </div>
                 <div class="form-group">
                     <div class="input-placeholder">
-                        <input type="password" id="input-pw" class="form-control password" rnw-required>
+                        <input type="password" name="password" id="input-pw" class="form-control password" rnw-required>
                         <div class="placeholder">
                             Password <span>*</span>
                         </div>
@@ -31,7 +32,7 @@
                 </div>
                 <div class="form-check">
                     <label class="form-check-label text-form-account" for="rememberMe">
-                        <input type="checkbox" class="form-check-input checkbox-input" id="rememberMe">
+                        <input type="checkbox" class="form-check-input checkbox-input" name="remember" id="rememberMe">
                         <div class="check">
                             <i class="material-icons icon-checkbox-blank">check_box_outline_blank</i>
                         </div>

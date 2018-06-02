@@ -5,6 +5,13 @@ var RNW = {};
     }
 
     RNW.Module.Ajax = {
+
+        spinner: '<div class="js-popup-loader">' +
+                    '<div class="fxc popup-backdrop">' +
+                    '   <i class="material-icons">donut_large</i>' +
+                    '</div>' +
+                '</div>',
+
         initialize: function() {
             $.ajaxSetup({
                 headers: {
@@ -21,20 +28,15 @@ var RNW = {};
                 url: url,
                 type: typeof type !=='undefined' ? type : 'GET',
                 data: typeof data !== 'undefined' ? data : {},
-                error: function (response) {
-                    if (typeof callbackFails === 'function') {
-                        callbackFails(response);
-                        return;
-                    }
-                    if (callback(response)) {
-                        return;
-                    }
-                    location.reload();
-                },
+                beforeSend: function () {
+                    $('body').append(this.spinner)
+                }.bind(this),
                 cache: false
             });
             
             ajax.done(function (response) {
+               $('.js-popup-loader').remove();
+                console.log($(this.spinner), this.spinner);
                 if (typeof callbackSuccess === 'function') {
                     callbackSuccess(response);
                 }
@@ -43,9 +45,10 @@ var RNW = {};
                         button.prop('disabled', false);
                     }
                 }, 300)
-            });
+            }.bind(this));
             
             ajax.fail(function (response) {
+                $('.js-popup-loader').remove();
                 setTimeout(function () {
                     if (button && typeof button !== 'undefined') {
                         button.prop('disabled', false);
@@ -55,11 +58,12 @@ var RNW = {};
                     callbackFails(response);
                     return;
                 }
-            })
+            }.bind(this))
         }
     }
 
     RNW.Module.Validate = {
+
         classInvalid: 'rnw-invalid',
 
         requiredInputs: function($form) {
@@ -79,8 +83,28 @@ var RNW = {};
         },
 
         onShowHidePlaceholderInputs: function () {
-            var inputs = $('input[rnw-required], textarea[rnw-required]');
-            $(document).delegate(inputs,"keyup",function(e){
+            $('body').on("keyup", ' input[rnw-required], textarea[rnw-required]',function(e){
+                var value = $(this).val();
+                if (value || value != '') {
+                    $(this).addClass('has-value');
+                } else {
+                    $(this).removeClass('has-value');
+                }
+            })
+        }
+    }
+
+    RNW.Module.Main = {
+
+        classInvalid: 'rnw-invalid',
+
+        showModal: function($modal) {
+            $('.modal-rnw').modal('hide');
+            $modal.modal();
+        },
+
+        onShowHidePlaceholderInputs: function () {
+            $('body').on("keyup", ' input[rnw-required], textarea[rnw-required]',function(e){
                 var value = $(this).val();
                 if (value || value != '') {
                     $(this).addClass('has-value');

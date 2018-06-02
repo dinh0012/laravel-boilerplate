@@ -5,7 +5,11 @@
                 @include('frontend.includes.lang-switcher')
             </div>
             <div class="col-sm-8 account-menu none-padding">
-                @include('frontend.includes.account-menu')
+                @if (!\Illuminate\Support\Facades\Auth::check())
+                    @include('frontend.includes.account-menu')
+                @else
+                    <a href="">{{\Illuminate\Support\Facades\Auth::user()->email}}</a>
+                @endif
             </div>
         </div>
     </nav>
@@ -33,7 +37,11 @@
                 </div>
                 <div class="modal-body">
                     <div class="account-menu">
-                        @include('frontend.includes.account-menu')
+                        @if (!\Illuminate\Support\Facades\Auth::check())
+                            @include('frontend.includes.account-menu')
+                        @else
+                            <a href="">{{\Illuminate\Support\Facades\Auth::user()->email}}</a>
+                        @endif
                     </div>
                     <div class="nav-bar-menu">
                         @include('frontend.includes.nav-bar-menu')
