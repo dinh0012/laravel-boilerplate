@@ -115,7 +115,8 @@ var RNW = {};
         },
 
         resetForm: function () {
-            $('input, textarea, select').val('').removeClass('rnw-invalid');
+            $('input:not([name=_token]), textarea, select:not(.account-type)').val('').removeClass('rnw-invalid');
+            $('#input-type-user').val(1);
         },
     }
 })();
