@@ -16,9 +16,13 @@
             this.onSubmitRegisterForm();
             this.onSubmitLoginForm();
             this.onSubmitForgotPassword();
-
+            this.onCLickTabForm();
         },
-
+        onCLickTabForm: function () {
+            $('#tab-account li.nav-item').on('click', function () {
+                RNW.Module.Main.resetForm();
+            })
+        },
         onSubmitForgotPassword: function () {
             $(document).on('submit', $('#reset-form'), function (e) {
                 var form = $('#reset-form');
@@ -59,7 +63,7 @@
         },
 
         onSubmitLoginForm: function () {
-            $(document).on('submit', $('#login-form'), function (e) {
+            $(document).on('submit', '#login-form', function (e) {
                 var form = $('#login-form');
                 e.preventDefault();
                 if (!RNW.Module.Validate.requiredInputs(form)) {
@@ -90,7 +94,7 @@
         },
 
         onSubmitRegisterForm: function () {
-            $(document).on('submit', $('#register-form'), function (e) {
+            $(document).on('submit', '#register-form', function (e) {
                 var form = $('#register-form');
                 e.preventDefault();
                 if (!RNW.Module.Validate.requiredInputs(form)) {
@@ -131,6 +135,7 @@
         },
 
         activeTabLoginForm: function () {
+            RNW.Module.Main.resetForm();
             $('.link-account-form').on('click', function () {
                 $('#loginFormModal .content-view').hide();
                 $('#loginFormModal #login-register').show();
@@ -173,11 +178,12 @@
                 event.preventDefault();
                 $('#loginFormModal #forgot-password-form').show();
                 $('#loginFormModal #login-register').hide();
-
+                RNW.Module.Main.resetForm();
             })
         },
 
         backToLogin: function () {
+            RNW.Module.Main.resetForm();
             var linkBack = $('#back-to-login');
             $(linkBack).on('click', function (event) {
                 event.preventDefault();

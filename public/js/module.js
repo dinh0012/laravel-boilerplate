@@ -112,7 +112,11 @@ var RNW = {};
                     $(this).removeClass('has-value');
                 }
             })
-        }
+        },
+
+        resetForm: function () {
+            $('input, textarea, select').val('').removeClass('rnw-invalid');
+        },
     }
 })();
 
